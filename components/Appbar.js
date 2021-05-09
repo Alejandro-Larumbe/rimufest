@@ -42,7 +42,7 @@ export default function Appbar({ children }) {
   }
 
   return (
-    <nav className="bg-green  opacity-90">
+    <nav className="bg-white shadow dark:bg-gray-800">
       <div className="container px-6 py-6 mx-auto">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex items-center justify-between">
