@@ -1,0 +1,58 @@
+module.exports = {
+  mode: "jit",
+  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class", // or 'media' or 'class'
+  variants: {},
+  plugins: [],
+  theme: {
+    fontFamily: {
+      sans: "Open Sans",
+      title: "Raleway",
+    },
+    colors: {
+      pink: {
+        // DEFAULT: "#F06CAE",
+        // DEFAULT: "#ED2488",
+        DEFAULT: "#FF4598",
+      },
+      blue: {
+        DEFAULT: "#6092F0",
+        // DEFAULT: "#0C59ED",
+      },
+      green: {
+        // DEFAULT:"#00ED00"
+        // DEFAULT:"#54F054"
+        DEFAULT: "#A8FCA2",
+      },
+      yellow: {
+        // DEFAULT:"#F0E384"
+        // DEFAULT:"#B7ED3B"
+        // DEFAULT:"#EDB53B"
+        // DEFAULT:"#0CED8B"
+        DEFAULT: "#24ED24",
+      },
+      pearl: {
+        DEFAULT: "#FFFFFF",
+      },
+      darky: {
+        DEFAULT: "#121212",
+      },
+    },
+    extend: {
+      backgroundImage: (theme) => ({
+        "splash-hero": "url('/studentConcert1.jpg')",
+        splash3: "url('/splash3.jpg')",
+        "concerts-background": "url('/concertBackground.jpg')",
+        "splash-info": "url('/mexico1.jpg')",
+        "footer-texture": "url('/img/footer-texture.png')",
+        "logo-dark": "url('/logo-dark.svg')",
+        "logo-light": "url('/logo-light.svg')",
+      }),
+      spacing: {
+        100: "48rem",
+        128: "56rem",
+        500: "500rem",
+      },
+    },
+  },
+};

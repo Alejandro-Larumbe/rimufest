@@ -1,0 +1,31 @@
+export const LangStrings = {
+  nz: {
+    about: "About",
+    concerts: "Concerts",
+    programs: "Programmes",
+    joinUs: "Join Us",
+    gallery: "Gallery",
+    artists: 'Artists',
+    violin: 'violin',
+    conductor: 'conductor',
+    percussion: 'percussion',
+    ensembleInResidence: 'Ensemble in Residence at Rimufest',
+    festivals: 'Festivals',
+    support: 'Support',
+  },
+  mx: {
+    artists: 'Artistas',
+    about: "Acerca",
+    concerts: "Conciertos",
+    programs: "Programas",
+    joinUs: "Únete",
+    gallery: "Galería",
+    violin: 'violín',
+    conductor: 'director',
+    percussion: 'percussión',
+    ensembleInResidence: 'Ensamble en Residencia en Rimufest',
+    festivals: 'Festivales',
+    support: 'Apóyanos',
+
+  },
+}
