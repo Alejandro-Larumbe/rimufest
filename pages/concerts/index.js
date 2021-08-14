@@ -1,6 +1,5 @@
 import ConcertCard from "../../components/ConcertCard";
 import { getSortedConcertsData } from "../../lib/concerts";
-import Image from "next/image";
 
 export async function getStaticProps() {
   const allConcertsData = getSortedConcertsData();

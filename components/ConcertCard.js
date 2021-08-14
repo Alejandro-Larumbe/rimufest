@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Date from "./date";
 import Button from "./primitives/button";
 

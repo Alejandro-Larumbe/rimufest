@@ -1,4 +1,4 @@
-import Image from "next/Image";
+import React from "react";
 
 export default function EventCard({ imgSrc, imageAlt, title, p, href }) {
   return (
