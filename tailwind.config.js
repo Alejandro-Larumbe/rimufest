@@ -17,12 +17,14 @@ module.exports = {
       },
       blue: {
         DEFAULT: "#6092F0",
-        // DEFAULT: "#0C59ED",
+        //   // DEFAULT: "#0C59ED",
       },
       green: {
         // DEFAULT:"#00ED00"
         // DEFAULT:"#54F054"
         DEFAULT: "#A8FCA2",
+        // DEFAULT: "#83C03E",
+        // DEFAULT: "#298F42",
       },
       yellow: {
         // DEFAULT:"#F0E384"
@@ -42,11 +44,13 @@ module.exports = {
       backgroundImage: (theme) => ({
         "splash-hero": "url('/studentConcert1.jpg')",
         splash3: "url('/splash3.jpg')",
-        "concerts-background": "url('/concertBackground.jpg')",
+        holidayProgram: "url('/holiday-programme.jpeg')",
+        concerts: "url('/concerts.jpeg')",
         "splash-info": "url('/mexico1.jpg')",
         "footer-texture": "url('/img/footer-texture.png')",
-        "logo-dark": "url('/logo-dark.svg')",
+        "logo-dark": "url('/logo-dark.png')",
         "logo-light": "url('/logo-light.svg')",
+        "logo-pink": "url('/logo-pink.svg')",
       }),
       spacing: {
         100: "48rem",

@@ -3,16 +3,19 @@ import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-
 import { Switch } from "@headlessui/react";
 import { MoonIcon as MoonSolid } from "@heroicons/react/solid";
 import { MoonIcon as MoonOutline } from "@heroicons/react/outline";
 import { SunIcon as SunSolid } from "@heroicons/react/solid";
-
 import { max } from "date-fns";
 
 import useTranslation from "../intl/useTranslation";
 import { LanguageContext, locales } from "../intl/LanguageProvider";
+
+const tabs = [
+  { path: "/concerts", name: "concerts" },
+  { path: "/holiday-programme", name: "holidayProgramme" },
+];
 
 export default function Appbar({ children }) {
   const router = useRouter();
@@ -27,7 +30,7 @@ export default function Appbar({ children }) {
     if (!window) {
       return;
     }
-    const regex = new RegExp(`^/(${locales.join("|")})`);
+    // const regex = new RegExp(`^/(${locales.join("|")})`);
     localStorage.setItem("lang", language);
     setLocale(language);
 
@@ -52,7 +55,7 @@ export default function Appbar({ children }) {
             </Link>
             {/* <Link href='/'>
                 <Image
-                  src={`/logo-dark.svg`}
+                  src={`/logo-dark.png`}
                   className={"hover:cursor-pointer"}
                   width={200}
                   height={100}
@@ -86,43 +89,18 @@ export default function Appbar({ children }) {
               openMenu ? "block" : "hidden"
             } md:flex md:items-center md:justify-between`}
           >
-            <div className="flex flex-col items-end -mx-4 md:flex-row md:items-center md:mx-8">
-              <Link href="/about">
-                <a className="uppercase px-2 py-1 mx-2 mt-2 text-xl font-extrabold text-pink transition-colors duration-200 transform md:mt-0 dark:text-gray-200 border-b-green hover:border-pink hover:border-b-2">
-                  {t("about")}
-                </a>
-              </Link>
-              <Link href="/concerts">
-                <h3
-                  className={`uppercase  px-2 py-1 mx-2 mt-2 text-xl font-extrabold text-pink transition-colors duration-200 transform md:mt-0 dark:text-gray-200 border-b-green hover:border-pink hover:border-b-2`}
-                >
-                  {t("concerts")}
-                </h3>
-              </Link>
-              <Link href="/festivals">
-                <a className="uppercase font-extrabold px-2 py-1 mx-2 mt-2 text-xl font-extrabold text-pink transition-colors duration-200 transform md:mt-0 dark:text-gray-200 border-b-green hover:border-pink hover:border-b-2">
-                  {t("festivals")}
-                </a>
-              </Link>
-              <Link href="/artists">
-                <a className="uppercase px-2 py-1 mx-2 mt-2 text-xl font-extrabold text-pink transition-colors duration-200 transform md:mt-0 dark:text-gray-200 border-b-green hover:border-pink hover:border-b-2">
-                  {t("artists")}
-                </a>
-              </Link>
-              <Link href="/gallery">
-                <a className="uppercase px-2 py-1 mx-2 mt-2 text-xl font-extrabold text-pink transition-colors duration-200 transform md:mt-0 dark:text-gray-200 border-b-green hover:border-pink hover:border-b-2">
-                  {t("gallery")}
-                </a>
-              </Link>
-              <Link href="/support">
-                <a className="uppercase px-2 py-1 mx-2 mt-2 text-xl font-extrabold text-pink transition-colors duration-200 transform md:mt-0 dark:text-gray-200 border-b-green hover:border-pink hover:border-b-2">
-                  {t("support")}
-                </a>
-              </Link>
+            <div className="flex flex-col items-end -mx-4 text-white md:flex-row md:items-center md:mx-8">
+              {tabs.map(({ path, name }) => (
+                <Link href={path}>
+                  <a className="uppercase text-md md:text-lg px-2 py-1 mx-2 mt-2 transition-colors duration-200 transform md:mt-0">
+                    {t(name)}
+                  </a>
+                </Link>
+              ))}
             </div>
 
             <div className="flex items-end md:flex-row md:items-center flex-col mt-4 md:mt-0">
-              <div className="mb-5 md:mb-0 overflow-hidden ">
+              {/* <div className="mb-5 md:mb-0 overflow-hidden ">
                 <button className="h-6 w-6 text-pink focus:outline-none">
                   {theme === "dark" ? (
                     <SunSolid onClick={() => setTheme("light")} />
@@ -130,7 +108,7 @@ export default function Appbar({ children }) {
                     <MoonSolid onClick={() => setTheme("dark")} />
                   )}
                 </button>
-              </div>
+              </div> */}
               <div className="w-7 h-7 md:w-8 md:h-8 ml-4 overflow-hidden rounded-full">
                 <button
                   onClick={() =>
