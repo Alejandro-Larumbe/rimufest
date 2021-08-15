@@ -7,8 +7,9 @@ export default function Splash() {
 
   return (
     <>
-      <div className="container w-full mx-auto">
-        <div className="md:flex md:flex-row-reverse">
+      <div>
+        <div className="w-full mx-auto">
+          <div className="md:flex md:flex-row-reverse"></div>
           <div className="">
             <Image
               src="/splash.png"
@@ -44,56 +45,30 @@ export default function Splash() {
         </div>
       </div>
 
-      <div className="p-8">
-        {/* <h2 className="text-2xl font-semibold text-gray-800 text-white md:text-3xl">Rimufest <span className="text-indigo-600 text-indigo-400">Mexico Online 2022</span></h2> */}
-
-        <p className="">Rimufest</p>
-        <p className="">is a chamber music festival </p>
-        <p className="">and academy</p>
-        <p className="">we inspire</p>
-        <p className="">the youth</p>
-        {/* <p className="mb-8">{t("blurb")}</p> */}
-
-        {/* <div className="flex mt-6">
-              <a href="#" className="block px-3 py-2 text-xs font-semibold text-white transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Apply</a>
-              <a
-              href="#"
-              className="block px-3 py-2 mx-4 text-xs font-semibold text-pink transition-colors duration-200 transform bg-gray-200 rounded-md hover:bg-gray-300"
-              >
-              Learn More
-              </a>
-            </div> */}
-        {/* <Button label={"Learn more"} /> */}
+      <div className="px-8 py-16">
+        <div className="flex items-center">
+          <p className="text-4xl mr-2">Rimufest</p>
+          <p className="text-">is a</p>
+        </div>
+        <div className="flex items-center">
+          <p className="text-xl mr-2">chamber music festival </p>
+          <p className="text-lg ml-2">{"&"}</p>
+        </div>
+        <div className="flex items-center">
+          <p className="text-3xl">academy</p>
+        </div>
+        <div className="flex items-center">
+          <p className="mr-2">we</p>
+          <p className="text-4xl text-pink">inspire</p>
+        </div>
+        <p className="text-2xl">the youth</p>
       </div>
-      <div className="h-100 bg-no-repeat bg-contain  bg-splash-student"></div>
 
-      {/* <section className="overflow-x-auto lg:py-12 lg:flex lg:justify-center"> */}
-      {/* <section className="overflow-x-auto mx-auto bg-gray-900 py-56 lg:flex sm:w-4/5 w-full lg:justify-center">
-        <h1 className="text-8xl text-green">Festivals</h1>
-        <EventCard
-          imgSrc="mx"
-          imgAlt="Rimufest MX-icon 2021"
-          title="RimuFest MX Online 2021"
-          p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!"
-          // href='/events/'
-        />
+      <div className="my-8 py-8">
+        <div className="bg-cover bg-splash-student justify-end flex flex-col w-screen h-72"></div>
+      </div>
 
-        <EventCard
-          imgSrc="nz"
-          imgAlt="Holliday Program"
-          title="Holiday Program"
-          p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!"
-          // href='/events/'
-        />
-
-        <EventCard
-          imgSrc="nz"
-          imgAlt="Rimufest NZ"
-          title="RimuFest NZ 2022"
-          p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores deserunt ea doloremque natus error, rerum quas odio quaerat nam ex commodi hic, suscipit in a veritatis pariatur minus consequuntur!"
-          // href='/events/'
-        />
-      </section> */}
+      <p className="p-8 py-16 my-8">{t("blurb")}</p>
     </>
   );
 }

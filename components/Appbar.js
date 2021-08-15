@@ -37,21 +37,19 @@ export default function Appbar({ children }) {
     // router.push(router.pathname, router.asPath.replace(regex, `/${language}`));
   }
 
-  console.log("path", path);
-
   function onSwitch() {
     setTheme(theme === "dark" ? "light" : "dark");
     setEnabled();
   }
 
   return (
-    <nav className="bg-white shadow dark:bg-gray-800">
+    <nav className="bg-white text-pink shadow dark:bg-gray-800">
       <div className="container px-6 py-6 mx-auto">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex items-center justify-between">
             {/* <div> */}
             <Link href="/">
-              <div className="w-28 h-14 md:w-36 md:h-18 bg-contain bg-no-repeat bg-logo-dark" />
+              <div className="w-28 mt-2 h-14 md:w-36 md:h-18 bg-contain bg-no-repeat bg-logo-dark" />
             </Link>
             {/* <Link href='/'>
                 <Image
@@ -70,10 +68,10 @@ export default function Appbar({ children }) {
               <button
                 onClick={() => setOpenMenu(openMenu === true ? false : true)}
                 type="button"
-                className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                className="-top-4 text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
                 aria-label="toggle menu"
               >
-                <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
+                <svg viewBox="0 0 24 24" className="w-6 pink h-6 fill-current">
                   <path
                     fillRule="evenodd"
                     d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"

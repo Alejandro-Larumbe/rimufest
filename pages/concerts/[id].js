@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { getAllConcertIds, getConcertData } from "../../lib/concerts";
 import Date from "../../components/date";
 import Hero from "../../components/Hero";
