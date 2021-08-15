@@ -45,7 +45,7 @@ module.exports = {
         "splash-hero": "url('/studentConcert1.jpg')",
         "splash-student": "url('/splash-student.jpg')",
         splash3: "url('/splash3.jpg')",
-        "holiday-programme": "url('/holiday-programme.jpg')",
+        "holiday-programme": "url('/holiday-programme.jpeg')",
         concerts: "url('/concerts.jpeg')",
         "splash-info": "url('/mexico1.jpg')",
         "footer-texture": "url('/img/footer-texture.png')",
