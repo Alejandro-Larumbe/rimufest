@@ -39,6 +39,9 @@ module.exports = {
       darky: {
         DEFAULT: "#121212",
       },
+      white: {
+        DEFAULT: "#FFFFFF",
+      },
     },
     extend: {
       backgroundImage: (theme) => ({

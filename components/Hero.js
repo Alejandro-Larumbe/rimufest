@@ -7,7 +7,7 @@ export default function Hero({ bgImage, children }) {
       }}
       className={`justify-end flex flex-col w-screen h-96`}
     >
-      <div className="p-8 text-3xl">{children}</div>
+      <div className="p-8 text-white text-3xl">{children}</div>
     </div>
   );
 }
