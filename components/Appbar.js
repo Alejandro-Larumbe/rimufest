@@ -42,7 +42,7 @@ export default function Appbar({ children }) {
           <div className="flex items-center justify-between">
             {/* <div> */}
             <Link href="/">
-              <a className="w-28 mt-3 h-14 md:w-36 md:h-18 bg-contain bg-no-repeat bg:logo-pink dark:bg-logo-dark" />
+              <a className="w-28 mt-3 h-14 md:w-36 md:h-18 bg-contain bg-no-repeat bg-logo-pink dark:bg-logo-dark" />
             </Link>
             {/* <Link href='/'>
                 <Image

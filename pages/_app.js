@@ -1,6 +1,6 @@
 // import 'tailwindcss/tailwind.css'
 import '../styles/tailwind.css';
-import { ThemeProvider } from 'next-themes'
+import { ThemeProvider} from 'next-themes'
 
 import { LanguageProvider } from '../intl/LanguageProvider'
 import Layout from '../components/layout'
@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
 
 
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider attribute="media">
       <LanguageProvider>
         <Layout>
           <Component {...pageProps} />
