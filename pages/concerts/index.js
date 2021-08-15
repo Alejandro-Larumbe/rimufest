@@ -15,7 +15,7 @@ export default function Concerts({ allConcertsData }) {
   return (
     <>
       <Hero bgImage="concerts">
-        <h1 className="uppercase">Concerts</h1>
+        <h1 className="uppercase text-white">Concerts</h1>
       </Hero>
       <div className="flex flex-col p-8">
         {allConcertsData.length ? (

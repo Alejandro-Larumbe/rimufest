@@ -6,8 +6,8 @@ export default function HolidayProgramme() {
   return (
     <>
       <Hero bgImage="holiday-programme">
-        <h1 className="uppercase">Term 3</h1>
-        <h1 className="uppercase">Holiday Programme</h1>
+        <h1 className="uppercase text-white">Term 3</h1>
+        <h1 className="uppercase text-white">Holiday Programme</h1>
       </Hero>
       <div className="p-8">
         <div className="py-4">

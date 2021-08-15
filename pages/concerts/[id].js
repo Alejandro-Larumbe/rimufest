@@ -38,8 +38,8 @@ export default function Event({ eventData }) {
   return (
     <>
       <Hero bgImage={image}>
-        <h1 className="uppercase">{title}</h1>
-        <h2 className="normal-case text-lg">{subtitle}</h2>
+        <h1 className="uppercase text-white">{title}</h1>
+        <h2 className="normal-case text-lg text-white">{subtitle}</h2>
       </Hero>
 
       <div className="p-8">
