@@ -21,8 +21,6 @@ export default function Appbar({ children }) {
   const router = useRouter();
   const { t } = useTranslation();
   const [locale, setLocale] = useContext(LanguageContext);
-  const { theme, setTheme } = useTheme();
-  const [enabled, setEnabled] = useState(theme !== "dark");
   const [openMenu, setOpenMenu] = useState(false);
   const [path] = useState(router.asPath);
 
@@ -37,11 +35,6 @@ export default function Appbar({ children }) {
     // router.push(router.pathname, router.asPath.replace(regex, `/${language}`));
   }
 
-  function onSwitch() {
-    setTheme(theme === "dark" ? "light" : "dark");
-    setEnabled();
-  }
-
   return (
     <nav className="bg-white text-pink shadow dark:bg-gray-800">
       <div className="container px-6 py-6 mx-auto">
@@ -49,7 +42,7 @@ export default function Appbar({ children }) {
           <div className="flex items-center justify-between">
             {/* <div> */}
             <Link href="/">
-              <div className="w-28 mt-2 h-14 md:w-36 md:h-18 bg-contain bg-no-repeat bg-logo-dark" />
+              <a className="w-28 mt-2 h-14 md:w-36 md:h-18 bg-contain bg-no-repeat bg-logo-pink" />
             </Link>
             {/* <Link href='/'>
                 <Image
@@ -98,15 +91,6 @@ export default function Appbar({ children }) {
             </div>
 
             <div className="flex items-end md:flex-row md:items-center flex-col mt-4 md:mt-0">
-              {/* <div className="mb-5 md:mb-0 overflow-hidden ">
-                <button className="h-6 w-6 text-pink focus:outline-none">
-                  {theme === "dark" ? (
-                    <SunSolid onClick={() => setTheme("light")} />
-                  ) : (
-                    <MoonSolid onClick={() => setTheme("dark")} />
-                  )}
-                </button>
-              </div> */}
               <div className="w-7 h-7 md:w-8 md:h-8 ml-4 overflow-hidden rounded-full">
                 <button
                   onClick={() =>
