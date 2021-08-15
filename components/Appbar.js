@@ -91,7 +91,7 @@ export default function Appbar({ children }) {
           >
             <div className="flex flex-col items-end -mx-4 text-white md:flex-row md:items-center md:mx-8">
               {tabs.map(({ path, name }) => (
-                <Link href={path}>
+                <Link key={path} href={path}>
                   <a className="uppercase text-md md:text-lg px-2 py-1 mx-2 mt-2 transition-colors duration-200 transform md:mt-0">
                     {t(name)}
                   </a>

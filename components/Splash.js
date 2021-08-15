@@ -44,19 +44,17 @@ export default function Splash() {
         </div>
       </div>
 
-      <div className="md:flex">
-        <div className="flex justify-center w-full py-8 md:h-128 md:w-1/2">
-          <div className="m-8 max-w-xl">
-            {/* <h2 className="text-2xl font-semibold text-gray-800 text-white md:text-3xl">Rimufest <span className="text-indigo-600 text-indigo-400">Mexico Online 2022</span></h2> */}
+      <div className="p-8">
+        {/* <h2 className="text-2xl font-semibold text-gray-800 text-white md:text-3xl">Rimufest <span className="text-indigo-600 text-indigo-400">Mexico Online 2022</span></h2> */}
 
-            <p className="">Rimufest</p>
-            <p className="">is a chamber music festival </p>
-            <p className="">and academy</p>
-            <p className="">we inspire</p>
-            <p className="">the youth</p>
-            {/* <p className="mb-8">{t("blurb")}</p> */}
+        <p className="">Rimufest</p>
+        <p className="">is a chamber music festival </p>
+        <p className="">and academy</p>
+        <p className="">we inspire</p>
+        <p className="">the youth</p>
+        {/* <p className="mb-8">{t("blurb")}</p> */}
 
-            {/* <div className="flex mt-6">
+        {/* <div className="flex mt-6">
               <a href="#" className="block px-3 py-2 text-xs font-semibold text-white transition-colors duration-200 transform bg-gray-900 rounded-md hover:bg-gray-700">Apply</a>
               <a
               href="#"
@@ -65,14 +63,9 @@ export default function Splash() {
               Learn More
               </a>
             </div> */}
-            {/* <Button label={"Learn more"} /> */}
-          </div>
-        </div>
-
-        <div className="h-100 md:w-3/4 md:w-128 bg-no-repeat bg-contain bg-splash-info">
-          <div className="w-full h-full bg-black opacity-25"></div>
-        </div>
+        {/* <Button label={"Learn more"} /> */}
       </div>
+      <div className="h-100 bg-no-repeat bg-contain  bg-splash-student"></div>
 
       {/* <section className="overflow-x-auto lg:py-12 lg:flex lg:justify-center"> */}
       {/* <section className="overflow-x-auto mx-auto bg-gray-900 py-56 lg:flex sm:w-4/5 w-full lg:justify-center">

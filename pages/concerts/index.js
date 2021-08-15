@@ -1,5 +1,6 @@
 import ConcertCard from "../../components/ConcertCard";
 import { getSortedConcertsData } from "../../lib/concerts";
+import Hero from "../../components/Hero";
 
 export async function getStaticProps() {
   const allConcertsData = getSortedConcertsData();
@@ -13,12 +14,9 @@ export async function getStaticProps() {
 export default function Concerts({ allConcertsData }) {
   return (
     <>
-      <div className="justify-end bg-center flex flex-col bg-opacity-10 w-screen h-96 bg-concerts bg-cover">
-        <div className="p-8">
-          <p className="text-white text-3xl uppecase">Concerts</p>
-        </div>
-      </div>
-      ≈
+      <Hero bgImage="concerts">
+        <h1 className="uppercase">Concerts</h1>
+      </Hero>
       <div className="flex flex-col p-8">
         {allConcertsData.length ? (
           allConcertsData.map(
@@ -35,6 +33,7 @@ export default function Concerts({ allConcertsData }) {
               return (
                 published && (
                   <ConcertCard
+                    key={id}
                     imgSrc={imgSrc}
                     title={title}
                     date={date}

@@ -1,21 +1,21 @@
 import React from "react";
+import Hero from "../components/Hero";
 import Button from "../components/primitives/button";
 
 export default function HolidayProgramme() {
   return (
     <>
-      <div className="justify-end bg-left flex flex-col bg-opacity-10 w-full h-96 bg-holidayProgram bg-cover">
-        <div className="p-8">
-          <p className="text-white text-3xl uppecase">Term 3</p>
-          <p className="text-white text-3xl uppecase">Holiday Programme</p>
-        </div>
-      </div>
+      <Hero bgImage="holiday-programme">
+        <h1 className="uppercase">Term 3</h1>
+        <h1 className="uppercase">Holiday Programme</h1>
+      </Hero>
       <div className="p-8">
         <div className="py-4">
           <p className="text-2xl">
-            RimuFest’s Term 3 Holiday Programme is an opportunity for both young
-            violinists and violists aged 7yrs-16yrs to work closely with Donald
-            Maurice, develop their talents, build friendships, and have fun!
+            RimuFest Term 3 Holiday Programme is an opportunity to build your
+            knowledge and skill of the viola alongside the prestigious Donald
+            Maurice. In these four days students will experience joy in
+            learning, bonding and performing with friends.
           </p>
         </div>
         <div className="py-4">
@@ -49,7 +49,7 @@ export default function HolidayProgramme() {
           </a>
         </div>
       </div>
-      <img className="py-4" src="/donald-maurice.jpeg"></img>
+      <img className="py-4" src="/donald-maurice1.jpeg"></img>
       <div className="p-8">
         <div className="py-4">
           <p className="text-lg font-extrabold">About Donald Maurice</p>
