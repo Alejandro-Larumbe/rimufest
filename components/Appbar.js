@@ -36,7 +36,7 @@ export default function Appbar({ children }) {
   }
 
   return (
-    <nav className="bg-white text-pink shadow dark:bg-gray-800">
+    <nav className="text-pink shadow dark:bg-gray-800">
       <div className="container px-6 py-6 mx-auto">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex items-center justify-between">
@@ -80,7 +80,7 @@ export default function Appbar({ children }) {
               openMenu ? "block" : "hidden"
             } md:flex md:items-center md:justify-between`}
           >
-            <div className="flex flex-col items-end -mx-4 text-white md:flex-row md:items-center md:mx-8">
+            <div className="flex flex-col items-end -mx-4 md:flex-row md:items-center md:mx-8">
               {tabs.map(({ path, name }) => (
                 <Link key={path} href={path}>
                   <a className="uppercase text-md md:text-lg px-2 py-1 mx-2 mt-2 transition-colors duration-200 transform md:mt-0">

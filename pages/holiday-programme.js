@@ -11,7 +11,7 @@ export default function HolidayProgramme() {
       </Hero>
       <div className="p-8">
         <div className="py-4">
-          <p className="text-2xl">
+          <p className="text-2xl text-pink">
             RimuFest Term 3 Holiday Programme is an opportunity to build your
             knowledge and skill of the viola alongside the prestigious Donald
             Maurice. In these four days students will experience joy in
