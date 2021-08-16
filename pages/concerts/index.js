@@ -17,7 +17,7 @@ export default function Concerts({ allConcertsData }) {
       <Hero bgImage="concerts">
         <h1 className="uppercase text-white">Concerts</h1>
       </Hero>
-      <div className="flex flex-col p-8">
+      <div className="flex flex-col md:py-20 items-center p-8">
         {allConcertsData.length ? (
           allConcertsData.map(
             ({

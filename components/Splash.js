@@ -7,68 +7,64 @@ export default function Splash() {
 
   return (
     <>
-      <div>
-        <div className="w-full mx-auto">
-          <div className="md:flex md:flex-row-reverse"></div>
-          <div className="">
-            <Image
-              src="/splash.png"
-              layout="intrinsic"
-              height={3508}
-              width={2480}
-            />
-          </div>
-          <section className="w-3/4 hidden md:block mx-auto body-font md:my-36">
-            <div className="container px-5 py-24 mx-auto">
-              <div className="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#A8FCA2"
-                  className="inline-block w-8 h-8 mb-8"
-                  viewBox="0 0 975.036 975.036"
-                >
-                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                </svg>
-                <p className="leading-relaxed md:leading-relaxed text-lg md:text-2xl">
-                  Amazing opportunity to work with world-class musicians.
-                  Wholistic learning and development of skills beyond music.
-                  Positive and kind teachers.
-                </p>
-                <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
-                <h2 className="font-medium title-font tracking-wider text-lg">
-                  Rimufest Parent
-                </h2>
-                <p className="text-md">Term 2 Holiday Program</p>
-              </div>
+      <div className="flex flex-col justify-center align-center lg:w-128 mx-auto">
+        <div className="md:flex md:flex-row">
+          <Image
+            src="/splash.png"
+            layout="intrinsic"
+            height={3508}
+            width={2480}
+          />
+          <div className="h-96 md:w-full self-center pt-24 pb-16 md:pl-8 pl-16">
+            <div className="flex items-center">
+              <p className="text-4xl mr-2">Rimufest is</p>
             </div>
-          </section>
+            <div className="flex items-center">
+              <p className="text-xl mr-2">a chamber music festival</p>
+            </div>
+            <div className="flex items-center">
+              <p className="text-3xl">& academy</p>
+            </div>
+            <div className="flex items-center">
+              <p className="text-4xl text-pink">we inspire</p>
+            </div>
+            <p className="text-2xl">the youth</p>
+          </div>
         </div>
       </div>
 
-      <div className="px-8 py-16">
-        <div className="flex items-center">
-          <p className="text-4xl mr-2">Rimufest</p>
-          <p className="text-">is a</p>
-        </div>
-        <div className="flex items-center">
-          <p className="text-xl mr-2">chamber music festival </p>
-          <p className="text-lg ml-2">{"&"}</p>
-        </div>
-        <div className="flex items-center">
-          <p className="text-3xl">academy</p>
-        </div>
-        <div className="flex items-center">
-          <p className="mr-2">we</p>
-          <p className="text-4xl text-pink">inspire</p>
-        </div>
-        <p className="text-2xl">the youth</p>
+      <div className="md:flex md:my-24 md:pl-48 md:flex-row">
+        <div className="bg-cover my-8 bg-splash-student w-screen md:h-96 md:w-1/3 h-72"></div>
+        <p className="md:w-1/3 md:h-96 md:text-xl p-8 py-16 md:mt-0 mt-16">
+          {t("blurb")}
+        </p>
       </div>
 
-      <div className="my-8 py-8">
-        <div className="bg-cover bg-splash-student justify-end flex flex-col w-screen h-72"></div>
-      </div>
+      <section className="w-3/4 hidden md:block mx-auto body-font md:my-36">
+        <div className="container px-5 py-24 mx-auto">
+          <div className="md:w-1/4 w-full mx-auto text-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#A8FCA2"
+              className="inline-block w-8 h-8 mb-8"
+              viewBox="0 0 975.036 975.036"
+            >
+              <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p className="leading-relaxed md:leading-relaxed text-lg md:text-2xl">
+              Amazing opportunity to work with world-class musicians. Wholistic
+              learning and development of skills beyond music. Positive and kind
+              teachers.
+            </p>
 
-      <p className="p-8 py-16 my-8">{t("blurb")}</p>
+            <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-8 mb-6"></span>
+            <h2 className="font-medium title-font tracking-wider text-lg">
+              Rimufest Parent
+            </h2>
+            <p className="text-md">Term 2 Holiday Program</p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

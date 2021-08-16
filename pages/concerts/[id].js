@@ -42,7 +42,7 @@ export default function Event({ eventData }) {
         <h2 className="normal-case text-lg text-white">{subtitle}</h2>
       </Hero>
 
-      <div className="p-8">
+      <div className="p-8 md:w-1/4 md:mx-auto md:my-32">
         <p className="py-2 text-lg">
           {Date(date)}, {time}
         </p>

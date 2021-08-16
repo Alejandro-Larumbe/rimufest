@@ -91,7 +91,7 @@ export default function Appbar({ children }) {
             </div>
 
             <div className="flex items-end md:flex-row md:items-center flex-col mt-4 md:mt-0">
-              <div className="w-7 h-7 md:w-8 md:h-8 ml-4 overflow-hidden rounded-full">
+              {/* <div className="w-7 h-7 md:w-8 md:h-8 ml-4 overflow-hidden rounded-full">
                 <button
                   onClick={() =>
                     handleLocaleChange(locale === "nz" ? "mx" : "nz")
@@ -108,7 +108,7 @@ export default function Appbar({ children }) {
                     alt="avatar"
                   />
                 </button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

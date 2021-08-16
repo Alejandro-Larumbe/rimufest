@@ -9,7 +9,7 @@ export default function HolidayProgramme() {
         <h1 className="uppercase text-white">Term 3</h1>
         <h1 className="uppercase text-white">Holiday Programme</h1>
       </Hero>
-      <div className="p-8">
+      <div className="md:w-1/3 md:mx-auto md:my-20 p-8">
         <div className="py-4">
           <p className="text-2xl text-pink">
             RimuFest Term 3 Holiday Programme is an opportunity to build your
@@ -49,30 +49,33 @@ export default function HolidayProgramme() {
           </a>
         </div>
       </div>
-      <img className="py-4" src="/donald-maurice1.jpeg"></img>
-      <div className="p-8">
-        <div className="py-4">
-          <p className="text-lg font-extrabold">About Donald Maurice</p>
-        </div>
-        <div className="py-4">
-          <p>
-            Donald was until retiring in 2020 Professor of Music at Victoria
-            University of Wellington. He has performed internationally for four
-            decades as a solo violist and chamber musician and has given world
-            premieres and New Zealand premieres of many works. He has presented
-            at twenty International Viola Congresses.
-          </p>
-        </div>
-        <div className="py-4">
-          Check out his impressive bio{" "}
-          <a
-            target="_blank"
-            href="https://www.donaldmaurice.org"
-            className="text-pink text-lg"
-          >
-            here
-          </a>
-          .
+
+      <div className="md:flex md:ml-56 md:my-24">
+        <img className="py-4 md:w-1/4" src="/donald-maurice1.jpeg"></img>
+        <div className="p-8 md:w-1/4 md:self-center">
+          <div className="py-4">
+            <p className="text-lg font-extrabold">About Donald Maurice</p>
+          </div>
+          <div className="py-4">
+            <p>
+              Donald was until retiring in 2020 Professor of Music at Victoria
+              University of Wellington. He has performed internationally for
+              four decades as a solo violist and chamber musician and has given
+              world premieres and New Zealand premieres of many works. He has
+              presented at twenty International Viola Congresses.
+            </p>
+          </div>
+          <div className="py-4">
+            Check out his impressive bio{" "}
+            <a
+              target="_blank"
+              href="https://www.donaldmaurice.org"
+              className="text-pink text-lg"
+            >
+              here
+            </a>
+            .
+          </div>
         </div>
       </div>
     </>
