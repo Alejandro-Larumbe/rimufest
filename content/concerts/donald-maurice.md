@@ -4,19 +4,15 @@ title: "Donald Maurice in Concert"
 image: "donald-maurice2"
 date: "2021-10-02"
 time: "6:30pm"
-subtitle: "ft. Amelia Taylor"
+subtitle: "ft. Amelia Taylor & Elizabeth Lau"
 locationName: "Tauranga Boys' College"
 address: "664 Cameron Rd, Tauranga 3112, NZ"
 runtime: "1.5 hours"
-ticketsUrl: "https://www.eventbrite.com/e/book-club-with-maggie-ofarrell-tickets-138581626375?aff=ebdssbonlinesearch&keep_tld=1"
+price: "chose"
+ticketsUrl: "https://www.eventbrite.com/e/concert-featuring-donald-maurice-tickets-154060560283"
 description: ""
 ---
-Anthony Ritchie - *Allegro tempestuoso*
 
-Alfred Hill - *Andantino* from Viola Concerto
+Violist Donald Maurice is joined by violinist Amelia Taylor and pianist Elizabeth Lau for a one-hour concert of music by NZ composers Douglas Lilburn, Anthony Ritchie and Alfred Hill, and Hungarian and Russian gems by Béla Bartók and Dmitri Shostakovich.
 
-Douglas Lilburn - selections from *Salutes to Seven Poets*
-
-Béla Bartok - selections from *44 Duos for violin and viola*
-
-Dmitri Shostakovich - *Five Pieces*
+These are rarely heard pieces and give the opportunity to experience the beauty of the viola in interesting combinations of instruments.

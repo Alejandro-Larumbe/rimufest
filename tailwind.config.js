@@ -57,6 +57,7 @@ module.exports = {
         "logo-pink": "url('/logo-pink.svg')",
       }),
       spacing: {
+        99: "30rem",
         100: "48rem",
         128: "56rem",
         500: "500rem",
