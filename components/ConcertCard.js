@@ -8,15 +8,15 @@ export default function ParagraphWithImage(props) {
   // console.log(imgSrc)
 
   return (
-    <div className="my-8 border-2 text-pink border-pink rounded-lg w-full md:w-1/4 p-6">
-      <h2 className="text-xl uppercase font-title font-bold md:text-4xl">
+    <div className="my-8 border-2 text-pink border-pink rounded-lg w-full sm:w-99 p-6">
+      <h2 className="text-xl uppercase font-title font-bold sm:text-4xl">
         {title}
         <span className="text-indigo-600 dark:text-indigo-400">{title2}</span>
       </h2>
       {subtitle && (
-        <h3 className="text-base font-extrabold md:text-l">{subtitle}</h3>
+        <h3 className="text-base font-extrabold sm:text-l">{subtitle}</h3>
       )}
-      <h3 className="text-sm mt-2 font-bold md:text-l">
+      <h3 className="text-sm mt-2 font-bold sm:text-l">
         {Date(date)}, {time}
       </h3>
 

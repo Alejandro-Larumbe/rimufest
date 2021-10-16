@@ -13,6 +13,6 @@ ticketsUrl: "https://www.eventbrite.com/e/concert-featuring-donald-maurice-ticke
 description: ""
 ---
 
-Violist Donald Maurice is joined by violinist Amelia Taylor and pianist Elizabeth Lau for a one-hour concert of music by NZ composers Douglas Lilburn, Anthony Ritchie and Alfred Hill, and Hungarian and Russian gems by Béla Bartók and Dmitri Shostakovich.
+Violist Donald Maurice is joined by violinist Amelia Taylor for a one-hour concert of music by NZ composers Douglas Lilburn and Alfred Hill, and gems by Bach, Mozart, and Bartok.
 
 These are rarely heard pieces and give the opportunity to experience the beauty of the viola in interesting combinations of instruments.

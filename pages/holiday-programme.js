@@ -9,7 +9,7 @@ export default function HolidayProgramme() {
         <h1 className="uppercase text-white">Term 3</h1>
         <h1 className="uppercase text-white">Holiday Programme</h1>
       </Hero>
-      <div className="md:w-1/3 md:mx-auto md:my-20 p-8">
+      <div className="md:w-101 md:mx-auto md:my-20 p-8">
         <div className="py-4">
           <p className="text-2xl text-pink">
             RimuFest Term 3 Holiday Programme is an opportunity to build your
@@ -73,7 +73,7 @@ export default function HolidayProgramme() {
         </div>
       </section>
 
-      <div className="md:w-1/3 md:mx-auto md:my-20 p-8">
+      <div className="md:w-99 md:mx-auto md:my-20 p-8">
         <div className="pt-6">
           <p className="text-lg font-extrabold">Why viola?</p>
         </div>

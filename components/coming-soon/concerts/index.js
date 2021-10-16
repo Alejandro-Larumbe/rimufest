@@ -1,6 +1,6 @@
-import ConcertCard from "../../components/ConcertCard";
-import { getSortedConcertsData } from "../../lib/concerts";
-import Hero from "../../components/Hero";
+import ConcertCard from "../../ConcertCard";
+import { getSortedConcertsData } from "../../../lib/concerts";
+import Hero from "../../Hero";
 
 export async function getStaticProps() {
   const allConcertsData = getSortedConcertsData();

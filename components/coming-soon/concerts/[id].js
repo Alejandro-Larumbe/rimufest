@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { getAllConcertIds, getConcertData } from "../../lib/concerts";
-import Date from "../../components/date";
-import Hero from "../../components/Hero";
-import Button from "../../components/primitives/button";
+import { getAllConcertIds, getConcertData } from "../../../lib/concerts";
+import Date from "../../date";
+import Hero from "../../Hero";
+import Button from "../../primitives/button";
 
 export async function getStaticProps({ params }) {
   const eventData = await getConcertData(params.id);

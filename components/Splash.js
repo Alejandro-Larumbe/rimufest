@@ -33,16 +33,16 @@ export default function Splash() {
         </div>
       </div>
 
-      <div className="md:flex md:my-24 md:pl-48 md:flex-row">
-        <div className="bg-cover my-8 bg-splash-student w-screen md:h-96 md:w-1/3 h-72"></div>
-        <p className="md:w-1/3 md:h-96 md:text-xl p-8 py-16 md:mt-0 mt-16">
+      <div className="lg:flex lg:my-24 lg:pl-48 lg:flex-row">
+        <div className="bg-cover lg:my:0 my-8 lg:my-0 bg-splash-student w-screen lg:h-96 lg:w-100 h-72"></div>
+        <p className="lg:w-80 lg:h-96 lg:text-md px-8 mt-16 lg:mt-0 self-center">
           {t("blurb")}
         </p>
       </div>
 
       <section className="w-3/4 hidden md:block mx-auto body-font md:my-36">
         <div className="container px-5 py-24 mx-auto">
-          <div className="md:w-1/4 w-full mx-auto text-center">
+          <div className="md:w-99 w-full mx-auto text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#A8FCA2"
