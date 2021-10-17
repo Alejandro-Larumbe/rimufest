@@ -21,14 +21,14 @@ export default function AnnualNZ2022() {
           </p>
         </div> */}
         <div className="py-4">
-          <p className="text-lg font-extrabold">Rimufest Annual NZ</p>
-          <p className="text-lg">5th - 11th January 2022</p>
-          <p className="text-">* Last day to register: November 20th</p>
+          <p className="text-xl font-extrabold">Rimufest Annual Festival</p>
+          <p className="text-lg">5th - 11th January 2022, Tauranga NZ</p>
+          <p className="text-">* Last day to apply: November 20th</p>
         </div>
         <div className="py-4 text-base">
           <p>
             RimuFest Chamber Music Festival, founded by Amelia Taylor and
-            Alejandro Larumbe, is an 7-day summer chamber music programme for
+            Alejandro Larumbe, is a 7-day summer chamber music programme for
             beginner to advanced string players between the ages of 7-18.
           </p>
         </div>
@@ -37,16 +37,48 @@ export default function AnnualNZ2022() {
             Students come together in a social setting using teamwork and
             leadership skills to create music while expanding their
             understanding of chamber music and strengthening their own
-            individual voice.
+            individual ability.
           </p>
         </div>
-        <div className="flex justify-center py-4">
+        <div className="py-4 text-base">
+          <p>
+            Students will participate in: daily chamber coachings and rehearsals
+            | private lessons | masterclasses | Alexander Technique |
+            performance opportunities
+          </p>
+        </div>
+        <div className="flex justify-center py-10">
           <a
             target="_blank"
             href="https://docs.google.com/forms/d/e/1FAIpQLSevuoKBHNeJ6bqZrJg0K81pVHrFc-0lzf2-d1dWEbHw-gyv5A/viewform?usp=sf_link"
           >
             <Button>Apply now</Button>
           </a>
+        </div>
+        <div className="py-4 text-base">
+          <p>Last date to apply: 20th November 2021</p>
+          <p>
+            Notified of acceptance, waitlist, or decline: 27th November 2021
+          </p>
+          <p>Email rimufest@gmail.com with any further questions.</p>
+        </div>
+        <div className="py-4 mt-10 text-sm">
+          <p>COVID-19</p>
+          <p>
+            Rules regarding COVID change over time. Our first priority is to
+            have sensible procedures so that everyone is as safe as possible
+            during the program as we learn together. We will make sure both
+            health care and learning music happens. It could mean that we may
+            need to make changes according to whatever situation presents, even
+            at short notice, from time to time. So we will always appreciate
+            your understanding and cooperation.
+          </p>
+          <p className="mt-2">
+            Please email any questions you may have. We look forward to you
+            joining our planned experiences in a program aimed to inspire and
+            excite people.{" "}
+          </p>
+          <p>Email rimufest@gmail.com with any further questions.</p>
         </div>
       </div>
     </>
