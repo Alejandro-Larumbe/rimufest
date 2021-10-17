@@ -21,7 +21,7 @@ export default function AnnualNZ2022() {
           </p>
         </div> */}
         <div className="py-4">
-          <p className="text-lg font-extrabold">Rimufest Annual NZ 2022</p>
+          <p className="text-lg font-extrabold">Rimufest Annual NZ</p>
           <p className="text-lg">5th - 11th January 2022</p>
           <p className="text-">* Last day to register: November 20th</p>
         </div>

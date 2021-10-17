@@ -14,7 +14,7 @@ import { LanguageContext, locales } from "../intl/LanguageProvider";
 
 const tabs = [
   { path: "/holiday-programme", name: "holidayProgramme" },
-  { path: "/annual-nz-2022", name: "nz2020" },
+  { path: "/annual-nz-2022", name: "nz2022" },
 ];
 
 export default function Appbar({ children }) {
