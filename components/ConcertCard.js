@@ -8,8 +8,8 @@ export default function ParagraphWithImage(props) {
   // console.log(imgSrc)
 
   return (
-    <div className="my-8 border-2 text-pink border-pink rounded-lg w-full sm:w-99 p-6">
-      <h2 className="text-xl uppercase font-title font-bold sm:text-4xl">
+    <div className="my-8 border-2 text-pink border-pink rounded-lg w-full sm:w-101 p-6">
+      <h2 className="text-2xl uppercase font-title font-extrabold sm:text-3xl">
         {title}
         <span className="text-indigo-600 dark:text-indigo-400">{title2}</span>
       </h2>

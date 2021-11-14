@@ -1,6 +1,6 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Button from "../components/primitives/button";
+import Hero from "../Hero";
+import Button from "../primitives/button";
 
 export default function HolidayProgramme() {
   return (

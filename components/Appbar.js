@@ -13,7 +13,7 @@ import useTranslation from "../intl/useTranslation";
 import { LanguageContext, locales } from "../intl/LanguageProvider";
 
 const tabs = [
-  { path: "/holiday-programme", name: "holidayProgramme" },
+  { path: "/concerts", name: "concerts" },
   { path: "/annual-nz-2022", name: "nz2022" },
 ];
 

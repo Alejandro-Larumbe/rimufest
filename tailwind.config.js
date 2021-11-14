@@ -45,6 +45,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: (theme) => ({
+        "music-in-the-garden": "url('/music_in_the_garden.jpg')",
         "splash-hero": "url('/studentConcert1.jpg')",
         "splash-student": "url('/splash-student.jpg')",
         splash3: "url('/splash3.jpg')",
