@@ -1,6 +1,7 @@
 ---
 published: true
 title: "Rimufest Student Concert"
+ticketsUrl: "https://www.eventbrite.com/e/207813695357"
 date: "2022-01-10"
 time: "1:00pm"
 image: "student-concert"

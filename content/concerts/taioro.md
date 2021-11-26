@@ -1,6 +1,7 @@
 ---
 published: true
 title: "TAIORO"
+ticketsUrl:  "https://www.eventbrite.com/e/207783284397"
 date: "2022-01-11"
 time: "6:30pm"
 image: "taioro"

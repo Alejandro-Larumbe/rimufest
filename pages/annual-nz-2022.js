@@ -9,19 +9,8 @@ export default function AnnualNZ2022() {
         <h1 className="uppercase text-white">Annual New Zealand 2022</h1>
       </Hero>
       <div className="md:w-101 md:mx-auto md:my-20 p-8">
-        {/* <div className="py-4">
-          <p className="text-2xl text-pink">
-            RimuFest Chamber Music Festival, founded by Amelia Taylor and
-            Alejandro Larumbe, is an 7-day summer chamber music programme for
-            beginner to advanced string players between the ages of 7-18.
-            Students come together in a social setting using teamwork and
-            leadership skills to create music while expanding their
-            understanding of chamber music and strengthening their own
-            individual voice.
-          </p>
-        </div> */}
         <div className="py-4">
-          <p className="text-xl font-extrabold">Rimufest Annual Festival</p>
+          <p className="text-2xl font-extrabold">Rimufest Annual Festival</p>
           <p className="text-lg">5th - 11th January 2022, Tauranga NZ</p>
           <p className="text-">* Last day to apply: November 20th</p>
         </div>
@@ -62,6 +51,10 @@ export default function AnnualNZ2022() {
           </p>
           <p>Email rimufest@gmail.com with any further questions.</p>
         </div>
+
+        {/* <p className="mt-8 text-2xl font-extrabold">Faculty</p>
+        <p className="mt-8 text-xl font-extrabold">Amelia Taylor</p> */}
+
         <div className="py-4 mt-10 text-sm">
           <p>COVID-19</p>
           <p>

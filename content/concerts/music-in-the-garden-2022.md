@@ -1,6 +1,7 @@
 ---
 published: true
 title: "Music in the Garden"
+ticketsUrl: "https://www.eventbrite.com/e/music-in-the-garden-tickets-207790836987"
 date: "2022-01-05"
 time: "6:00pm"
 image: "music_in_the_garden"
