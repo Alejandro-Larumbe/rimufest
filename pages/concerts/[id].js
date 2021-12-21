@@ -36,6 +36,7 @@ export default function Event({ eventData }) {
     title,
     timeDoorsOpen,
     price,
+    timeDoorsClose,
     id,
   } = eventData;
   return (
@@ -49,7 +50,20 @@ export default function Event({ eventData }) {
         <p className="pt-2 text-lg">
           {Date(date)}, {time}
         </p>
-        {timeDoorsOpen && <p>{`doors open at ${timeDoorsOpen}`}</p>}
+        {timeDoorsOpen && (
+          <p>
+            {id === "music-in-the-garden-2022"
+              ? `Start arriving at ${timeDoorsOpen} to enjoy pizza and wine`
+              : `doors open at ${timeDoorsOpen}`}
+          </p>
+        )}
+        {/* {timeDoorsClose && (
+          <p>
+            {id === "music-in-the-garden-2022"
+              ? `Doors close at ${timeDoorsClose}`
+              : ""}
+          </p>
+        )} */}
         <p className="py-2 text-sm">{price}</p>
         <div className="pt-4">
           <p>{locationName}</p>

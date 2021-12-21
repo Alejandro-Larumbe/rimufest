@@ -1,5 +1,4 @@
 export default function Hero({ bgImage, children }) {
-  console.log(bgImage);
   return (
     <div
       style={{
