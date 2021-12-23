@@ -15,6 +15,7 @@ import { LanguageContext, locales } from "../intl/LanguageProvider";
 const tabs = [
   { path: "/concerts", name: "concerts" },
   { path: "/annual-nz-2022", name: "nz2022" },
+  { path: "/gallery", name: "gallery" },
 ];
 
 export default function Appbar({ children }) {
