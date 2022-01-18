@@ -104,6 +104,21 @@ const nz2022 = [
     width: 4,
     height: 3,
   },
+  {
+    src: "/2022/2022-6.jpeg",
+    width: 3,
+    height: 4,
+  },
+  {
+    src: "/2022/2022-7.jpeg",
+    width: 4,
+    height: 3,
+  },
+  {
+    src: "/2022/2022-8.jpeg",
+    width: 4,
+    height: 3,
+  },
 ];
 
 export default function Pictures() {
