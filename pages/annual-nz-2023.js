@@ -5,14 +5,17 @@ import Button from "../components/primitives/button";
 export default function AnnualNZ2022() {
   return (
     <>
-      <Hero bgImage="nz-2022">
-        <h1 className="uppercase text-white">Annual New Zealand 2022</h1>
+      <Hero bgImage="nz-2023">
+        <h1 className="uppercase text-white">Annual New Zealand 2023</h1>
       </Hero>
       <div className="md:w-101 md:mx-auto md:my-20 p-8">
         <div className="py-4">
           <p className="text-2xl font-extrabold">Rimufest Annual Festival</p>
-          <p className="text-lg">5th - 11th January 2022, Tauranga NZ</p>
-          <p className="text-">* Last day to apply: November 20th</p>
+          <p className="text-lg">4th - 10th January 2023, Tauranga NZ</p>{" "}
+          <div className="py-4 text-base">
+            <p>**Application form coming out soon!</p>
+          </div>
+          {/* <p className="text-">* Last day to apply: November 20th</p> */}
         </div>
         <div className="py-4 text-base">
           <p>
@@ -36,26 +39,26 @@ export default function AnnualNZ2022() {
             performance opportunities
           </p>
         </div>
-        <div className="flex justify-center py-10">
+        {/* <div className="flex justify-center py-10">
           <a
             target="_blank"
             href="https://docs.google.com/forms/d/e/1FAIpQLSevuoKBHNeJ6bqZrJg0K81pVHrFc-0lzf2-d1dWEbHw-gyv5A/viewform?usp=sf_link"
           >
             <Button>Apply now</Button>
           </a>
-        </div>
-        <div className="py-4 text-base">
-          <p>Last date to apply: 20th November 2021</p>
+        </div> */}
+        {/* <div className="py-4 text-base">
+          <p>Application and detailed info coming out soon!</p>
           <p>
             Notified of acceptance, waitlist, or decline: 27th November 2021
           </p>
           <p>Email rimufest@gmail.com with any further questions.</p>
-        </div>
+        </div> */}
 
         {/* <p className="mt-8 text-2xl font-extrabold">Faculty</p>
         <p className="mt-8 text-xl font-extrabold">Amelia Taylor</p> */}
 
-        <div className="py-4 mt-10 text-sm">
+        {/* <div className="py-4 mt-10 text-sm">
           <p>COVID-19</p>
           <p>
             Rules regarding COVID change over time. Our first priority is to
@@ -72,7 +75,7 @@ export default function AnnualNZ2022() {
             excite people.{" "}
           </p>
           <p>Email rimufest@gmail.com with any further questions.</p>
-        </div>
+        </div> */}
       </div>
     </>
   );

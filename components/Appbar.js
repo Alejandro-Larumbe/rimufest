@@ -14,7 +14,7 @@ import { LanguageContext, locales } from "../intl/LanguageProvider";
 
 const tabs = [
   { path: "/concerts", name: "concerts" },
-  { path: "/annual-nz-2022", name: "nz2022" },
+  { path: "/annual-nz-2023", name: "nz2023" },
   { path: "/gallery", name: "gallery" },
 ];
 
@@ -37,7 +37,10 @@ export default function Appbar({ children }) {
   }
 
   return (
-    <nav className="text-pink shadow dark:bg-gray-800">
+    <nav
+      // style={{ position: "fixed" }}
+      className="text-pink shadow dark:bg-gray-800"
+    >
       <div className="container px-6 py-6 mx-auto">
         <div className="md:flex md:items-center md:justify-between">
           <div className="flex items-center justify-between">
