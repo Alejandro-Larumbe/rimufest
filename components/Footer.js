@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mt-8 text-white bg-pink">
+    <footer className="mt-8 text-white">
       <div className="flex flex-col items-start container p-8 mx-auto">
         {/* <p className="max-w-md mt-2 text-gray-500 dark:text-gray-400">rimufest@gmail.com</p> */}
         <div>
@@ -83,7 +83,7 @@ export default function Footer() {
 
         <div className="">
           <p className="text-center text-xs text-white">
-            © Rimufest 2021 - All rights reserved
+            © Rimufest 2022 - All rights reserved
           </p>
         </div>
       </div>
