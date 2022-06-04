@@ -38,8 +38,8 @@ export default function Appbar({ children }) {
 
   return (
     <nav
-      // style={{ position: "fixed" }}
-      className="text-pink shadow dark:bg-gray-800"
+      style={{ width: "100%", position: "relative", backgroundColor: "black" }}
+      className=" shadow bg-gray-800 "
     >
       <div className="container px-6 py-6 mx-auto">
         <div className="md:flex md:items-center md:justify-between">

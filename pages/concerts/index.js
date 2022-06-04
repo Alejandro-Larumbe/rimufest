@@ -51,7 +51,9 @@ export default function Concerts({ allConcertsData }) {
               }
             )
         ) : (
-          <h1>No concerts coming up</h1>
+          <h1 style={{ margin: "100px auto 200px", fontSize: "24px" }}>
+            Stay tuned for our upcoming up concerts....
+          </h1>
         )}
       </div>
     </>
