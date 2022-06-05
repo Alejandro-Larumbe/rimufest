@@ -13,6 +13,7 @@ import useTranslation from "../intl/useTranslation";
 import { LanguageContext, locales } from "../intl/LanguageProvider";
 
 const tabs = [
+  { path: "/about", name: "about" },
   { path: "/concerts", name: "concerts" },
   { path: "/annual-nz-2023", name: "nz2023" },
   { path: "/gallery", name: "gallery" },
@@ -38,8 +39,12 @@ export default function Appbar({ children }) {
 
   return (
     <nav
-      style={{ width: "100%", position: "relative", backgroundColor: "black" }}
-      className=" shadow bg-gray-800 "
+      style={{
+        width: "100%",
+        position: "relative",
+        backgroundColor: "#121212",
+      }}
+      // className="bg-gray-800 "
     >
       <div className="container px-6 py-6 mx-auto">
         <div className="md:flex md:items-center md:justify-between">
