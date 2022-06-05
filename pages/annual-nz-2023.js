@@ -2,6 +2,27 @@ import React from "react";
 import Hero from "../components/Hero";
 import Button from "../components/primitives/button";
 
+const artists = [
+  { name: "Joella Pinto", title: "Chamber music coach", instrument: "violin" },
+  { name: "Martin Roberts", title: "Chamber music coach", instrument: "cello" },
+  { name: "Yotam Levy", title: "Chamber music coach", instrument: "cello" },
+  {
+    name: "Amelia Taylor",
+    title: "Chamber music coach",
+    instrument: "violin/viola",
+  },
+  {
+    name: "Alejandro Larumbe",
+    title: "Orchestra conductor/Chamber music coach",
+    instrument: "conductor/violin/viola",
+  },
+  {
+    name: "Salina Fisher",
+    title: "Composer/Chamber music coach",
+    instrument: "composer/violin",
+  },
+];
+
 export default function AnnualNZ2022() {
   return (
     <>
@@ -39,6 +60,34 @@ export default function AnnualNZ2022() {
             performance opportunities
           </p>
         </div>
+        <section>
+          <h1>Artists</h1>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gridGap: "8px",
+            }}
+          >
+            {artists.map((artist) => (
+              <div>
+                <div
+                  style={{
+                    backgroundColor: "red",
+                    // width: "100px",
+                    height: "300px",
+                    display: "flex",
+                    alignItems: "flex-end ",
+                  }}
+                >
+                  <h3>{artist.name}</h3>
+                </div>
+                {/* <p>{artist.title}</p> */}
+                <p>{artist.instrument}</p>
+              </div>
+            ))}
+          </div>
+        </section>
         {/* <div className="flex justify-center py-10">
           <a
             target="_blank"
