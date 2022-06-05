@@ -17,7 +17,7 @@ export default function Concerts() {
       </Hero>
       <div className="flex flex-col md:py-20 items-center p-8">
         <h1 style={{ margin: "100px auto 200px", fontSize: "24px" }}>
-          Stay tuned for our upcoming up concerts....
+          Stay tuned for our upcoming concerts....
         </h1>
       </div>
     </>
