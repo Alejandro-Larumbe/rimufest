@@ -60,34 +60,7 @@ export default function AnnualNZ2022() {
             performance opportunities
           </p>
         </div>
-        {/* <section>
-          <h1>Artists</h1>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gridGap: "8px",
-            }}
-          >
-            {artists.map((artist) => (
-              <div>
-                <div
-                  style={{
-                    backgroundColor: "red",
-                    // width: "100px",
-                    height: "300px",
-                    display: "flex",
-                    alignItems: "flex-end ",
-                  }}
-                >
-                  <h3>{artist.name}</h3>
-                </div>
-                {/* <p>{artist.title}</p> */}
-                <p>{artist.instrument}</p>
-              </div>
-            ))}
-          </div>
-        </section> */}
+
         {/* <div className="flex justify-center py-10">
           <a
             target="_blank"
