@@ -60,7 +60,7 @@ export default function AnnualNZ2022() {
             performance opportunities
           </p>
         </div>
-        <section>
+        {/* <section>
           <h1>Artists</h1>
           <div
             style={{
@@ -87,7 +87,7 @@ export default function AnnualNZ2022() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
         {/* <div className="flex justify-center py-10">
           <a
             target="_blank"
