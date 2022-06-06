@@ -57,7 +57,15 @@ export default function PressRoom() {
           <p style={{ marginTop: "16px" }}>
             Veracruz | Concierto de Clausura Rimufest
           </p>
-          <p>Centro Nacional de las Artes</p>
+          <p style={{ fontSize: "14px" }}>Centro Nacional de las Artes</p>
+        </a>
+        <a
+          target="_blank"
+          className={styles.link}
+          href="https://www.eldictamen.mx/sociales/viviendo-veracruz-50/"
+        >
+          <p style={{ marginTop: "16px" }}>Viviendo Veracruz</p>
+          <p style={{ fontSize: "14px" }}>By Rodolfo Gonzalez / Notiver</p>
         </a>
       </div>
     </>

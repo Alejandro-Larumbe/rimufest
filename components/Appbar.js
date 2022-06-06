@@ -14,6 +14,7 @@ import { LanguageContext, locales } from "../intl/LanguageProvider";
 
 const tabs = [
   { path: "/about", name: "about" },
+  { path: "/upcoming", name: "upcoming" },
   { path: "/concerts", name: "concerts" },
   { path: "/annual-nz-2023", name: "nz2023" },
   { path: "/gallery", name: "gallery" },
@@ -91,7 +92,7 @@ export default function Appbar({ children }) {
             <div className="flex flex-col items-end -mx-4 md:flex-row md:items-center md:mx-8">
               {tabs.map(({ path, name }) => (
                 <Link key={path} href={path}>
-                  <a className="uppercase text-md px-2 py-1 mx-2 mt-2 transition-colors duration-200 transform md:mt-0">
+                  <a className="uppercase hover:text-pink text-md px-2 py-1 mx-2 mt-2 transition-colors duration-200 transform md:mt-0">
                     {t(name)}
                   </a>
                 </Link>

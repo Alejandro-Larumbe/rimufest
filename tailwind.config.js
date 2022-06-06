@@ -51,6 +51,7 @@ module.exports = {
         splash3: "url('/splash3.jpg')",
         "holiday-programme": "url('/holiday-programme.jpeg')",
         concerts: "url('/concerts.jpeg')",
+        upcoming: "url('/upcoming.jpeg')",
         "splash-info": "url('/mexico1.jpg')",
         "footer-texture": "url('/img/footer-texture.png')",
         "logo-dark": "url('/logo-dark.png')",
