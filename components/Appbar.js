@@ -42,9 +42,8 @@ export default function Appbar({ children }) {
       style={{
         width: "100%",
         position: "relative",
-        backgroundColor: "#121212",
       }}
-      // className="bg-gray-800 "
+      className="bg-gray-800"
     >
       <div className="container px-6 py-6 mx-auto">
         <div className="md:flex md:items-center md:justify-between">
