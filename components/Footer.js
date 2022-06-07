@@ -5,9 +5,13 @@ export default function Footer() {
     <footer className="mt-8 bg-pink text-white">
       <div className="flex flex-col items-start container p-8 mx-auto">
         {/* <p className="max-w-md mt-2 text-gray-500 dark:text-gray-400">rimufest@gmail.com</p> */}
-        <div>
-          <img src="/logo-dark.png" className="w-36" />
-        </div>
+
+        <img
+          style={{ marginTop: "64px" }}
+          src="/logo-dark.png"
+          className="w-36"
+        />
+
         <div className="py-8">
           <div className="flex mt-4 -mx-2">
             <a

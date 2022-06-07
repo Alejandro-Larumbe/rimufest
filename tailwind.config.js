@@ -55,6 +55,7 @@ module.exports = {
         "splash-info": "url('/mexico1.jpg')",
         "footer-texture": "url('/img/footer-texture.png')",
         "logo-dark": "url('/logo-dark.png')",
+        "ccnz-logo": "url('/ccnz-logo.png')",
         "logo-light": "url('/logo-light.svg')",
         "logo-pink": "url('/logo-pink.svg')",
         "nz-2022": "url('/nz-2022.jpg')",
