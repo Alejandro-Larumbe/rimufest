@@ -14,7 +14,7 @@ import { LanguageContext, locales } from "../intl/LanguageProvider";
 
 const tabs = [
   { path: "/about", name: "about" },
-  // { path: "/upcoming", name: "upcoming" },
+  { path: "/upcoming", name: "upcoming" },
   { path: "/concerts", name: "concerts" },
   { path: "/annual-nz-2023", name: "nz2023" },
   { path: "/gallery", name: "gallery" },
