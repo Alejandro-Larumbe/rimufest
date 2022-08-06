@@ -14,16 +14,15 @@ export default function Upcoming() {
         </h2>
         <h3>1st - 4th October 2022</h3>
         <span style={{ fontSize: "14px", marginTop: "16px" }}>
-          Imparted by Donald Maurice and Elena Morgan
+          Imparted by Donald Maurice and Martin Roberts
         </span>
         <p style={{ fontSize: "14px", margin: "16px 0" }}>
           For violists, cellists and violinists wanting to learn about the
           viola.
         </p>
-        <i style={{ fontSize: "14px", margin: "24px 0", display: "block" }}>
-          More info coming up soon...
-        </i>
-        {/* <Button>Learn more</Button> */}
+        <Button>
+          <a href="/holiday-program">Learn more</a>
+        </Button>
         <h2 style={{ fontSize: "24px", marginTop: "64px" }}>
           NZ 4th Annual Festival
         </h2>

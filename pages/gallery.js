@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "../components/Hero";
 import { GalleryComponent } from "../components/Gallery";
 
 const t32021 = [
@@ -124,9 +123,10 @@ const nz2022 = [
 export default function Pictures() {
   return (
     <>
-      <Hero bgImage="holiday-programme">
+      {/* <Hero bgImage="holiday-programme">
         <h1 className="uppercase text-white">Gallery</h1>
-      </Hero>
+      </Hero> */}
+      <div className="p-8 text-white md:text-5xl text-3xl">Gallery</div>
       {/* <div className="md:w-101 md:mx-auto md:my-20 p-8"> */}
       <div className="mx-auto p-4 md:p-8">
         <div className="py-12">

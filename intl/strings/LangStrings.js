@@ -2,7 +2,7 @@ export const LangStrings = {
   nz: {
     nz2023: "Annual NZ 2023",
     pressRoom: "Press Room",
-    holidayProgramme: "NZ Holiday Programme",
+    holidayProgram: "Holiday Programme",
     upcoming: "Upcoming",
     about: "About",
     concerts: "Concerts",
@@ -24,7 +24,7 @@ export const LangStrings = {
     pressRoom: "Press Room",
     upcoming: "Upcoming",
     nz2023: "Annual NZ 2023",
-    holidayProgramme: "NZ Holiday Programme",
+    holidayProgram: "Holiday Programme",
     artists: "Artistas",
     about: "Acerca",
     concerts: "Conciertos",
