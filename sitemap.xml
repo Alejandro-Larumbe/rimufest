@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>http://www.rimufest.com/</loc>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://www.rimufest.com/concerts</loc>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://www.rimufest.com/about</loc>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://www.rimufest.com/annual-nz-2023</loc>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://www.rimufest.com/gallery</loc>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://www.rimufest.com/holiday-program</loc>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://www.rimufest.com/press-room</loc>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://www.rimufest.com/support</loc>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+   <url>
+
+      <loc>http://www.rimufest.com/upcoming</loc>
+
+      <changefreq>weekly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+</urlset>
