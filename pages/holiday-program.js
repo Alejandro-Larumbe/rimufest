@@ -83,9 +83,8 @@ export default function AnnualNZ2022() {
               </h3>
               <img
                 src={`/${picture}`}
+                className="w-full md:w-auto md:h-99"
                 style={{
-                  height: "500px",
-                  width: "auto",
                   margin: "24px 0 24px",
                 }}
               />
