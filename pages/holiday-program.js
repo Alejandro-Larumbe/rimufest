@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import Button from "../components/primitives/button";
+import SEO from "../components/SEO";
 
 const artists = [
   {
@@ -26,6 +27,10 @@ const artists = [
 export default function AnnualNZ2022() {
   return (
     <>
+      <SEO
+        title="Rimufest Chamber Music Festival | Term 3 Holiday Programme 2022"
+        description="RimuFest Chamber Music Festival, founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
+      />
       <Hero bgImage="holiday-programme">
         <h1 className="uppercase text-white">
           RimuFest NZ 2022 Term 3 Holiday Programme
@@ -72,7 +77,7 @@ export default function AnnualNZ2022() {
 
         {artists.map(({ name, bio, picture }) => {
           return (
-            <>
+            <div key={name}>
               <h3 style={{ fontSize: "20px", margin: "24px 0 24px" }}>
                 {name}
               </h3>
@@ -85,9 +90,11 @@ export default function AnnualNZ2022() {
                 }}
               />
               {bio.map((paragraph) => (
-                <p style={{ marginTop: "8px" }}>{paragraph}</p>
+                <p key={paragraph} style={{ marginTop: "8px" }}>
+                  {paragraph}
+                </p>
               ))}
-            </>
+            </div>
           );
         })}
       </div>

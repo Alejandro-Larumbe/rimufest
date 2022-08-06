@@ -1,10 +1,15 @@
 import React from "react";
 import Hero from "../../components/Hero";
 import Button from "../../components/primitives/button";
+import SEO from "../../components/SEO";
 
 export default function Upcoming() {
   return (
     <>
+      <SEO
+        title="Rimufest Chamber Music Festival | Upcomming"
+        description="RimuFest Chamber Music Festival, founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
+      />
       <Hero bgImage="upcoming">
         <h1 className="uppercase text-white">Upcoming</h1>
       </Hero>

@@ -1,5 +1,6 @@
 import React from "react";
 import { GalleryComponent } from "../components/Gallery";
+import SEO from "../components/SEO";
 
 const t32021 = [
   {
@@ -123,6 +124,10 @@ const nz2022 = [
 export default function Pictures() {
   return (
     <>
+      <SEO
+        title="Rimufest Chamber Music Festival | Gallery"
+        description="RimuFest Chamber Music Festival, founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
+      />
       {/* <Hero bgImage="holiday-programme">
         <h1 className="uppercase text-white">Gallery</h1>
       </Hero> */}
