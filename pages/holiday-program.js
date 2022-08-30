@@ -1,4 +1,5 @@
 import React from "react";
+import { useRouter } from "next/router";
 import Hero from "../components/Hero";
 import Button from "../components/primitives/button";
 import SEO from "../components/SEO";
@@ -25,6 +26,7 @@ const artists = [
 ];
 
 export default function AnnualNZ2022() {
+  const router = useRouter();
   return (
     <>
       <SEO
@@ -43,8 +45,11 @@ export default function AnnualNZ2022() {
           </p>
           <p className="text-lg">1st - 4th October 2022</p>{" "}
           <div className="py-4 text-base">
-            <p>**Last date to register: 1st of September</p>
+            <p className="mb-4">**Last date to register: 1st of September</p>
           </div>
+          <a href="https://forms.gle/So1LkY1XCzJbp8EG6" target="_blank">
+            <Button>Apply here</Button>
+          </a>
           {/* <p className="text-">* Last day to apply: November 20th</p> */}
         </div>
         <div className="py-4 text-base">
