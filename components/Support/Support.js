@@ -118,7 +118,7 @@ export default function PressRoom() {
             <p className="text-pink text-xl font-thin">${amount}</p>
             <ul className={[styles.towards, "text-md mt-2 "].join(" ")}>
               {contribute.map((item) => (
-                <li style={{ display: "flex", alignItems: "center" }}>
+                <li style={{ display: "flex", alignItems: "center"`` }}>
                   {chevronRight}
                   {item}
                 </li>
