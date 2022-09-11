@@ -20,6 +20,7 @@ const tabs = [
   { path: "/annual-nz-2023", name: "nz2023" },
   { path: "/gallery", name: "gallery" },
   { path: "/press-room", name: "pressRoom" },
+  { path: "/support", name: "support" },
 ];
 
 export default function Appbar({ children }) {

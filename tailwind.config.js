@@ -10,11 +10,12 @@ module.exports = {
       title: "Raleway",
     },
     colors: {
-      pink: {
-        // DEFAULT: "#F06CAE",
-        // DEFAULT: "#ED2488",
-        DEFAULT: "#FF4598",
-      },
+      pink: "#FF4598",
+
+      caca: "#FF4598",
+
+      purple: "#75499D",
+
       blue: {
         DEFAULT: "#6092F0",
         //   // DEFAULT: "#0C59ED",

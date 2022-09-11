@@ -1,0 +1,13 @@
+.towards svg {
+  /* width: 12px;
+  height: 8px; */
+}
+
+.towards li {
+  display: flex;
+  align-items: center;
+}
+
+.towards li > svg:last-of-type {
+  margin-right: 8px;
+}
