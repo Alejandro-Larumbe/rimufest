@@ -116,24 +116,25 @@ export default function PressRoom() {
             <h2 className="text-purple text-4xl">sponsor</h2>
             <p className="text-pink font-lg mt-6">investment</p>
             <p className="text-pink text-xl font-thin">${amount}</p>
-            <ul
-              className={[styles.towards, "text-md mt-2 leading-6"].join(" ")}
-            >
+            <ul className={[styles.towards, "text-md mt-2 "].join(" ")}>
               {contribute.map((item) => (
-                <li>
+                <li style={{ display: "flex", alignItems: "center" }}>
                   {chevronRight}
                   {item}
                 </li>
               ))}
             </ul>
             <p className="text-pink font-lg mt-6">benefits</p>
-            <ul
-              className={[styles.towards, "text-lg mt-2 leading-8"].join(" ")}
-            >
+            <ul className={[styles.towards, "text-lg mt-2 "].join(" ")}>
               {benefits.map((item) => (
-                <li>
-                  {chevronRight}
-                  {chevronRight}
+                <li
+                  className="mt-1"
+                  style={{ display: "grid", gridTemplateColumns: "auto 1fr" }}
+                >
+                  <div className="mr-2">
+                    {chevronRight}
+                    {chevronRight}
+                  </div>
                   {item}
                 </li>
               ))}

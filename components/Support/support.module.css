@@ -1,11 +1,6 @@
-.towards svg {
-  /* width: 12px;
-  height: 8px; */
-}
-
 .towards li {
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
 .towards li > svg:last-of-type {
