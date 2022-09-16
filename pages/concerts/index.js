@@ -24,41 +24,52 @@ export default function Concerts() {
       </Hero>
 
       <div className="md:w-101 md:mx-auto md:my-20 p-8">
-        <h2 style={{ fontSize: "20px", marginTop: "56px" }}>
-          Donald Maurice in Concert
-        </h2>
-        <h3>October 1st, 6:30pm</h3>
-        <span style={{ fontSize: "14px", marginTop: "16px" }}>Venue: TBA</span>
+        <div className="">
+          <h2 className="text-purple text-3xl mt-8 mb-2">
+            Donald Maurice in Concert ft. Martin Roberts
+          </h2>
+          <h3 className="text-xl ">October 1st, 6:30pm @Charlemagne Lodge</h3>
+          <div className="flex">
+            <img src="/donald-maurice1.jpeg" className="w-1/2 my-8"></img>
+            <img src="/martin.jpg" className="w-1/2 my-8"></img>
+          </div>
+          <a
+            target="_blank"
+            href="https://www.eventbrite.com/e/viola-and-cello-sonorities-tickets-400494589097"
+          >
+            <Button>Get Tickets</Button>
+          </a>
+          <div>{/* <h3 className="text-pink">ft. Martin Roberts</h3> */}</div>
+        </div>
+        <div></div>
         {/* <p style={{ fontSize: "14px", margin: "16px 0" }}>
           For violists, cellists and violinists wanting to learn about the
           viola.
         </p> */}
 
         {/* <Button>Learn more</Button> */}
-        <h2 style={{ fontSize: "20px", marginTop: "64px" }}>
+        <h2 className="text-purple text-3xl mt-8 mb-2">
           RimuFest Term 3 Holiday Program - Student Concert
         </h2>
-        <h3 style={{ marginTop: "64pxpx" }}>October 4th, 1pm</h3>
-        <span style={{ fontSize: "14px", marginTop: "16px" }}>
-          @ The Jam Factory
-        </span>
+        <h3 className="text-xl ">October 4th, 1pm @ The Jam Factory</h3>
+
         <span style={{ fontSize: "14px", display: "block" }}>
           Featuring viola and cello ensembles{" "}
         </span>
 
-        <h2 style={{ fontSize: "20px", marginTop: "64px" }}>
+        <h2 className="text-purple text-3xl mt-8 mb-2">
           Rimufest NZ Annual Festival - Opening Event
         </h2>
-        <h3 style={{ marginTop: "64pxpx" }}>January 6th, 6pm</h3>
+        <h3 className="text-xl ">January 6th, 6pm</h3>
         <span style={{ fontSize: "14px", marginTop: "16px" }}>Venue: TBA</span>
 
-        <h2 style={{ fontSize: "20px", marginTop: "64px" }}>
+        <h2 className="text-purple text-3xl mt-8 mb-2">
           Rimufest NZ Annual Festival - Student Concert
         </h2>
-        <h3 style={{ marginTop: "64pxpx" }}>January 9th, 1pm</h3>
-        <span style={{ fontSize: "14px", marginTop: "16px" }}>
-          @ Graham Young Youth Theater
-        </span>
+        <h3 className="text-xl ">
+          January 9th, 1pm @ Graham Young Youth Theater
+        </h3>
+
         <p style={{ fontSize: "14px", marginTop: "8px" }}>
           Unique opportunity to support NZ's next generation of musicians at
           their first experiences in chamber music and orchestra.

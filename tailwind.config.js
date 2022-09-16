@@ -61,6 +61,8 @@ module.exports = {
         "logo-light": "url('/logo-light.svg')",
         "logo-pink": "url('/logo-pink.svg')",
         "nz-2022": "url('/nz-2022.jpg')",
+        martin: "url('/martin.jpg')",
+        donald: "url('/donald-maurice1.jpeg')",
       }),
       spacing: {
         99: "30rem",

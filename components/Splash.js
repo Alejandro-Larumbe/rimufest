@@ -1,13 +1,33 @@
-import EventCard from "../components/EventCard";
 import Image from "next/image";
 import useTranslation from "../intl/useTranslation";
 import SEO from "../components/SEO";
+import Button from "./primitives/button";
 
 export default function Splash() {
   const { t } = useTranslation();
 
   return (
     <>
+      <div className="h-24 bg-purple flex">
+        <div className="m-auto flex ">
+          <div>
+            <p className="self-center">
+              Donald Maurice ft. Martin Roberts <br />
+            </p>
+            <p className="self-center mr-4 text-sm">
+              Oct 1st @ Charlomagne Lodge
+            </p>
+          </div>
+          <a
+            className="self-center ml-4 md:ml-8"
+            // className="block"
+            target="_blank"
+            href="https://www.eventbrite.com/e/viola-and-cello-sonorities-tickets-400494589097"
+          >
+            <Button>Get Tickets</Button>
+          </a>
+        </div>
+      </div>
       <SEO
         title="Rimufest Chamber Music Festival | Home"
         description="RimuFest Chamber Music Festival, founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
