@@ -9,7 +9,7 @@ export default function Splash() {
   return (
     <>
       <div className="h-24 bg-purple flex">
-        <div className="m-auto flex ">
+        <div className="m-auto flex text-white">
           <div>
             <p className="self-center">
               Rimufest NZ 2023 <br />
