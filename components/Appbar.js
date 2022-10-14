@@ -27,7 +27,7 @@ export default function Appbar({ children }) {
   const { t } = useTranslation();
   const [locale, setLocale] = useContext(LanguageContext);
   const [openMenu, setOpenMenu] = useState(false);
-  const [path] = useState(router.asPath);
+  const [path] = useState(router);
 
   function handleLocaleChange(language) {
     if (!window) {
@@ -92,13 +92,21 @@ export default function Appbar({ children }) {
             } md:flex md:items-center md:justify-between`}
           >
             <div className="flex flex-col items-end -mx-4 md:flex-row md:items-center md:mx-8">
-              {tabs.map(({ path, name }) => (
-                <Link key={path} href={path}>
-                  <a className="uppercase hover:text-pink text-sm px-2 py-1 mx-2 mt-2 transition-colors duration-200 transform md:mt-0">
-                    {t(name)}
-                  </a>
-                </Link>
-              ))}
+              {tabs.map(({ path: currentPath, name }) => {
+                console.log(router.asPath);
+                return (
+                  <Link key={currentPath} href={currentPath}>
+                    <a
+                      onClick={() => setOpenMenu(false)}
+                      className={`uppercase hover:text-pink text-xs lg:text-sm px-2 py-1 mx-2 mt-2 transition-colors duration-200 transform md:mt-0 ${
+                        router.asPath === currentPath ? " text-pink" : ""
+                      }`}
+                    >
+                      {t(name)}
+                    </a>
+                  </Link>
+                );
+              })}
             </div>
 
             <div className="flex items-end md:flex-row md:items-center flex-col mt-4 md:mt-0">
