@@ -8,8 +8,8 @@ export default function Splash() {
 
   return (
     <>
-      <div className="h-24 bg-purple flex">
-        <div className="m-auto flex text-white">
+      <div className="h-32 md:h-24 bg-purple flex">
+        <div className="m-auto flex flex-col md:flex-row text-center md:text-left text-white">
           <div>
             <p className="self-center">
               Rimufest NZ 2023 <br />
@@ -17,7 +17,7 @@ export default function Splash() {
             <p className="self-center mr-4 text-sm">Jan 4th - 9th</p>
           </div>
           <a
-            className="self-center ml-4 md:ml-8"
+            className="self-center ml-4 mt-2 md:mt-0 md:ml-8"
             // className="block"
             target="_blank"
             href="https://forms.gle/kREu3iFXrcJhbTFC7 "
