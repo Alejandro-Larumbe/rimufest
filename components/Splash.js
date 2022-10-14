@@ -12,19 +12,17 @@ export default function Splash() {
         <div className="m-auto flex ">
           <div>
             <p className="self-center">
-              Donald Maurice ft. Martin Roberts <br />
+              Rimufest NZ 2023 <br />
             </p>
-            <p className="self-center mr-4 text-sm">
-              Oct 1st @ Charlomagne Lodge
-            </p>
+            <p className="self-center mr-4 text-sm">Jan 4th - 9th</p>
           </div>
           <a
             className="self-center ml-4 md:ml-8"
             // className="block"
             target="_blank"
-            href="https://www.eventbrite.com/e/viola-and-cello-sonorities-tickets-400494589097"
+            href="https://forms.gle/kREu3iFXrcJhbTFC7 "
           >
-            <Button>Get Tickets</Button>
+            <Button>Apply now!</Button>
           </a>
         </div>
       </div>
