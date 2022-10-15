@@ -119,7 +119,7 @@ export default function AnnualNZ2022() {
             >
               <span className="ml-2">
                 • Upload audition video to Youtube performing one piece of no
-                more thank 5 minutes in length that demonstrates your technical
+                more than 5 minutes in length that demonstrates your technical
                 and musical ability.
               </span>
             </li>
