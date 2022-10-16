@@ -27,7 +27,6 @@ export const GalleryComponent = ({ images }) => {
       {!!currentImage && (
         <Lightbox
           mainSrc={currentImage.original}
-          imageTitle={currentImage.caption}
           mainSrcThumbnail={currentImage.src}
           nextSrc={nextImage.original}
           nextSrcThumbnail={nextImage.src}
