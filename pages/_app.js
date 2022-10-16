@@ -1,5 +1,6 @@
 import "tailwindcss/tailwind.css";
 // import "../styles/tailwind.css";
+import "react-image-lightbox/style.css";
 
 import { ThemeProvider } from "next-themes";
 
