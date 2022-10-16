@@ -16,7 +16,7 @@ export const GalleryComponent = ({ images }) => {
   const handleClose = () => setIndex(-1);
   const handleMovePrev = () => setIndex(prevIndex);
   const handleMoveNext = () => setIndex(nextIndex);
-
+  console.log({ currentImage });
   return (
     <div>
       <Gallery
@@ -24,7 +24,8 @@ export const GalleryComponent = ({ images }) => {
         onClick={handleClick}
         enableImageSelection={false}
       />
-      {!!currentImage && console.log(currentImage) && (
+      {!currentImage && console.log("from inside: ", currentImage)}
+      {!!currentImage && (
         <Lightbox
           mainSrc={currentImage.original}
           mainSrcThumbnail={currentImage.src}

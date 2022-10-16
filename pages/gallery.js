@@ -94,36 +94,36 @@ const nz2021 = [
   },
 ];
 const nz2022 = [
-  {
-    src: "/2022/2022-1.jpeg",
-    original: "/2022/2022-1.jpeg",
-    width: 450,
-    height: 300,
-  },
-  {
-    src: "/2022/2022-2.jpeg",
-    original: "/2022/2022-2.jpeg",
-    width: 300,
-    height: 400,
-  },
-  {
-    src: "/2022/2022-3.jpeg",
-    original: "/2022/2022-3.jpeg",
-    width: 400,
-    height: 300,
-  },
-  {
-    src: "/2022/2022-4.jpeg",
-    original: "/2022/2022-4.jpeg",
-    width: 400,
-    height: 300,
-  },
-  {
-    src: "/2022/2022-5.jpeg",
-    original: "/2022/2022-5.jpeg",
-    width: 400,
-    height: 300,
-  },
+  // {
+  //   src: "/2022/2022-1.jpeg",
+  //   original: "/2022/2022-1.jpeg",
+  //   width: 450,
+  //   height: 300,
+  // },
+  // {
+  //   src: "/2022/2022-2.jpeg",
+  //   original: "/2022/2022-2.jpeg",
+  //   width: 300,
+  //   height: 400,
+  // },
+  // {
+  //   src: "/2022/2022-3.jpeg",
+  //   original: "/2022/2022-3.jpeg",
+  //   width: 400,
+  //   height: 300,
+  // },
+  // {
+  //   src: "/2022/2022-4.jpeg",
+  //   original: "/2022/2022-4.jpeg",
+  //   width: 400,
+  //   height: 300,
+  // },
+  // {
+  //   src: "/2022/2022-5.jpeg",
+  //   original: "/2022/2022-5.jpeg",
+  //   width: 400,
+  //   height: 300,
+  // },
   {
     src: "/2022/2022-6.jpeg",
     original: "/2022/2022-6.jpeg",
