@@ -24,7 +24,7 @@ export const GalleryComponent = ({ images }) => {
         onClick={handleClick}
         enableImageSelection={false}
       />
-      {!!currentImage && (
+      {!!currentImage && console.log(currentImage) && (
         <Lightbox
           mainSrc={currentImage.original}
           mainSrcThumbnail={currentImage.src}
