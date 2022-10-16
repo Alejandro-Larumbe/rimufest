@@ -1,34 +1,44 @@
-import React, { useState, useCallback } from "react";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import React, { useState } from "react";
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
+import { Gallery } from "react-grid-gallery";
 
-export const GalleryComponent = ({ photos }) => {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+export const GalleryComponent = ({ images }) => {
+  const [index, setIndex] = useState(-1);
 
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
+  const currentImage = images[index];
+  const nextIndex = (index + 1) % images.length;
+  const nextImage = images[nextIndex] || currentImage;
+  const prevIndex = (index + images.length - 1) % images.length;
+  const prevImage = images[prevIndex] || currentImage;
 
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
+  const handleClick = (index, _item) => setIndex(index);
+  const handleClose = () => setIndex(-1);
+  const handleMovePrev = () => setIndex(prevIndex);
+  const handleMoveNext = () => setIndex(nextIndex);
+
   return (
-    <>
-      <Gallery photos={photos} onClick={openLightbox} />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              isFullscreen={false}
-              currentIndex={currentImage}
-              views={photos}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
-    </>
+    <div>
+      <Gallery
+        images={images}
+        onClick={handleClick}
+        enableImageSelection={false}
+      />
+      {!!currentImage && (
+        <Lightbox
+          mainSrc={currentImage.original}
+          imageTitle={currentImage.caption}
+          mainSrcThumbnail={currentImage.src}
+          nextSrc={nextImage.original}
+          nextSrcThumbnail={nextImage.src}
+          prevSrc={prevImage.original}
+          prevSrcThumbnail={prevImage.src}
+          onCloseRequest={handleClose}
+          onMovePrevRequest={handleMovePrev}
+          onMoveNextRequest={handleMoveNext}
+          enableZoom={false}
+        />
+      )}
+    </div>
   );
 };

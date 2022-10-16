@@ -63,6 +63,7 @@ module.exports = {
         "nz-2022": "url('/nz-2022.jpg')",
         martin: "url('/martin.jpg')",
         donald: "url('/donald-maurice1.jpeg')",
+        gallery: "url('/gallery.jpeg')",
       }),
       spacing: {
         99: "30rem",

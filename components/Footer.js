@@ -1,11 +1,7 @@
-import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer className="mt-8 bg-pink text-white">
       <div className="flex flex-col items-start container p-8 mx-auto">
-        {/* <p className="max-w-md mt-2 text-gray-500 dark:text-gray-400">rimufest@gmail.com</p> */}
-
         <img
           style={{ marginTop: "64px" }}
           src="/logo-dark.png"
@@ -45,45 +41,6 @@ export default function Footer() {
           </div>
           <h3 className="mt-4 text-sm">rimufest@gmail.com</h3>
         </div>
-
-        {/* <div className="mt-6  lg:mt-0 lg:flex-1">
-            <div className="grid grid-cols-2 gap-6 lg:grid-cols-4 xl:grid-cols-6">
-              <div>
-                <Link href="/about">
-                  <h3 className="text-gray-700 uppercase dark:text-white">
-                    About
-                  </h3>
-                </Link>
-              </div>
-              <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  Concerts
-                </h3>
-              </div>
-              <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  Programmes
-                </h3>
-              </div>
-              <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  Artists
-                </h3>
-              </div>
-              <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  Join Us
-                </h3>
-              </div>
-              <div>
-                <h3 className="text-gray-700 uppercase dark:text-white">
-                  Gallery
-                </h3>
-              </div>
-            </div>
-          </div> */}
-
-        {/* <hr className="h-px my-6 bg-white border-none dark:bg-gray-700" /> */}
 
         <div className="">
           <p className="text-center text-xs text-white">
