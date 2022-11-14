@@ -25,62 +25,54 @@ export default function Concerts() {
 
       <div className="md:w-101 md:mx-auto md:my-20 p-8">
         <div className="">
-          <h2 className="text-purple text-3xl mt-8 mb-2">
-            Donald Maurice in Concert ft. Martin Roberts
-          </h2>
-          <h3 className="text-xl ">October 1st, 6:30pm @Charlemagne Lodge</h3>
-          <div className="flex">
-            <img src="/donald-maurice1.jpeg" className="w-1/2 my-8"></img>
-            <img src="/martin.jpg" className="w-1/2 my-8"></img>
-          </div>
-          <a
+          <h2 className="text-purple text-3xl mt-8 mb-2">Faculty Concert</h2>
+          <h3 className="text-xl ">
+            Saturday Jan 7th 2023, 6:30pm @ Charlemagne Lodge, Te Puna
+          </h3>
+
+          <img src="/garden-concert.jpeg" className="w-full my-8"></img>
+
+          <p>
+            Bring a picnic and enjoy an exciting music repertoire performed by
+            Rimufest's world class musicians.{" "}
+          </p>
+          {/* <a
             target="_blank"
             href="https://www.eventbrite.com/e/viola-and-cello-sonorities-tickets-400494589097"
           >
             <Button>Get Tickets</Button>
-          </a>
-          <div>{/* <h3 className="text-pink">ft. Martin Roberts</h3> */}</div>
+          </a> */}
         </div>
         <div></div>
-        {/* <p style={{ fontSize: "14px", margin: "16px 0" }}>
-          For violists, cellists and violinists wanting to learn about the
-          viola.
-        </p> */}
 
         {/* <Button>Learn more</Button> */}
-        <h2 className="text-purple text-3xl mt-8 mb-2">
-          RimuFest Term 3 Holiday Program - Student Concert
-        </h2>
-        <h3 className="text-xl ">October 4th, 1pm @ The Jam Factory</h3>
-
-        <span style={{ fontSize: "14px", display: "block" }}>
-          Featuring viola and cello ensembles{" "}
-        </span>
-
-        <h2 className="text-purple text-3xl mt-8 mb-2">
-          Rimufest NZ Annual Festival - Opening Event
-        </h2>
-        <h3 className="text-xl ">January 6th, 6pm</h3>
-        <span style={{ fontSize: "14px", marginTop: "16px" }}>Venue: TBA</span>
-
-        <h2 className="text-purple text-3xl mt-8 mb-2">
-          Rimufest NZ Annual Festival - Student Concert
+        <h2 className="text-purple text-3xl mt-32 mb-2">
+          RimuFest Annual 2023 - Student Concert
         </h2>
         <h3 className="text-xl ">
-          January 9th, 1pm @ Graham Young Youth Theater
+          Monday Jan 9th, 1:30pm @ Graham Young Youth Theatre, Tauranga Boys
+          College
         </h3>
+        <img src="/student-concert-2022.jpeg" className="w-full my-8"></img>
+
+        <span style={{ fontSize: "14px", display: "block" }}>
+          Come and support young students in a variety of chamber groups. Fun
+          for the family.{" "}
+        </span>
+
+        <h2 className="text-purple text-3xl mt-32 mb-2">
+          Chase Ward in Concert
+        </h2>
+        <h3 className="text-xl ">
+          Jan 10th, 6:30pm @ Graham Young Youth Theater, Tauranga Boys College
+        </h3>
+        <img src="/chase.jpeg" className="w-full my-8"></img>
 
         <p style={{ fontSize: "14px", marginTop: "8px" }}>
-          Unique opportunity to support NZ's next generation of musicians at
-          their first experiences in chamber music and orchestra.
+          USA violinist Chase Ward will be performing at the Graham Young Youth
+          Theatre, Tauranga Boys College. Chase is a faculty member for the
+          January 2023 festival.
         </p>
-        <p style={{ fontSize: "14px", marginTop: "8px" }}>
-          Featuring the world premier of Salina Fisher’s piece commissioned for
-          RimuFest students.
-        </p>
-        <i style={{ marginTop: "64px", display: "block" }}>
-          More information on our concert series coming soon...
-        </i>
       </div>
     </>
   );
