@@ -61,7 +61,7 @@ export default function Concerts() {
           for the family.{" "}
         </span>
 
-        <h2 className="text-purple text-3xl mt-32 mb-2">
+        {/* <h2 className="text-purple text-3xl mt-32 mb-2">
           Chase Ward in Concert
         </h2>
         <h3 className="text-xl ">
@@ -73,7 +73,7 @@ export default function Concerts() {
           USA violinist Chase Ward will be performing at the Graham Young Youth
           Theatre, Tauranga Boys College. Chase is a faculty member for the
           January 2023 festival.
-        </p>
+        </p> */}
       </div>
     </>
   );
