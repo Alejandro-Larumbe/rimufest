@@ -36,12 +36,13 @@ export default function Concerts() {
             Bring a picnic and enjoy an exciting music repertoire performed by
             Rimufest's world class musicians.{" "}
           </p>
-          {/* <a
+          <a
             target="_blank"
-            href="https://www.eventbrite.com/e/viola-and-cello-sonorities-tickets-400494589097"
+            href="https://www.eventbrite.com/e/faculty-concert-tickets-487414729577"
+            className="mt-4 block"
           >
             <Button>Get Tickets</Button>
-          </a> */}
+          </a>
         </div>
         <div></div>
 

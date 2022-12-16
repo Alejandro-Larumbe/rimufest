@@ -12,17 +12,17 @@ export default function Splash() {
         <div className="m-auto flex flex-col md:flex-row text-center md:text-left text-white">
           <div>
             <p className="self-center">
-              Rimufest NZ 2023 <br />
+              Rimufest Faculty Concert <br />
             </p>
-            <p className="self-center mr-4 text-sm">Jan 4th - 9th</p>
+            <p className="self-center mr-4 text-sm">January 7th 2023</p>
           </div>
           <a
             className="self-center ml-4 mt-2 md:mt-0 md:ml-8"
             // className="block"
             target="_blank"
-            href="https://forms.gle/kREu3iFXrcJhbTFC7 "
+            href="https://www.eventbrite.com/e/faculty-concert-tickets-487414729577"
           >
-            <Button>Apply now!</Button>
+            <Button>Get your tickets</Button>
           </a>
         </div>
       </div>
