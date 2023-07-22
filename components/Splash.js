@@ -1,28 +1,37 @@
 import Image from "next/image";
-import useTranslation from "../intl/useTranslation";
 import SEO from "../components/SEO";
-import Button from "./primitives/button";
 
 export default function Splash() {
-  const { t } = useTranslation();
-
   return (
     <>
-      <div className="h-32 md:h-24 bg-purple flex">
-        <div className="m-auto flex flex-col md:flex-row text-center md:text-left text-white">
-          <div>
-            <p className="self-center">
-              Rimufest Faculty Concert <br />
-            </p>
-            <p className="self-center mr-4 text-sm">January 7th 2023</p>
-          </div>
+      <div className="min-h-32 md:min-h-24 bg-purple flex flex-col p-4 md:p-8 gap-4 justify-between	">
+        <div className="m-auto flex gap-2 content-center flex-col  md:flex-row  text-center md:text-left text-white">
+          <p className="self-center mr-4 text-sm">
+            {" "}
+            Faculty Concert: September 22nd, 7pm
+          </p>
           <a
-            className="self-center ml-4 mt-2 md:mt-0 md:ml-8"
-            // className="block"
+            className="self-center uppercase text-sm text-pink hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
             target="_blank"
-            href="https://www.eventbrite.com/e/faculty-concert-tickets-487414729577"
+            href="https://www.eventspronto.co.nz/LockdownQuartet "
           >
-            <Button>Get your tickets</Button>
+            Get your tickets
+          </a>
+        </div>
+        <div className="m-auto flex gap-2 content-center flex-col md:flex-row  text-center md:text-left text-white">
+          {/* <div> */}
+          <p className="self-center mr-4 text-sm">
+            Upcoming Holiday Programme: September 23rd- 26th
+            <br />
+          </p>
+
+          <a
+            className="self-center uppercase text-sm text-pink hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
+            target="_blank"
+            href="https://forms.gle/zD5Z1DgdNafAkzWv8 
+            "
+          >
+            Apply now
           </a>
         </div>
       </div>
@@ -35,8 +44,8 @@ export default function Splash() {
           <Image
             src="/splash.png"
             layout="intrinsic"
-            height={3508}
-            width={2480}
+            height={3508 * 0.4}
+            width={2480 * 0.4}
           />
           <div className="h-96 md:w-full self-center pt-24 pb-16 md:pl-8 pl-16">
             <div className="flex items-center">
@@ -56,10 +65,20 @@ export default function Splash() {
         </div>
       </div>
 
-      <div className="lg:flex lg:my-24 lg:pl-48 lg:flex-row">
-        <div className="bg-cover lg:my:0 my-8 lg:my-0 bg-splash-student w-screen lg:h-96 lg:w-100 h-72"></div>
-        <p className="lg:w-80 lg:h-96 lg:text-md px-8 mt-16 lg:mt-0 self-center">
-          {t("blurb")}
+      <div className="lg:flex py-24 lg:m-auto lg:flex-row gap-24  justify-center align-center">
+        <Image
+          src="/cofounders.jpg"
+          layout="intrinsic"
+          width={3637 * 0.12}
+          height={5465 * 0.12}
+        />
+        <p className="p-6 lg:p-0 lg:w-80 lg:text-md  mt-16 lg:mt-0 self-center text-center text-md">
+          <strong>RimuFest Chamber Music Festival</strong>, co-founded by Amelia
+          Taylor and Alejandro Larumbe, presents two annual programs in
+          Tauranga: a 4-day holiday program and a 6-day summer program. Designed
+          for ages 7-18, these inclusive programs foster music collaboration,
+          enabling students to cultivate essential life skills such as
+          communication, teamwork, goal-setting, and organization.
         </p>
       </div>
 
