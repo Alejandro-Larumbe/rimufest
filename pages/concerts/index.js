@@ -35,7 +35,7 @@ export default function Concerts() {
             </h3>
           </div>
 
-          <img src="/garden-concert.jpeg" className="w-full "></img>
+          <img src="/lockdown-quartet.png" className="w-full "></img>
 
           <a
             className="w-full flex justify-center"
@@ -80,7 +80,7 @@ export default function Concerts() {
             </p>
             <p className="text-lg ">Enter by donation</p>
           </div>
-          <img src="/student-concert-2022.jpeg" className="w-full "></img>
+          <img src="/student-concert.jpg" className="w-full "></img>
 
           <span>
             The RimuFest student concert is a family-friendly celebration,

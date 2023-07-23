@@ -50,8 +50,9 @@ export default function AnnualNZ2022() {
           <p>
             The upcoming RimuFest Holiday Programme offers a chance for
             violinists, violists, and cellists to enhance their chamber music
-            skills and techniques. <strong>Students aged 7 to 18</strong>,
-            regardless of their level or ability, are encouraged to apply.
+            skills and techniques.{" "}
+            <span className="text-pink">Students aged 7 to 18</span>, regardless
+            of their level or ability, are encouraged to apply.
           </p>
         </div>
         <div className="py-4 text-base">
@@ -63,16 +64,18 @@ export default function AnnualNZ2022() {
         </div>
         <div className="py-8 text-base">
           <p>
-            <strong>Customise</strong>your experience: violinists can explore
-            both violin and viola. - Let us know in your application form.
+            <span className="text-pink">Customise</span> your experience:
+            violinists can explore both violin and viola. - Let us know in your
+            application form.
           </p>
           <p>
-            <strong>RimuFest Chamber Music Festival</strong>, co-founded by
-            Amelia Taylor and Alejandro Larumbe, presents two annual programs in
-            Tauranga: a 4-day holiday program and a 6-day summer program.
-            Designed for ages 7-18, these inclusive programs foster music
-            collaboration, enabling students to cultivate essential life skills
-            such as communication, teamwork, goal-setting, and organization.
+            <span className="text-pink">RimuFest Chamber Music Festival</span>,
+            co-founded by Amelia Taylor and Alejandro Larumbe, presents two
+            annual programs in Tauranga: a 4-day holiday program and a 6-day
+            summer program. Designed for ages 7-18, these inclusive programs
+            foster music collaboration, enabling students to cultivate essential
+            life skills such as communication, teamwork, goal-setting, and
+            organization.
           </p>
           <p>
             Want to learn more about RimuFest and the different classes students
