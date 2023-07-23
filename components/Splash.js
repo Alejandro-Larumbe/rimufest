@@ -39,46 +39,53 @@ export default function Splash() {
         title="Rimufest Chamber Music Festival | Home"
         description="RimuFest Chamber Music Festival, founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
       />
-      <div className="flex flex-col justify-center align-center lg:w-128 mx-auto">
-        <div className="md:flex md:flex-row">
-          <Image
-            src="/splash.png"
-            layout="intrinsic"
-            height={3508 * 0.4}
-            width={2480 * 0.4}
-          />
-          <div className="h-96 md:w-full self-center pt-24 pb-16 md:pl-8 pl-16">
-            <div className="flex items-center">
-              <p className="text-4xl mr-2">Rimufest is</p>
-            </div>
-            <div className="flex items-center">
-              <p className="text-xl mr-2">a chamber music festival</p>
-            </div>
-            <div className="flex items-center">
-              <p className="text-3xl">& academy</p>
-            </div>
-            <div className="flex items-center">
-              <p className="text-4xl text-pink">we inspire</p>
-            </div>
-            <p className="text-2xl">the youth</p>
+      <div className="flex flex-col md:flex-row items-center">
+        <Image
+          src="/splash.png"
+          layout="intrinsic"
+          height={3508 * 0.4}
+          width={2480 * 0.4}
+        />
+        <div className="h-96 md:w-full self-center pt-24 pb-16 ">
+          <div className="flex items-center">
+            <p className="text-4xl mr-2">Rimufest is</p>
           </div>
+          <div className="flex items-center">
+            <p className="text-xl mr-2">a chamber music festival</p>
+          </div>
+          <div className="flex items-center">
+            <p className="text-3xl">& academy</p>
+          </div>
+          <div className="flex items-center">
+            <p className="text-4xl text-pink">we inspire</p>
+          </div>
+          <p className="text-2xl">the youth</p>
         </div>
       </div>
+      <p className="max-w-xl mx-auto my-72 self-center text-center text-xl">
+        RimuFest envisions an inclusive and innovative chamber music festival,
+        empowering young musicians to excel. We provide high-quality music
+        tuition, promoting teamwork, leadership, and a diverse repertoire.
+        Through captivating performances and community engagement, we aim to
+        inspire and make a lasting impact on the musical journey of young
+        talents in the Bay of Plenty and beyond.
+      </p>
 
-      <div className="lg:flex py-24 lg:m-auto lg:flex-row gap-24  justify-center align-center">
+      <div className="flex p-6  flex-col lg:flex-row items-center justify-center gap-12">
         <Image
           src="/cofounders.jpg"
           layout="intrinsic"
           width={3637 * 0.12}
           height={5465 * 0.12}
         />
-        <p className="p-6 lg:p-0 lg:w-80 lg:text-md  mt-16 lg:mt-0 self-center text-center text-md">
-          <strong>RimuFest Chamber Music Festival</strong>, co-founded by Amelia
-          Taylor and Alejandro Larumbe, presents two annual programs in
-          Tauranga: a 4-day holiday program and a 6-day summer program. Designed
-          for ages 7-18, these inclusive programs foster music collaboration,
-          enabling students to cultivate essential life skills such as
-          communication, teamwork, goal-setting, and organization.
+        <p className="max-w-lg lg:w-96 text-lg text-center text-md">
+          <strong>RimuFest Chamber Music Festival</strong> is a non profit
+          organization co-founded by Amelia Taylor and Alejandro Larumbe,
+          presents two annual programs in Tauranga: a 4-day holiday program and
+          a 6-day summer program. Designed for ages 7-18, these inclusive
+          programs foster music collaboration, enabling students to cultivate
+          essential life skills such as communication, teamwork, goal-setting,
+          and organization.
         </p>
       </div>
 

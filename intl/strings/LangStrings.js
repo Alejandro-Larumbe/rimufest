@@ -1,8 +1,8 @@
 export const LangStrings = {
   nz: {
-    nz2023: "Annual 2023",
+    nz2024: "Annual 2024",
     pressRoom: "Press Room",
-    holidayProgram: "Holiday Programme",
+    holidayProgramme: "Holiday Programme",
     upcoming: "Upcoming",
     about: "About",
     concerts: "Concerts",
@@ -23,8 +23,8 @@ export const LangStrings = {
   mx: {
     pressRoom: "Press Room",
     upcoming: "Upcoming",
-    nz2023: "Annual 2023",
-    holidayProgram: "Holiday Programme",
+    nz2024: "Annual 2024",
+    holidayProgramme: "Holiday Programme",
     artists: "Artistas",
     about: "Acerca",
     concerts: "Conciertos",

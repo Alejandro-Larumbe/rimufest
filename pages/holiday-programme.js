@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import Hero from "../components/Hero";
 import Button from "../components/primitives/button";
@@ -14,15 +15,6 @@ const artists = [
     ],
     picture: "donald-maurice1.jpeg",
   },
-  {
-    name: "Martin Roberts",
-    bio: [
-      "French-New Zealand cellist Martin Roberts grew up in Christchurch, where his passion for music, and particularly chamber music, was first ignited. Martin studied initially at the University of Canterbury before finishing his Bachelor, Honours, and Masters degrees at the University of Auckland, under the guidance of Edith Salzmann. Following these studies, Martin spent three years in Germany with Prof. Mario De Secondi at the Staatliche Hochschule für Musik Trossingen, where he furthered his education in both solo performance and chamber music. To further enhance his training, Martin has attended many music festivals such as the Academy International d’Été De Nice (France), the Internationale Sommerakademie Schwetzingen-Worms (Germany), and the Tuckamore Music Festival (Canada).",
-      "Martin has performed up and down the country within orchestras and chamber groups, most notably touring for Chamber Music New Zealand alongside the New Zealand String Quartet. While overseas, he was fortunate enough to join the Württembergische Philharmonie Reutlingen and regional youth orchestras, which saw him perform all over Germany, as well as in Switzerland, Italy, and China. He is also an artist for the Lincoln Center Stage programme aboard Holland America Line, based in New York City.",
-      "Since his return to New Zealand, Martin has been teaching and performing, both in orchestral settings as well as with his string quartet, the Arcus Quartet.",
-    ],
-    picture: "martin.jpg",
-  },
 ];
 
 export default function AnnualNZ2022() {
@@ -35,46 +27,60 @@ export default function AnnualNZ2022() {
       />
       <Hero bgImage="holiday-programme">
         <h1 className="uppercase text-white">
-          RimuFest NZ 2022 Term 3 Holiday Programme
+          RimuFest NZ 2024 Term 3 Holiday Programme
         </h1>
       </Hero>
       <div className="md:w-101 md:mx-auto md:my-20 p-8">
         <div className="py-4">
           <p className="text-2xl font-extrabold">
-            RimuFest NZ 2022 Term 3 Holiday Programme
+            RimuFest NZ 2024 Term 3 Holiday Programme
           </p>
-          <p className="text-lg">1st - 4th October 2022</p>{" "}
+          <p className="text-lg">September 23rd → 26th</p>{" "}
+          <p className="text-lg">10am - 3:30pm</p>{" "}
+          <p className="text-lg">Open to: Violin, Viola and Cello</p>{" "}
           <div className="py-4 text-base">
             <p className="mb-4">**Last date to register: 1st of September</p>
           </div>
-          <a href="https://forms.gle/So1LkY1XCzJbp8EG6" target="_blank">
+          <a href="https://forms.gle/zD5Z1DgdNafAkzWv8 ">
             <Button>Apply here</Button>
           </a>
           {/* <p className="text-">* Last day to apply: November 20th</p> */}
         </div>
         <div className="py-4 text-base">
           <p>
-            RimuFest Chamber Music Festival, founded by Amelia Taylor and
-            Alejandro Larumbe, is a 7-day summer chamber music programme for
-            beginner to advanced string players between the ages of 7-18.
+            The upcoming RimuFest Holiday Programme offers a chance for
+            violinists, violists, and cellists to enhance their chamber music
+            skills and techniques. <strong>Students aged 7 to 18</strong>,
+            regardless of their level or ability, are encouraged to apply.
           </p>
         </div>
         <div className="py-4 text-base">
           <p>
-            During the 2022 four-day holiday programme, students will
-            participate in the RimuFest ensemble (led by Donald and Martin),
-            chamber music, technique classes and the student concert.
+            The four-day program includes engaging activities such as ensemble
+            rehearsals, chamber music sessions, technique classes, and ends with
+            a student concert.
           </p>
         </div>
         <div className="py-8 text-base">
           <p>
-            <strong>RimuFest Chamber Music Festival</strong>, founded by Amelia
-            Taylor and Alejandro Larumbe, offers two programmes a year in
-            Tauranga - a 4-day holiday programme and a 6-day summer programme
-            for beginner to advanced string players between the ages of 7-18.
-            Both these programmes provide music collaboration opportunities.
-            Students can develop effective communication, teamwork, goal-setting
-            and organisational skills, all transferable life skills.
+            <strong>Customise</strong>your experience: violinists can explore
+            both violin and viola. - Let us know in your application form.
+          </p>
+          <p>
+            <strong>RimuFest Chamber Music Festival</strong>, co-founded by
+            Amelia Taylor and Alejandro Larumbe, presents two annual programs in
+            Tauranga: a 4-day holiday program and a 6-day summer program.
+            Designed for ages 7-18, these inclusive programs foster music
+            collaboration, enabling students to cultivate essential life skills
+            such as communication, teamwork, goal-setting, and organization.
+          </p>
+          <p>
+            Want to learn more about RimuFest and the different classes students
+            are involved in? Check out our{" "}
+            <Link href="/about">
+              <a className="text-pink">about page</a>
+            </Link>
+            .
           </p>
         </div>
 

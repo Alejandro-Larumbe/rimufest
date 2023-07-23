@@ -32,22 +32,22 @@ export default function AnnualNZ2022() {
         description="RimuFest Chamber Music Festival, founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
       />
       <Hero bgImage="nz-2023">
-        <h1 className="uppercase text-white">Annual New Zealand 2023</h1>
+        <h1 className="uppercase text-white">Annual New Zealand 2024</h1>
       </Hero>
       <div className="md:w-101 md:mx-auto md:my-20 p-8">
         <div className="py-4">
           <p className="text-3xl font-extrabold text-purple">
-            Rimufest 4th Annual Festival
+            Rimufest 5th Annual Festival
           </p>
           <p className="text-lg text-pink">
-            4th - 9th January 2023, Tauranga NZ
+            3rd-8th January 2024, Tauranga, NZ
           </p>{" "}
           <div className="py-4 text-base text-lg">
-            <p>**DEADLINE TO APPLY: 20TH NOVEMBER 2022</p>
+            <p>**Information coming on October...</p>
           </div>
           {/* <p className="text-">* Last day to apply: November 20th</p> */}
         </div>
-        <div className="py-4 text-base">
+        {/* <div className="py-4 text-base">
           <p>
             <b className="text-pink">RimuFest Chamber Music Festival</b>,
             founded by Amelia Taylor and Alejandro Larumbe, is a 6-day summer
@@ -124,7 +124,7 @@ export default function AnnualNZ2022() {
               </span>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="py-4 text-base"></div>
         {/* <div className="flex justify-center py-10">
           <a
@@ -161,9 +161,12 @@ export default function AnnualNZ2022() {
           </p>
           <p>Email rimufest@gmail.com with any further questions.</p>
         </div> */}
-        <p className="text-2xl my-4 text-purple">FAQ </p>
-        <b style={{ marginTop: "24px", display: "block" }}>
-          What is a chamber group / Chamber music?
+        {/* <p className="text-2xl my-4 text-purple">FAQ </p>
+        <b
+          className="text-pink"
+          style={{ marginTop: "24px", display: "block" }}
+        >
+          What is a chamber group / chamber music?
         </b>
         <p style={{ fontSize: "14px", marginTop: "8px" }}>
           Broadly speaking it means music that is performed by a small number of
@@ -171,7 +174,10 @@ export default function AnnualNZ2022() {
           groups of 3, 4 or 5. Chamber music has been described as “The music of
           friends”
         </p>
-        <b style={{ marginTop: "24px", display: "block" }}>
+        <b
+          className="text-pink"
+          style={{ marginTop: "24px", display: "block" }}
+        >
           What is a rehearsal?{" "}
         </b>
         <p style={{ fontSize: "14px", marginTop: "8px" }}>
@@ -181,7 +187,10 @@ export default function AnnualNZ2022() {
           have a room assigned to them to rehearse during the day without a
           teacher in the room. However there's always a teacher floating by.
         </p>
-        <b style={{ marginTop: "24px", display: "block" }}>
+        <b
+          className="text-pink"
+          style={{ marginTop: "24px", display: "block" }}
+        >
           What is a coaching?{" "}
         </b>
         <p style={{ fontSize: "14px", marginTop: "8px" }}>
@@ -190,7 +199,10 @@ export default function AnnualNZ2022() {
           nutting out musical ideas, providing inspiration for the group to then
           go and work on their piece some more.
         </p>
-        <b style={{ marginTop: "24px", display: "block" }}>
+        <b
+          className="text-pink"
+          style={{ marginTop: "24px", display: "block" }}
+        >
           What is a masterclass?{" "}
         </b>
         <p style={{ fontSize: "14px", marginTop: "8px" }}>
@@ -199,7 +211,7 @@ export default function AnnualNZ2022() {
           worked or didn’t work from the rehearsal/coaching. RimuFest provides
           students with Masterclasses everyday to allow students to learn how to
           perform and to get additional comments from all the coaches.
-        </p>
+        </p> */}
       </div>
     </>
   );
