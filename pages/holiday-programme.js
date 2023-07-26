@@ -27,19 +27,19 @@ export default function AnnualNZ2022() {
       />
       <Hero bgImage="holiday-programme">
         <h1 className="uppercase text-white">
-          RimuFest NZ 2024 Term 3 Holiday Programme
+          RimuFest NZ 2023 Term 3 Holiday Programme
         </h1>
       </Hero>
       <div className="md:w-101 md:mx-auto md:my-20 p-8">
         <div className="py-4">
           <p className="text-2xl font-extrabold">
-            RimuFest NZ 2024 Term 3 Holiday Programme
+            RimuFest NZ 2023 Term 3 Holiday Programme
           </p>
           <p className="text-lg">September 23rd → 26th</p>{" "}
           <p className="text-lg">10am - 3:30pm</p>{" "}
           <p className="text-lg">Open to: Violin, Viola and Cello</p>{" "}
           <div className="py-4 text-base">
-            <p className="mb-4">**Last date to register: 1st of September</p>
+            <p className="mb-4">**Last date to register: August 27</p>
           </div>
           <a href="https://forms.gle/zD5Z1DgdNafAkzWv8 ">
             <Button>Apply here</Button>
