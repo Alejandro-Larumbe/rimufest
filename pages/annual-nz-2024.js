@@ -39,7 +39,7 @@ export default function AnnualNZ2022() {
             Rimufest 5th Annual Festival
           </p>
           <p className="text-lg text-pink">
-            3rd-8th January 2024, Tauranga, NZ
+            4th-9th January 2024, Tauranga, NZ
           </p>{" "}
           <div className="py-4 text-base text-lg">
             <p>**Information coming on October...</p>

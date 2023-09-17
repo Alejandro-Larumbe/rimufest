@@ -13,7 +13,7 @@ export default function Splash() {
           <a
             className="self-center uppercase text-sm text-pink hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
             target="_blank"
-            href="https://www.eventspronto.co.nz/LockdownQuartet "
+            href="https://www.theincubator.co.nz/event-details/lockdown-quartet"
           >
             Get your tickets
           </a>
@@ -28,7 +28,7 @@ export default function Splash() {
           <a
             className="self-center uppercase text-sm text-pink hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
             target="_blank"
-            href="https://forms.gle/zD5Z1DgdNafAkzWv8 
+            href="https://forms.gle/zD5Z1DgdNafAkzWv8
             "
           >
             Apply now
