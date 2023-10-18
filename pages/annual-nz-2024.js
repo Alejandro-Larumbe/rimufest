@@ -1,6 +1,12 @@
 import React from "react";
 import Hero from "../components/Hero";
 import SEO from "../components/SEO";
+import { ChevronRightIcon } from "@heroicons/react/solid";
+import Button from "../components/primitives/button";
+
+const SectionHeader = ({ children }) => (
+  <p className="text-purple text-xl font-thin mt-8">{children}</p>
+);
 
 const artists = [
   { name: "Joella Pinto", title: "Chamber music coach", instrument: "violin" },
@@ -23,6 +29,61 @@ const artists = [
   },
 ];
 
+const instructions = [
+  "Go to",
+  "Sign in or create an account.",
+  "Click Upload.",
+  "Set privacy setting to ‘unlisted’ (this is very important).",
+  "Upload your audition clip. You will need to copy the video URL (link) and enter it into the application form.",
+];
+
+const highlights = [
+  {
+    label: "Customisation",
+    paragraph:
+      "Customisation: Students may opt to participate in both violin and viola if desired. We provide loaner violas to accommodate students interested in exploring this.",
+  },
+  {
+    label: "Orchestra Participation",
+    paragraph:
+      "Everyone is involved in orchestra. For those not yet ready for chamber music, orchestra will be their only session.",
+  },
+  {
+    label: "University Mentors",
+    paragraph:
+      "Each group will be assigned a university mentor who will help guide rehearsals and enhance group dynamics.",
+  },
+  {
+    label: "Tailored Curriculum",
+    paragraph:
+      " We offer a curated program for younger students to ensure a balanced and enjoyable experience.",
+  },
+  {
+    label: "Ensemble Work",
+    paragraph:
+      "Students collaborate in small groups, including trios, quartets, or quintets, guided by experienced coaches.",
+  },
+  {
+    label: "Chamber Concert Series:",
+    paragraph:
+      "Enjoy inspiring performances by our esteemed faculty and guest artists.",
+  },
+  {
+    label: "Daily Coaching",
+    paragraph:
+      "Benefit from daily coaching sessions and rehearsals to refine your ensemble skills.",
+  },
+  {
+    label: "Masterclasses",
+    paragraph:
+      "Participate in enriching masterclasses to elevate your performance.",
+  },
+  {
+    label: "Alexander Technique",
+    paragraph: "Experience specialized training tailored to string students.",
+  },
+];
+
 export default function AnnualNZ2022() {
   return (
     <>
@@ -33,106 +94,75 @@ export default function AnnualNZ2022() {
       <Hero bgImage="nz-2023">
         <h1 className="uppercase text-white">Annual New Zealand 2024</h1>
       </Hero>
-      <div className="md:w-101 md:mx-auto md:my-20 p-8">
+      <div className="md:w-100 md:mx-auto md:my-20 p-8">
         <div className="py-4">
-          <p className="text-3xl font-extrabold text-purple">
+          <p className="text-3xl font-extrabold text-pink">
             Rimufest 5th Annual Festival
           </p>
-          <p className="text-lg text-pink">
-            4th-9th January 2024, Tauranga, NZ
+          <p className="text-lg  mt-4">4th-9th January 2024, 9am - 3pm</p>{" "}
+          <p className="text-lg ">Tauranga, NZ</p>{" "}
+          <p className="text-lg ">
+            Open to Violin, Viola, Cello, Double Bass, and Piano
           </p>{" "}
-          <div className="py-4 text-base text-lg">
-            <p>**Information coming on October...</p>
-          </div>
-          {/* <p className="text-">* Last day to apply: November 20th</p> */}
+          <p className="mt-4">* Last day to apply: November 12th, 2023</p>
         </div>
-        {/* <div className="py-4 text-base">
-          <p>
-            <b className="text-pink">RimuFest Chamber Music Festival</b>,
-            founded by Amelia Taylor and Alejandro Larumbe, is a 6-day summer
-            chamber music programme for beginner to advanced string players
-            between the ages of 7-18.
-          </p>
-        </div>
-        <div className="py-4 text-base">
-          <p>
-            Students come together in a social setting using teamwork and
-            leadership skills to create music while expanding their
-            understanding of chamber music and strengthening their own
-            individual ability.
-          </p>
-        </div>
-        <div className="py-4 text-base">
-          <p>
-            Students will participate in: daily chamber coachings and rehearsals
-            | orchestra | private lessons | masterclasses | Alexander Technique
-            | performance opportunities
-          </p>
-        </div>
-        <div className="pt-12 text-base">
-          <p className="">
-            RimuFest offers two programmes for all levels of string players:
-          </p>
-        </div>
-        <div className="py-4 text-base">
-          <p>
-            Our <b className={"text-pink"}>beginner chamber music programme </b>
-            is for the student that has little or no experience in chamber
-            music. This programme is teacher led. Throughout the 6 days (9am -
-            12:30pm) students will work on a chamber piece as a group learning
-            how to play together, how to lead and how to follow, including other
-            chamber music skills. Students will be divided into smaller groups
-            for the final concert.{" "}
-          </p>
-        </div>
-        <div className="py-4 text-base">
-          <p>
-            Our <b className="text-pink">full chamber music programme</b> (9am -
-            2:45pm) is for the student that has some to a lot of experience in
-            chamber music or other types of ensembles. This programme is student
-            led. Students work together in small groups, either a trio, quartet
-            or quintet with guidance from our high-caliber coaches. Students
-            have the opportunity to premier commissioned works by NZ composers
-            and have the experience of working directly with the composer.
-          </p>
-        </div>
-        <div className="pt-12 text-base">
-          <p className="text-2xl my-4 text-purple">How to apply </p>
-          <ul>
-            <li style={{ display: "flex", alignItems: "center" }}>
-              <span className="ml-2">
-                • Fill out the{" "}
-                <a
-                  className="inline text-pink"
-                  // className="block"
-                  target="_blank"
-                  href="https://forms.gle/kREu3iFXrcJhbTFC7 "
-                >
-                  application form
-                </a>
+
+        <p className="text-purple text-xl font-thin mt-8">Program highlights</p>
+        <ul className="text-md mt-2 ">
+          {highlights.map((highlight) => (
+            <li
+              className="mt-6"
+              style={{ display: "flex", alignItems: "flex-start" }}
+            >
+              <div className="text-pink">
+                <ChevronRightIcon className="w-6 h-6 font-bold" />
+              </div>
+              <span className="text-base ml-1">
+                <span className="text-pink">{highlight.label}: </span>{" "}
+                {highlight.paragraph}
               </span>
             </li>
+          ))}
+        </ul>
+
+        <SectionHeader>The audition process</SectionHeader>
+        <p className="mt-2">
+          {
+            "Please provide a YouTube link which demonstrates your musical ability (5-minute maximum)."
+          }
+        </p>
+        <p className="mt-2">* Auditions will only be accepted via YouTube.</p>
+        <p className="mt-8">Follow these instructions:</p>
+
+        <ul className="text-md mt-2 ">
+          {instructions.map((instruction, i) => (
             <li
               className="mt-2"
               style={{ display: "flex", alignItems: "flex-start" }}
             >
-              <span className="ml-2">
-                • Upload audition video to Youtube performing one piece of no
-                more than 5 minutes in length that demonstrates your technical
-                and musical ability.
+              <div className="text-pink mr-2">{i + 1})</div>
+              <span className="text-base ml-1">
+                {/* <span className="text-pink">{highlight.label}: </span>{" "} */}
+                {instruction}{" "}
+                {i === 0 && (
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    href={"https://www.youtube.com/"}
+                    className="text-blue"
+                  >
+                    youtube.com.
+                  </a>
+                )}
               </span>
             </li>
-          </ul>
-        </div> */}
-        <div className="py-4 text-base"></div>
-        {/* <div className="flex justify-center py-10">
-          <a
-            target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSevuoKBHNeJ6bqZrJg0K81pVHrFc-0lzf2-d1dWEbHw-gyv5A/viewform?usp=sf_link"
-          >
-            <Button>Apply now</Button>
-          </a>
-        </div> */}
+          ))}
+        </ul>
+
+        <a className="w-full flex justify-center mt-16" href="/learn-more">
+          <Button>Learn more...</Button>
+        </a>
+
         {/* <div className="py-4 text-base">
           <p>Application and detailed info coming out soon!</p>
           <p>

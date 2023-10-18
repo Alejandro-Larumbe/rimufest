@@ -5,46 +5,46 @@ module.exports = {
   variants: {},
   plugins: [],
   theme: {
-    fontFamily: {
-      sans: "Open Sans",
-      title: "Raleway",
-    },
-    colors: {
-      pink: "#FF4598",
-
-      caca: "#FF4598",
-
-      purple: "#75499D",
-
-      blue: {
-        DEFAULT: "#6092F0",
-        //   // DEFAULT: "#0C59ED",
-      },
-      green: {
-        // DEFAULT:"#00ED00"
-        // DEFAULT:"#54F054"
-        DEFAULT: "#A8FCA2",
-        // DEFAULT: "#83C03E",
-        // DEFAULT: "#298F42",
-      },
-      yellow: {
-        // DEFAULT:"#F0E384"
-        // DEFAULT:"#B7ED3B"
-        // DEFAULT:"#EDB53B"
-        // DEFAULT:"#0CED8B"
-        DEFAULT: "#24ED24",
-      },
-      pearl: {
-        DEFAULT: "#FFFFFF",
-      },
-      darky: {
-        DEFAULT: "#121212",
-      },
-      white: {
-        DEFAULT: "#FFFFFF",
-      },
-    },
     extend: {
+      fontFamily: {
+        sans: "Open Sans",
+        title: "Raleway",
+      },
+      colors: {
+        pink: "#FF4598",
+
+        caca: "#FF4598",
+
+        purple: "#75499D",
+
+        blue: {
+          DEFAULT: "#6092F0",
+          //   // DEFAULT: "#0C59ED",
+        },
+        green: {
+          // DEFAULT:"#00ED00"
+          // DEFAULT:"#54F054"
+          DEFAULT: "#A8FCA2",
+          // DEFAULT: "#83C03E",
+          // DEFAULT: "#298F42",
+        },
+        yellow: {
+          // DEFAULT:"#F0E384"
+          // DEFAULT:"#B7ED3B"
+          // DEFAULT:"#EDB53B"
+          // DEFAULT:"#0CED8B"
+          DEFAULT: "#24ED24",
+        },
+        pearl: {
+          DEFAULT: "#FFFFFF",
+        },
+        darky: {
+          DEFAULT: "#121212",
+        },
+        white: {
+          DEFAULT: "#FFFFFF",
+        },
+      },
       backgroundImage: (theme) => ({
         "music-in-the-garden": "url('/music_in_the_garden.jpg')",
         "splash-hero": "url('/studentConcert1.jpg')",
