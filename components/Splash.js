@@ -5,42 +5,11 @@ import Button from "./primitives/button";
 export default function Splash() {
   return (
     <>
-      {/* <div className="min-h-32 md:min-h-24 bg-purple flex flex-col p-4 md:p-8 gap-4 justify-between	">
-        <div className="m-auto flex gap-2 content-center flex-col  md:flex-row  text-center md:text-left text-white">
-          <p className="self-center mr-4 text-sm"> Rimufest Concerts Series</p>
-          <a
-            className="self-center uppercase text-sm text-pink hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
-            href="/concerts/faculty-2024"
-          >
-            More info
-          </a>
-        </div>
-        <div className="m-auto flex gap-2 content-center flex-col md:flex-row  text-center md:text-left text-white">
-          <p className="self-center mr-4 text-sm">
-            Annual Festival NZ 2024, Jan - 4th - 9th
-            <br />
-          </p>
-
-          <a
-            className="self-center uppercase text-sm text-pink hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
-            target="_blank"
-            href="https://docs.google.com/forms/d/1knrJ838H9bIyp7q8t95kWpab0JF64vYfguKeGXOta5I/edit?pli=1"
-          >
-            Apply now
-          </a>
-        </div>
-      </div> */}
       <SEO
         title="Rimufest Chamber Music Festival | Home"
         description="RimuFest Chamber Music Festival, founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
       />
-      <div className="flex flex-col md:flex-row items-center">
-        {/* <Image
-          src="/splash.png"
-          layout="intrinsic"
-          height={3508 * 0.4}
-          width={2480 * 0.4}
-        /> */}
+      <div className="flex flex-col lg:flex-row items-center">
         <div style={{ width: "100%", height: "100vh", position: "relative" }}>
           <Image
             src="/splash.jpeg"
@@ -48,12 +17,11 @@ export default function Splash() {
             layout="fill"
             objectFit="cover" // Optional: Specifies how the image should be fitted within its container
           />
-          <div className="absolute flex flex-col items-end gap-4 right-24 text-right top-56">
-            <p className="text-6xl">Annual Festival NZ 2024</p>
-            <p className="text-4xl">Jan - 4th - 9th</p>
-            {/* <Button> */}
+          <div className="absolute flex flex-col items-end gap-4 right-8 md:right-28 lg:right-24 text-right top-48 lg:top-56">
+            <p className="text-4xl lg:text-6xl">Annual Festival NZ 2024</p>
+            <p className="text-3xl lg:text-4xl">Jan - 4th - 9th</p>
             <a
-              className="uppercase text-sm lg:text-xl text-pink hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
+              className="uppercase text-xl text-pink hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
               target="_blank"
               href="https://docs.google.com/forms/d/1knrJ838H9bIyp7q8t95kWpab0JF64vYfguKeGXOta5I/edit?pli=1"
             >

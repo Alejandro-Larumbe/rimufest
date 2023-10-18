@@ -12,7 +12,6 @@ const tabs = [
   { path: "/holiday-programme", name: "holidayProgramme" },
   { path: "/gallery", name: "gallery" },
   { path: "/press-room", name: "pressRoom" },
-  // { path: "/support", name: "support" },
 ];
 
 export default function Appbar() {
@@ -27,21 +26,9 @@ export default function Appbar() {
           <div className="container px-6 py-6 mx-auto">
             <div className="lg:flex lg:items-center lg:justify-between">
               <div className="flex items-center justify-between">
-                {/* <div> */}
                 <Link href="/">
                   <a className="w-28 mt-3 h-14 lg:w-36 lg:h-18 bg-contain bg-no-repeat bg-logo-pink dark:bg-logo-dark" />
                 </Link>
-                {/* <Link href='/'>
-                <Image
-                  src={`/logo-dark.png`}
-                  className={"hover:cursor-pointer"}
-                  width={200}
-                  height={100}
-                  alt="avatar"
-                  objectFit="contain"
-                />
-              </Link> */}
-                {/* </div> */}
 
                 {/* <!-- Mobile menu button --> */}
                 <div className="flex lg:hidden">
@@ -70,7 +57,7 @@ export default function Appbar() {
               <div
                 className={`flex-1 ${
                   openMenu ? "block" : "hidden"
-                } md:flex md:items-center md:justify-between`}
+                } lg:flex lg:items-center lg:justify-between`}
               >
                 <div className="flex flex-col items-end -mx-4 lg:flex-row lg:items-center lg:mx-8">
                   {tabs.map(({ path: currentPath, name }) => {
@@ -90,26 +77,7 @@ export default function Appbar() {
                   })}
                 </div>
 
-                <div className="flex items-end lg:flex-row lg:items-center flex-col mt-4 lg:mt-0">
-                  {/* <div className="w-7 h-7 lg:w-8 lg:h-8 ml-4 overflow-hidden rounded-full">
-                <button
-                  onClick={() =>
-                    handleLocaleChange(locale === "nz" ? "mx" : "nz")
-                  }
-                  type="button"
-                  className="flex items-center focus:outline-none"
-                  aria-label="toggle profile dropdown"
-                >
-                  <Image
-                    src={`/${locale}.svg`}
-                    className="object-cover w-full h-full"
-                    width={50}
-                    height={50}
-                    alt="avatar"
-                  />
-                </button>
-              </div> */}
-                </div>
+                <div className="flex items-end lg:flex-row lg:items-center flex-col mt-4 lg:mt-0"></div>
               </div>
               <div className="hidden lg:block">
                 <Button>
