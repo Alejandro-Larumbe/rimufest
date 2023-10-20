@@ -84,6 +84,15 @@ const highlights = [
   },
 ];
 
+const fellowshipOfferings = [
+  "Chamber rehearsal time with other students in the fellowship programme",
+  "Daily coachings",
+  "Mentor chamber music students through their rehearsals",
+  "Performance opportunities ",
+  "Lodging by host ",
+  "Most meals included ",
+];
+
 export default function AnnualNZ2022() {
   return (
     <>
@@ -106,7 +115,14 @@ export default function AnnualNZ2022() {
           </p>{" "}
           <p className="mt-4">* Last day to apply: November 12th, 2023</p>
         </div>
-
+        <div className="mt-4 mb-12">
+          <a
+            target="_blank"
+            href="https://docs.google.com/forms/d/1knrJ838H9bIyp7q8t95kWpab0JF64vYfguKeGXOta5I/edit?pli=1"
+          >
+            <Button>Apply now</Button>
+          </a>
+        </div>
         <p className="text-purple text-xl font-thin mt-8">Program highlights</p>
         <ul className="text-md mt-2 ">
           {highlights.map((highlight) => (
@@ -124,16 +140,14 @@ export default function AnnualNZ2022() {
             </li>
           ))}
         </ul>
-
         <SectionHeader>The audition process</SectionHeader>
-        <p className="mt-2">
+        <p className="mt-8">
           {
             "Please provide a YouTube link which demonstrates your musical ability (5-minute maximum)."
           }
         </p>
         <p className="mt-2">* Auditions will only be accepted via YouTube.</p>
         <p className="mt-8">Follow these instructions:</p>
-
         <ul className="text-md mt-2 ">
           {instructions.map((instruction, i) => (
             <li
@@ -158,11 +172,69 @@ export default function AnnualNZ2022() {
             </li>
           ))}
         </ul>
-
         <a className="w-full flex justify-center mt-16" href="/learn-more">
           <Button>Learn more...</Button>
         </a>
-
+        <p className="text-purple text-xl font-thin mt-8">
+          String Fellowship Program
+        </p>
+        <p className="text-pink text-md  mt-2">4th-9th January 2024</p>{" "}
+        <p className="mt-4">
+          The RimuFest String Fellowship Program is a course for university
+          music students early in their career. The programme will help to
+          enhance rehearsal techniques, hone your artistry, gain performing and
+          teaching experience.
+        </p>
+        <p className="mt-4">The programme includes:</p>
+        <ul className="text-md mt-2 ">
+          {fellowshipOfferings.map((item) => (
+            <li
+              className="mt-2"
+              style={{ display: "flex", alignItems: "flex-start" }}
+            >
+              <div className="text-pink">
+                <ChevronRightIcon className="w-6 h-6 font-bold" />
+              </div>
+              <span className="text-base ml-1">{item}</span>
+            </li>
+          ))}
+        </ul>
+        <p className="text-pink text-lg font-thin mt-8">
+          Admission Requirements:
+        </p>
+        <ul className="text-md mt-2 ">
+          <li
+            className="mt-2"
+            style={{ display: "flex", alignItems: "flex-start" }}
+          >
+            <div className="text-pink">
+              <ChevronRightIcon className="w-6 h-6 font-bold" />
+            </div>
+            <span className="text-base ml-1">
+              {" "}
+              Fill out the{" "}
+              <a
+                className=" mt-4 text-lg text-blue hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
+                target="_blank"
+                href="https://forms.gle/fcxgq2nnJXmnbkWA6"
+              >
+                application form
+              </a>{" "}
+            </span>
+          </li>
+          <li
+            className="mt-2"
+            style={{ display: "flex", alignItems: "flex-start" }}
+          >
+            <div className="text-pink">
+              <ChevronRightIcon className="w-6 h-6 font-bold" />
+            </div>
+            <span className="text-base ml-1">
+              {"Audition recording (max duration of 10 minutes)"}
+            </span>
+          </li>
+        </ul>
+        <p className="mt-8">* Pre-formed groups allowed to apply</p>
         {/* <div className="py-4 text-base">
           <p>Application and detailed info coming out soon!</p>
           <p>
