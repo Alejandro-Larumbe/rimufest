@@ -5,29 +5,29 @@ import { ChevronRightIcon } from "@heroicons/react/solid";
 import Button from "../components/primitives/button";
 
 const SectionHeader = ({ children }) => (
-  <p className="text-purple text-xl font-thin mt-8">{children}</p>
+  <p className="text-purple text-3xl font-thin mt-8">{children}</p>
 );
 
-const artists = [
-  { name: "Joella Pinto", title: "Chamber music coach", instrument: "violin" },
-  { name: "Martin Roberts", title: "Chamber music coach", instrument: "cello" },
-  { name: "Yotam Levy", title: "Chamber music coach", instrument: "cello" },
-  {
-    name: "Amelia Taylor",
-    title: "Chamber music coach",
-    instrument: "violin/viola",
-  },
-  {
-    name: "Alejandro Larumbe",
-    title: "Orchestra conductor/Chamber music coach",
-    instrument: "conductor/violin/viola",
-  },
-  {
-    name: "Salina Fisher",
-    title: "Composer/Chamber music coach",
-    instrument: "composer/violin",
-  },
-];
+// const artists = [
+//   { name: "Joella Pinto", title: "Chamber music coach", instrument: "violin" },
+//   { name: "Martin Roberts", title: "Chamber music coach", instrument: "cello" },
+//   { name: "Yotam Levy", title: "Chamber music coach", instrument: "cello" },
+//   {
+//     name: "Amelia Taylor",
+//     title: "Chamber music coach",
+//     instrument: "violin/viola",
+//   },
+//   {
+//     name: "Alejandro Larumbe",
+//     title: "Orchestra conductor/Chamber music coach",
+//     instrument: "conductor/violin/viola",
+//   },
+//   {
+//     name: "Salina Fisher",
+//     title: "Composer/Chamber music coach",
+//     instrument: "composer/violin",
+//   },
+// ];
 
 const instructions = [
   "Go to",
@@ -35,6 +35,39 @@ const instructions = [
   "Click Upload.",
   "Set privacy setting to ‘unlisted’ (this is very important).",
   "Upload your audition clip. You will need to copy the video URL (link) and enter it into the application form.",
+];
+
+const artists = [
+  {
+    name: "Amelia Taylor",
+    instrument: "Violin, Co-Founder",
+    title: "Director, Co-Founder",
+    website: "https://www.ameliacetaylor.com",
+    image: "amelia-4",
+  },
+  {
+    name: "Alejandro Larumbe",
+    instrument: "Violin, Orchestra Conductor",
+    title: "Co-Founder",
+    image: "alejandro",
+  },
+  {
+    name: "Kate Ellingham-Hunt",
+    instrument: "Violin, Alexander Technique",
+    website: "https://kate-eh.co.nz",
+    image: "kate",
+  },
+  {
+    name: "Donald Maurice",
+    instrument: "Viola",
+    website: "https://www.donaldmaurice.org",
+    image: "donald-maurice1",
+  },
+  {
+    name: "Maria Mo",
+    instrument: "Piano",
+    image: "maria-mo",
+  },
 ];
 
 const highlights = [
@@ -105,7 +138,7 @@ export default function AnnualNZ2022() {
       </Hero>
       <div className="md:w-100 md:mx-auto md:my-20 p-8">
         <div className="py-4">
-          <p className="text-3xl font-extrabold text-pink">
+          <p className="text-4xl font-extrabold text-pink">
             Rimufest 5th Annual Festival
           </p>
           <p className="text-lg  mt-4">4th-9th January 2024, 9am - 3pm</p>{" "}
@@ -123,7 +156,9 @@ export default function AnnualNZ2022() {
             <Button>Apply now</Button>
           </a>
         </div>
-        <p className="text-purple text-xl font-thin mt-8">Program highlights</p>
+        <p className="text-purple text-3xl font-thin mt-8">
+          Program highlights
+        </p>
         <ul className="text-md mt-2 ">
           {highlights.map((highlight) => (
             <li
@@ -175,7 +210,7 @@ export default function AnnualNZ2022() {
         <a className="w-full flex justify-center mt-16" href="/learn-more">
           <Button>Learn more...</Button>
         </a>
-        <p className="text-purple text-xl font-thin mt-8">
+        <p className="text-purple text-3xl font-thin mt-8">
           String Fellowship Program
         </p>
         <p className="text-pink text-md  mt-2">4th-9th January 2024</p>{" "}
@@ -235,84 +270,21 @@ export default function AnnualNZ2022() {
           </li>
         </ul>
         <p className="mt-8">* Pre-formed groups allowed to apply</p>
-        {/* <div className="py-4 text-base">
-          <p>Application and detailed info coming out soon!</p>
-          <p>
-            Notified of acceptance, waitlist, or decline: 27th November 2021
-          </p>
-          <p>Email rimufest@gmail.com with any further questions.</p>
-        </div> */}
-        {/* <p className="mt-8 text-2xl font-extrabold">Faculty</p>
-        <p className="mt-8 text-xl font-extrabold">Amelia Taylor</p> */}
-        {/* <div className="py-4 mt-10 text-sm">
-          <p>COVID-19</p>
-          <p>
-            Rules regarding COVID change over time. Our first priority is to
-            have sensible procedures so that everyone is as safe as possible
-            during the program as we learn together. We will make sure both
-            health care and learning music happens. It could mean that we may
-            need to make changes according to whatever situation presents, even
-            at short notice, from time to time. So we will always appreciate
-            your understanding and cooperation.
-          </p>
-          <p className="mt-2">
-            Please email any questions you may have. We look forward to you
-            joining our planned experiences in a program aimed to inspire and
-            excite people.{" "}
-          </p>
-          <p>Email rimufest@gmail.com with any further questions.</p>
-        </div> */}
-        {/* <p className="text-2xl my-4 text-purple">FAQ </p>
-        <b
-          className="text-pink"
-          style={{ marginTop: "24px", display: "block" }}
-        >
-          What is a chamber group / chamber music?
-        </b>
-        <p style={{ fontSize: "14px", marginTop: "8px" }}>
-          Broadly speaking it means music that is performed by a small number of
-          musicians and one person per part. At RimuFest you will typically see
-          groups of 3, 4 or 5. Chamber music has been described as “The music of
-          friends”
-        </p>
-        <b
-          className="text-pink"
-          style={{ marginTop: "24px", display: "block" }}
-        >
-          What is a rehearsal?{" "}
-        </b>
-        <p style={{ fontSize: "14px", marginTop: "8px" }}>
-          This is when the chamber group gets together and figures out how to
-          put each part of the music together. Other things involved during this
-          time are making musical decisions together. At RimuFest students will
-          have a room assigned to them to rehearse during the day without a
-          teacher in the room. However there's always a teacher floating by.
-        </p>
-        <b
-          className="text-pink"
-          style={{ marginTop: "24px", display: "block" }}
-        >
-          What is a coaching?{" "}
-        </b>
-        <p style={{ fontSize: "14px", marginTop: "8px" }}>
-          This is like a rehearsal but with a teacher/coach in the room
-          providing constructive criticism, helping the students work together,
-          nutting out musical ideas, providing inspiration for the group to then
-          go and work on their piece some more.
-        </p>
-        <b
-          className="text-pink"
-          style={{ marginTop: "24px", display: "block" }}
-        >
-          What is a masterclass?{" "}
-        </b>
-        <p style={{ fontSize: "14px", marginTop: "8px" }}>
-          This is the group's chance to practice the performance of their piece
-          and how to present themselves in front of an audience. To see what
-          worked or didn’t work from the rehearsal/coaching. RimuFest provides
-          students with Masterclasses everyday to allow students to learn how to
-          perform and to get additional comments from all the coaches.
-        </p> */}
+        <p className="text-purple text-3xl font-thin mt-8">Faculty</p>
+        <div className="grid grid-cols-2 gap-8 mt-4">
+          {artists.map((artist) => (
+            <a className="gap-4 flex flex-col">
+              <img
+                className="h-96 w-full object-cover"
+                src={`/${artist.image}.jpeg`}
+              />
+              <div>
+                <h5 className="text-pink">{artist.name}</h5>
+                <h6 className="text-sm">{artist.instrument}</h6>
+              </div>
+            </a>
+          ))}
+        </div>
       </div>
     </>
   );
