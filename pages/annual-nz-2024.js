@@ -290,8 +290,8 @@ export default function AnnualNZ2022() {
                 />
               </div>
               <div>
-                <h5 className="text-pink">{artist.name}</h5>
-                <h6 className="text-sm">{artist.instrument}</h6>
+                <h5 className="text-pink text-2xl">{artist.name}</h5>
+                <h6 className="text-lg">{artist.instrument}</h6>
               </div>
             </a>
           ))}
