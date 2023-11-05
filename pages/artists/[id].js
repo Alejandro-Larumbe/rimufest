@@ -30,6 +30,12 @@ const artists = [
     website: "https://kate-eh.co.nz",
     image: "kate",
     path: "/kate-ellingham-hunt",
+    bio: [
+      "As a child, Kate learned the violin through the Suzuki method and later completed a Bmus in performance violin at the NZ School of Music. ",
+      "She has taught private and group Suzuki lessons for over 15 years in NZ and the UK. ",
+      "She spent three years training to be a teacher of the Alexander Technique in London where she got the chance to assist with the Alexander Technique programme at the Royal College of Music. ",
+      "She has an interest in the way we use our bodies and how that affects our health and technique as musicians. ",
+    ],
   },
   {
     name: "Donald Maurice",
