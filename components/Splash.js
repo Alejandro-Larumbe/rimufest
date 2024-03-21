@@ -1,6 +1,5 @@
 import Image from "next/image";
 import SEO from "../components/SEO";
-import Button from "./primitives/button";
 
 export default function Splash() {
   return (
@@ -9,42 +8,28 @@ export default function Splash() {
         title="Rimufest Chamber Music Festival | Home"
         description="RimuFest Chamber Music Festival, founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
       />
-      <div className="flex flex-col lg:flex-row items-center">
+      <div className="flex flex-col lg:flex-row items-center relative">
         <div style={{ width: "100%", height: "100vh", position: "relative" }}>
           <Image
             src="/splash.jpeg"
             alt="Hero Image"
             layout="fill"
-            objectFit="cover" // Optional: Specifies how the image should be fitted within its container
+            objectFit="cover"
           />
-          <div className="absolute flex flex-col items-end gap-4 right-8 md:right-28 lg:right-24 text-right top-48 lg:top-56">
-            <p className="text-4xl lg:text-6xl">Annual Festival NZ 2024</p>
-            <p className="text-3xl lg:text-4xl">Jan - 4th - 9th</p>
-            <a
-              className="uppercase text-xl text-pink hover:font-extrabold	 transition-colors duration-150 hover:underline decoration-8 underline-offset-4"
-              target="_blank"
-              href="https://docs.google.com/forms/d/1knrJ838H9bIyp7q8t95kWpab0JF64vYfguKeGXOta5I/edit?pli=1"
-            >
-              Apply now
-            </a>
-            {/* </Button> */}
+          <div className="absolute inset-0 flex flex-col items-end gap-4 right-8 md:right-28 lg:right-24 text-right top-48 lg:top-56">
+            <div className="bg-black bg-opacity-50 p-4 rounded-lg">
+              <p className="text-white text-4xl lg:text-6xl">
+                Annual Festival NZ 2025
+              </p>
+              <p className="text-white text-3xl lg:text-4xl">
+                Jan - 9th - 14th
+              </p>
+              <p className="text-white text-2xl lg:text-3xl">
+                Applications Open Oct 1st
+              </p>
+            </div>
           </div>
         </div>
-        {/* <div className="h-96 md:w-full self-center pt-24 pb-16 ">
-          <div className="flex items-center">
-            <p className="text-4xl mr-2">Rimufest is</p>
-          </div>
-          <div className="flex items-center">
-            <p className="text-xl mr-2">a chamber music festival</p>
-          </div>
-          <div className="flex items-center">
-            <p className="text-3xl">& academy</p>
-          </div>
-          <div className="flex items-center">
-            <p className="text-4xl text-pink">we inspire</p>
-          </div>
-          <p className="text-2xl">the youth</p>
-        </div> */}
       </div>
       <p className="max-w-xl mx-auto my-72 self-center text-center text-xl">
         RimuFest envisions an inclusive and innovative chamber music festival,

@@ -8,7 +8,7 @@ import Button from "./primitives/button";
 const tabs = [
   { path: "/about", name: "about" },
   { path: "/concerts", name: "concerts" },
-  { path: "/annual-nz-2024", name: "nz2024" },
+  { path: "/annual-nz-2025", name: "nz2025" },
   { path: "/holiday-programme", name: "holidayProgramme" },
   { path: "/gallery", name: "gallery" },
   { path: "/press-room", name: "pressRoom" },
@@ -22,7 +22,7 @@ export default function Appbar() {
   return (
     <>
       <div>
-        <nav className="w-full fixed z-50 dark:bg-black bg-white bg-opacity-50">
+        <nav className="w-full fixed z-50  bg-white dark:bg-black  bg-opacity-50">
           <div className="container px-6 py-6 mx-auto">
             <div className="lg:flex lg:items-center lg:justify-between">
               <div className="flex items-center justify-between">
