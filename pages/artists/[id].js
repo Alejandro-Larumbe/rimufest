@@ -23,6 +23,10 @@ const artists = [
     title: "Co-Founder",
     image: "alejandro",
     path: "/alejandro-larumbe",
+    bio: [
+      "Alejandro Larumbe Martínez (RimuFest co-founder) is a violinist and conductor based in San Diego, California. Alejandro has performed as a violinist in the USA and Mexico with orchestras such as the Louisiana Philharmonic, Baton Rouge Symphony Orchestra, Lansing Symphony and the Miami Symphoni Orchestra.",
+      "Alejandro started his violin studies at age five in his native Mexico. He received a bachelor’s degree in violin performance from Florida International University, and a masters and doctoral degrees in orchestral conducting studying with Carlos Riazuelo at Louisiana State University.",
+    ],
   },
   {
     name: "Kate Ellingham-Hunt",
@@ -30,6 +34,12 @@ const artists = [
     website: "https://kate-eh.co.nz",
     image: "kate",
     path: "/kate-ellingham-hunt",
+    bio: [
+      "As a child, Kate learned the violin through the Suzuki method and later completed a Bmus in performance violin at the NZ School of Music. ",
+      "She has taught private and group Suzuki lessons for over 15 years in NZ and the UK. ",
+      "She spent three years training to be a teacher of the Alexander Technique in London where she got the chance to assist with the Alexander Technique programme at the Royal College of Music. ",
+      "She has an interest in the way we use our bodies and how that affects our health and technique as musicians. ",
+    ],
   },
   {
     name: "Donald Maurice",

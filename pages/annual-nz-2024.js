@@ -212,6 +212,17 @@ export default function AnnualNZ2022() {
             </li>
           ))}
         </ul>
+        <p className="mt-8 text-2xl flex text-purple">Tuition Fee</p>
+        <p className="mt-4 text-lg  text-pink flex">
+          <ChevronRightIcon className="w-6 h-6 font-bold text-pink" />
+          $290 per student
+        </p>
+        <p className="mt-4 flex">
+          We provide a limited number of financial assistance scholarships.
+          These scholarships are need-based and may cover up to the full cost of
+          the program. If you wish to be considered, please specify this in your
+          application.
+        </p>
         <a className="w-full flex justify-center mt-16" href="/learn-more">
           <Button>Learn more...</Button>
         </a>
