@@ -27,23 +27,25 @@ export default function AnnualNZ2022() {
       />
       <Hero bgImage="holiday-programme">
         <h1 className="uppercase text-white">
-          RimuFest NZ 2023 Term 3 Holiday Programme
+          RimuFest NZ 2024 Term 3 Holiday Programme
         </h1>
       </Hero>
       <div className="md:w-101 md:mx-auto md:my-20 p-8">
         <div className="py-4">
-          <p className="text-2xl font-extrabold">
-            RimuFest NZ 2023 Term 3 Holiday Programme
+          <p className="text-3xl text-pink font-extrabold">
+            RimuFest NZ 2024 Term 3 Holiday Programme
           </p>
-          <p className="text-lg">September 23rd → 26th</p>{" "}
-          <p className="text-lg">10am - 3:30pm</p>{" "}
+          <p className="text-lg mt-2">September 29th → October 3rd</p>{" "}
+          {/* <p className="text-lg">10am - 3:30pm</p>{" "} */}
           <p className="text-lg">Open to: Violin, Viola and Cello</p>{" "}
           <div className="py-4 text-base">
-            <p className="mb-4">**Last date to register: August 27</p>
+            <p className="mt-4">**Applications open July 1st</p>
+            <p className="mt-1">**Applications close August 31st</p>
+            <p className="mt-1">**Tuition: $260</p>
           </div>
-          <a href="https://forms.gle/zD5Z1DgdNafAkzWv8 ">
+          {/* <a href="https://forms.gle/zD5Z1DgdNafAkzWv8 ">
             <Button>Apply here</Button>
-          </a>
+          </a> */}
           {/* <p className="text-">* Last day to apply: November 20th</p> */}
         </div>
         <div className="py-4 text-base">

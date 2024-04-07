@@ -5,7 +5,7 @@ import { ChevronRightIcon } from "@heroicons/react/solid";
 import Button from "../components/primitives/button";
 
 const SectionHeader = ({ children }) => (
-  <p className="text-purple text-3xl font-thin mt-8">{children}</p>
+  <p className="text-purple-10 text-3xl font-thin mt-8">{children}</p>
 );
 
 // const artists = [
@@ -144,9 +144,9 @@ export default function AnnualNZ2022() {
       <div className="md:w-100 md:mx-auto md:my-20 p-8">
         <div className="py-4">
           <p className="text-4xl font-extrabold text-pink">
-            Rimufest 5th Annual Festival
+            Rimufest 6th Annual Festival
           </p>
-          <p className="text-lg  mt-4">4th-9th January 2024, 9am - 3pm</p>{" "}
+          <p className="text-lg  mt-4">9th - 14th</p>{" "}
           <p className="text-lg ">Tauranga, NZ</p>{" "}
           <p className="text-lg ">
             Open to Violin, Viola, Cello, Double Bass, and Piano

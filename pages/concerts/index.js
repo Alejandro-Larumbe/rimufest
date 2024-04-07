@@ -3,15 +3,33 @@ import React from "react";
 import Button from "../../components/primitives/button";
 import SEO from "../../components/SEO";
 
-// export async function getStaticProps() {
-//   const allConcertsData = getSortedConcertsData();
-//   return {
-//     props: {
-//       allConcertsData,
-//     },
-//   };
-// }
-
+const concertsData = [
+  {
+    date: "September 29th, 6:30pm",
+    title: "Faculty concert",
+    price: "Adult $35, Student $25",
+  },
+  {
+    date: "October 3rd, 1:30pm",
+    title: "Student concert",
+    price: "Adults $10, Student free",
+  },
+  {
+    date: "January 11th, 6:30pm",
+    title: "Faculty Concert",
+    price: "Adult $35, Student $25",
+  },
+  {
+    date: "January 12th, 1pm",
+    title: "University mentors concert",
+    price: "Adult $35, Student $25",
+  },
+  {
+    date: "January 14th, 1pm",
+    title: "Student concert",
+    price: "Adults $10, Student free",
+  },
+];
 export default function Concerts() {
   return (
     <>
@@ -23,81 +41,16 @@ export default function Concerts() {
         <h1 className="uppercase text-white">Concerts</h1>
       </Hero>
 
-      <div className="md:w-101 md:mx-auto md:my-20 p-8">
-        <div className="flex flex-col gap-6">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-purple text-3xl ">Faculty Concert</h2>
-
-            <h3 className="text-xl ">
-              January 6th 2024, 6:30pm @ St Peter's Church
-            </h3>
+      <div className="md:w-101 md:mx-auto md:my-20 p-8 flex flex-col gap-6">
+        <h1 className={"text-pink text-4xl"}>2025 Concert Series</h1>
+        {concertsData.map(({ date, title, price }) => (
+          <div className="my-4">
+            <h2 className={" text-2xl"}>{title}</h2>
+            <p className="text-lg">{date}</p>
+            <p>Tickets: {price}</p>
           </div>
-
-          {/* <img src="/lockdown-quartet.png" className="w-full "></img> */}
-
-          <a className="w-full flex justify-center" target="_blank">
-            <Button>Get Tickets</Button>
-          </a>
-
-          <div className="flex flex-col mt-32 gap-2">
-            <h2 className="text-purple text-3xl ">
-              Lunchtime Chamber Music Concert
-            </h2>
-
-            <h3 className="text-xl ">January 7th 2024, 1:00pm @ TBD venue</h3>
-          </div>
-
-          {/* <img src="/lockdown-quartet.png" className="w-full "></img> */}
-
-          <a
-            className="w-full flex justify-center"
-            target="_blank"
-            // href="https://www.eventspronto.co.nz/LockdownQuartet"
-          >
-            <Button>Get Tickets</Button>
-          </a>
-        </div>
-
-        <div className="flex flex-col mt-32 gap-2">
-          <h2 className="text-purple text-3xl ">RimuFest Student Concert</h2>
-          <p className="text-xl">
-            January 9th 2024, 1:00pm @ Graham Young Youth Theatre, Tauranga Boys
-            College
-          </p>
-          <p className="text-lg ">Enter by donation</p>
-        </div>
-        <img src="/student-concert.jpg" className="w-full "></img>
-
-        <span>
-          The RimuFest student concert is a family-friendly celebration,
-          inspiring the next generation of music enthusiasts. It showcases the
-          culmination of four days of dedicated hard work by our exceptional
-          students and faculty. They present a mesmerizing display of
-          high-caliber music that is sure to be enjoyed by audiences of all
-          ages. With their talent and passion on full display, the concert
-          promises to be a delightful and unforgettable musical experience for
-          the entire family. It is a celebration of the students' growth and
-          achievements, as well as a testament to the dedication and expertise
-          of the faculty. Don't miss this incredible showcase of musical talent
-          at the RimuFest student concert, as it inspires and delights young and
-          old alike.
-        </span>
+        ))}
       </div>
-
-      {/* <h2 className="text-purple text-3xl mt-32">
-          Chase Ward in Concert
-        </h2>
-        <h3 className="text-xl ">
-          Jan 10th, 6:30pm @ Graham Young Youth Theater, Tauranga Boys College
-        </h3>
-        <img src="/chase.jpeg" className="w-full "></img>
-
-        <p style={{ fontSize: "14px", marginTop: "8px" }}>
-          USA violinist Chase Ward will be performing at the Graham Young Youth
-          Theatre, Tauranga Boys College. Chase is a faculty member for the
-          January 2023 festival.
-        </p> */}
-      {/* </div> */}
     </>
   );
 }

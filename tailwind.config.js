@@ -60,6 +60,7 @@ module.exports = {
         "ccnz-logo-black": "url('/ccnz-logo-black.png')",
         "logo-light": "url('/logo-light.svg')",
         "logo-pink": "url('/logo-pink.svg')",
+        "nz-2024": "url('/nz-2024.jpg')",
         "nz-2022": "url('/nz-2022.jpg')",
         martin: "url('/martin.jpg')",
         donald: "url('/donald-maurice1.jpeg')",
