@@ -17,7 +17,7 @@ export default function AnnualNZ2022() {
           <p className="text-4xl font-extrabold text-pink">
             Rimufest 6th Annual Festival 2025
           </p>
-          <p className="text-lg  mt-4">9th - 14th</p>{" "}
+          <p className="text-lg  mt-4">9th - 14th January, 2025</p>{" "}
           <p className="text-lg ">Tauranga, NZ</p>{" "}
           <p className="text-lg ">
             Open to Violin, Viola, Cello, Double Bass, and Piano
