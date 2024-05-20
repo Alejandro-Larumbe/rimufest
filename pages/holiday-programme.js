@@ -5,6 +5,35 @@ import Hero from "../components/Hero";
 import Button from "../components/primitives/button";
 import SEO from "../components/SEO";
 
+const chevronRight = (
+  <svg
+    version="1.1"
+    id="Capa_1"
+    xmlns="http://www.w3.org/2000/svg"
+    width={16}
+    height={24}
+    viewBox="80 0 80 185.343"
+    style={{ display: "inline-block" }}
+  >
+    <g>
+      <g>
+        <path
+          fill="#75499D"
+          d="M51.707,185.343c-2.741,0-5.493-1.044-7.593-3.149c-4.194-4.194-4.194-10.981,0-15.175
+			l74.352-74.347L44.114,18.32c-4.194-4.194-4.194-10.987,0-15.175c4.194-4.194,10.987-4.194,15.18,0l81.934,81.934
+			c4.194,4.194,4.194,10.987,0,15.175l-81.934,81.939C57.201,184.293,54.454,185.343,51.707,185.343z"
+        />
+      </g>
+    </g>
+  </svg>
+);
+
+const bulletPoints = [
+  "Faculty and student concerts: Learn by watching professionals and participating yourself",
+  "Daily Chamber Coaching: Work with our expert coaches in daily sessions, both in small groups and larger ensembles",
+  " Chamber Music Masterclasses: Focus on performance techniques and public speaking",
+];
+
 const artists = [
   {
     name: "Donald Maurice",
@@ -14,6 +43,14 @@ const artists = [
       "He has performed for New Zealand diplomatic missions in Washington DC, New York, Ottawa, Berlin, Bangkok, Kuala Lumpur and Warsaw. In 2014 he was made a Member of the New Zealand Order of Merit.",
     ],
     picture: "donald-maurice1.jpeg",
+  },
+  {
+    name: "Alejandro Larumbe",
+    picture: "alejandro.jpeg",
+    bio: [
+      "Alejandro Larumbe Martínez (RimuFest co-founder) is a violinist and conductor based in San Diego, California. Alejandro has performed as a violinist in the USA and Mexico with orchestras such as the Louisiana Philharmonic, Baton Rouge Symphony Orchestra, Lansing Symphony and the Miami Symphoni Orchestra.",
+      "Alejandro started his violin studies at age five in his native Mexico. He received a bachelor’s degree in violin performance from Florida International University, and a masters and doctoral degrees in orchestral conducting studying with Carlos Riazuelo at Louisiana State University.",
+    ],
   },
 ];
 
@@ -42,6 +79,12 @@ export default function AnnualNZ2022() {
             <p className="mt-4">**Applications open July 1st</p>
             <p className="mt-1">**Applications close August 31st</p>
             <p className="mt-1">**Tuition: $260</p>
+            <a
+              className="mt-6 block"
+              href="https://forms.gle/ySSu5CJXZU6VNToD6"
+            >
+              <Button>Apply</Button>
+            </a>
           </div>
           {/* <a href="https://forms.gle/zD5Z1DgdNafAkzWv8 ">
             <Button>Apply here</Button>
@@ -59,37 +102,25 @@ export default function AnnualNZ2022() {
         </div>
         <div className="py-4 text-base">
           <p>
-            The four-day program includes engaging activities such as ensemble
+            The five-day program includes engaging activities such as ensemble
             rehearsals, chamber music sessions, technique classes, and ends with
             a student concert.
           </p>
         </div>
-        <div className="py-8 text-base">
-          <p>
-            <span className="text-pink">Customise</span> your experience:
-            violinists can explore both violin and viola. - Let us know in your
-            application form.
-          </p>
-          <p>
-            <span className="text-pink">RimuFest Chamber Music Festival</span>,
-            co-founded by Amelia Taylor and Alejandro Larumbe, presents two
-            annual programs in Tauranga: a 4-day holiday program and a 6-day
-            summer program. Designed for ages 7-18, these inclusive programs
-            foster music collaboration, enabling students to cultivate essential
-            life skills such as communication, teamwork, goal-setting, and
-            organization.
-          </p>
-          <p>
-            Want to learn more about RimuFest and the different classes students
-            are involved in? Check out our{" "}
-            <Link href="/about">
-              <a className="text-pink">about page</a>
-            </Link>
-            .
-          </p>
+        <div className=" text-base">
+          <ul className={["text-md mt-2 flex flex-col gap-2"].join(" ")}>
+            {bulletPoints.map((item) => (
+              <li className="flex align-middle gap-2">
+                {chevronRight}
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
 
-        <h2 style={{ fontSize: "24px", marginBottom: "24px" }}>Faculty</h2>
+        <h2 className="mt-8" style={{ fontSize: "24px", marginBottom: "24px" }}>
+          Faculty
+        </h2>
 
         {artists.map(({ name, bio, picture }) => {
           return (

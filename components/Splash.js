@@ -19,6 +19,17 @@ export default function Splash() {
           <div className="absolute inset-0 flex flex-col items-end gap-4 right-8 md:right-28 lg:right-24 text-right top-48 lg:top-56">
             <div className="bg-black bg-opacity-50 p-4 rounded-lg">
               <p className="text-white text-4xl lg:text-6xl">
+                Holiday Term 3 Program{" "}
+              </p>
+              <p className="text-white text-3xl lg:text-4xl">
+                Sep 29th - Oct 3rd
+              </p>
+              <p className="text-white text-2xl lg:text-3xl">
+                Applications Open July 1st
+              </p>
+            </div>
+            {/* <div className="bg-black bg-opacity-50 p-4 rounded-lg">
+              <p className="text-white text-4xl lg:text-6xl">
                 Annual Festival NZ 2025
               </p>
               <p className="text-white text-3xl lg:text-4xl">
@@ -27,7 +38,7 @@ export default function Splash() {
               <p className="text-white text-2xl lg:text-3xl">
                 Applications Open Oct 1st
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

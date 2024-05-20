@@ -48,7 +48,7 @@ export default function About() {
           students enhance their overall musicianship and ensemble playing
           abilities.
         </p>
-        <h3 className="text-xl mt-6 text-pink">Technique class</h3>
+        {/* <h3 className="text-xl mt-6 text-pink">Technique class</h3>
         <p style={{ marginTop: "16px" }}>
           A string technique class focuses on developing essential skills for
           string instrument players. It covers areas such as proper posture,
@@ -56,7 +56,7 @@ export default function About() {
           production, scales, etudes, and musical expression. The class aims to
           improve technical proficiency and musicianship for a well-rounded
           playing experience. -This class is only part of the Holiday programme
-        </p>
+        </p> */}
         <h3 className="text-xl mt-6 text-pink">Rehearsal vs Coaching</h3>
         <p style={{ marginTop: "16px" }}>
           A rehearsal in chamber music is a practice session where the members
