@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import Hero from "../components/Hero";
 import Button from "../components/primitives/button";
@@ -36,21 +35,34 @@ const bulletPoints = [
 
 const artists = [
   {
-    name: "Donald Maurice",
-    bio: [
-      "Donald was until retiring in 2020 Professor of Music at Victoria University of Wellington. He has performed internationally for four decades as a solo violist and chamber musician and has given world premieres and New Zealand premieres of many works. He has presented at twenty International Viola Congresses.",
-      "He was awarded the Silver Alto Clef by the International Viola Society in 2000, was made an Honorary Life Member of the American Viola Society in 2007, and in 2009 he gave the William Primrose Memorial Concert in Utah. He has performed for New Zealand diplomatic missions in Washington DC, New York, Ottawa, Berlin, Bangkok, Kuala Lumpur and Warsaw. In 2014 he was made a Member of the New Zealand Order of Merit.",
-      "He has performed for New Zealand diplomatic missions in Washington DC, New York, Ottawa, Berlin, Bangkok, Kuala Lumpur and Warsaw. In 2014 he was made a Member of the New Zealand Order of Merit.",
-    ],
-    picture: "donald-maurice1.jpeg",
-  },
-  {
     name: "Alejandro Larumbe",
     picture: "alejandro.jpeg",
     bio: [
       "Alejandro Larumbe Martínez (RimuFest co-founder) is a violinist and conductor based in San Diego, California. Alejandro has performed as a violinist in the USA and Mexico with orchestras such as the Louisiana Philharmonic, Baton Rouge Symphony Orchestra, Lansing Symphony and the Miami Symphoni Orchestra.",
       "Alejandro started his violin studies at age five in his native Mexico. He received a bachelor’s degree in violin performance from Florida International University, and a masters and doctoral degrees in orchestral conducting studying with Carlos Riazuelo at Louisiana State University.",
     ],
+  },
+  {
+    name: "Jesbery Hartono-Hall",
+    bio: [
+      "Jesbery Hartono-Hall holds a Master of Music with First Class Honours from the University of Auckland, New Zealand. She was awarded scholarships and funding such as the Anne Bellam and the Wallace Foundation to further her studies in Europe.",
+      "Jesbery has played for and worked with many renowned artists such as cellists Daniel Müller-Schott, Torleif Thedéen, Alexander Gebert, Clemens Krieger (Dresdner Philharmonie), Dinar Enikeev (Robert Schumann Philharmonie), Ramón Jaffé, Mario di Secondi and Elisabeth Kufferath of the Tetzlaff String Quartet, amongst many others in Germany, America and New Zealand.",
+      "She has played in prestigious venues around Europe, most notibly the Berlin Konzerthaus and Predjama Castle, among many others. Jesbery has also played in film soundtracks and other music videos in New Zealand. A founding member of the prize-winning Akato Piano Trio, the group has also been successful in New Zealand and Europe.",
+      "Jesbery is an active orchestral musician who performs regularly with the Christchurch Symphony Orchestra, Auckland Philharmonia Orchestra and the Royal New Zealand Ballet, and has also worked with the Auckland Chamber Orchestra, Bach Musica NZ, Orchestra Wellington and Trust Waikato Symphony Orchestra.",
+      "Jesbery now teaches at the Epsom Music School and also runs a private cello studio of which all who have sat their ABRSM grade exams received marks with Distinction.",
+    ],
+    picture: "jesbery.jpeg",
+  },
+  {
+    name: "Callum Hall",
+    bio: [
+      "Auckland cellist Callum Hall holds a Doctorate of Musical Arts from Michigan State University, where he studied as a teaching assistant with Suren Bagratuni.",
+      "Callum has been on contract with the Auckland Philharmonia Orchestra since 2017. Prior to his studies in the USA he completed his Masters degree in cello performance at the University of Waikato, studying with James Tennant.",
+      "Callum has taken part in masterclasses with Gautier Capuçon, Alexander Ivashkin, Laurence Lesser, Leslie Parnas, and Torleif Thedéen.",
+      "In 2014 Callum toured for Chamber Music New Zealand as a member of the Rangitoto Piano Trio, which was recorded live in concert for broadcast on Radio New Zealand, and he recently recorded the six Michl bassoon quartets for Atoll Records with his two sisters and bassoonist Ben Hoadley.",
+      "Callum currently teaches at the Epsom Music School and has taught at the Pettman National Junior Academy of Music and the Albany School of Music. He has also played regularly in orchestras such as the Auckland Chamber Orchestra, Opus Chamber Orchestra, Jackson Symphony, Lansing Symphony and the West Michigan Symphony.",
+    ],
+    // picture: "callum.jpeg",
   },
 ];
 
@@ -107,7 +119,7 @@ export default function AnnualNZ2022() {
             a student concert.
           </p>
         </div>
-        <div className=" text-base">
+        <div className="text-base">
           <ul className={["text-md mt-2 flex flex-col gap-2"].join(" ")}>
             {bulletPoints.map((item) => (
               <li className="flex align-middle gap-2">
@@ -118,23 +130,26 @@ export default function AnnualNZ2022() {
           </ul>
         </div>
 
-        <h2 className="mt-8" style={{ fontSize: "24px", marginBottom: "24px" }}>
+        <h2
+          className="mt-8 text-purple"
+          style={{ fontSize: "24px", marginBottom: "24px" }}
+        >
           Faculty
         </h2>
 
         {artists.map(({ name, bio, picture }) => {
           return (
             <div key={name}>
-              <h3 style={{ fontSize: "20px", margin: "24px 0 24px" }}>
-                {name}
-              </h3>
-              <img
-                src={`/${picture}`}
-                className="w-full md:w-auto md:h-99"
-                style={{
-                  margin: "24px 0 24px",
-                }}
-              />
+              <h3 className="text-pink text-xl my-6">{name}</h3>
+              {!!picture && (
+                <img
+                  src={`/${picture}`}
+                  className="w-full md:w-auto md:h-99"
+                  style={{
+                    margin: "24px 0 24px",
+                  }}
+                />
+              )}
               {bio.map((paragraph) => (
                 <p key={paragraph} style={{ marginTop: "8px" }}>
                   {paragraph}
