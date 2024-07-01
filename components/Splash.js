@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SEO from "../components/SEO";
+import Button from "./primitives/button";
 
 export default function Splash() {
   return (
@@ -27,6 +28,12 @@ export default function Splash() {
               <p className="text-white text-2xl lg:text-3xl">
                 Applications Open July 1st
               </p>
+              <a
+                className="mt-6 block"
+                href="https://forms.gle/ySSu5CJXZU6VNToD6"
+              >
+                <Button>Apply</Button>
+              </a>
             </div>
             {/* <div className="bg-black bg-opacity-50 p-4 rounded-lg">
               <p className="text-white text-4xl lg:text-6xl">
