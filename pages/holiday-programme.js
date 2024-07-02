@@ -89,7 +89,7 @@ export default function AnnualNZ2022() {
           <p className="text-lg">Open to: Violin, Viola and Cello</p>{" "}
           <div className="py-4 text-base">
             <p className="mt-4">**Applications open July 1st</p>
-            <p className="mt-1">**Applications close August 31st</p>
+            <p className="mt-1">**Applications close August 24th</p>
             <p className="mt-1">**Tuition: $260</p>
             <a
               className="mt-6 block"
