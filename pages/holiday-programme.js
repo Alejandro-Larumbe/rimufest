@@ -56,13 +56,12 @@ const artists = [
   {
     name: "Callum Hall",
     bio: [
-      "Auckland cellist Callum Hall holds a Doctorate of Musical Arts from Michigan State University, where he studied as a teaching assistant with Suren Bagratuni.",
-      "Callum has been on contract with the Auckland Philharmonia Orchestra since 2017. Prior to his studies in the USA he completed his Masters degree in cello performance at the University of Waikato, studying with James Tennant.",
-      "Callum has taken part in masterclasses with Gautier Capuçon, Alexander Ivashkin, Laurence Lesser, Leslie Parnas, and Torleif Thedéen.",
-      "In 2014 Callum toured for Chamber Music New Zealand as a member of the Rangitoto Piano Trio, which was recorded live in concert for broadcast on Radio New Zealand, and he recently recorded the six Michl bassoon quartets for Atoll Records with his two sisters and bassoonist Ben Hoadley.",
-      "Callum currently teaches at the Epsom Music School and has taught at the Pettman National Junior Academy of Music and the Albany School of Music. He has also played regularly in orchestras such as the Auckland Chamber Orchestra, Opus Chamber Orchestra, Jackson Symphony, Lansing Symphony and the West Michigan Symphony.",
+      "Auckland musician Callum Hall has been making music since a young age, initially playing violin alongside his three siblings but quickly moving his focus to the beautiful sound of the cello. Currently Callum is found performing a diverse range of music around New Zealand, including chamber and orchestral music, contemporary and classical.",
+      "Callum has toured for Chamber Music New Zealand, recorded for Atoll Records and performed on Radio NZ Concert. He played at Upsurge Festival 2022 in the Bay of Islands as well as the Asian Composers League Festival in Christchurch. Callum was a part of the Auckland String Quartet Summer School 2023, tutoring and playing with the Jade String Quartet. In April 2024 he performed in the inaugural Waiheke Chamber Music Festival.",
+      "Callum performs frequently with the Auckland Chamber Orchestra and the Auckland Philharmonia. He has also played as Guest Principal of the Christchurch Symphony Orchestra and the Opus Chamber Orchestra.",
+      "Callum studied with Suren Bagratuni at Michigan State University, where he graduated with a Doctorate of Musical Arts. Prior to his studies in the USA he completed his Masters degree at the University of Waikato, studying with James Tennant. At MSU Callum worked as a teaching assistant, and he now teaches cello in Auckland, on the North Shore as well as at Epsom Music School.",
     ],
-    // picture: "callum.jpeg",
+    picture: "callum.jpeg",
   },
 ];
 
