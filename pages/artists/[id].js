@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "../../components/Hero";
 import SEO from "../../components/SEO";
 
 const artists = [
@@ -81,14 +80,6 @@ const artists = [
       "She has played in prestigious venues around Europe, most notibly the Berlin Konzerthaus and Predjama Castle, among many others. Jesbery has also played in film soundtracks and other music videos in New Zealand. A founding member of the prize-winning Akato Piano Trio, the group has also been successful in New Zealand and Europe.",
       "Jesbery is an active orchestral musician who performs regularly with the Christchurch Symphony Orchestra, Auckland Philharmonia Orchestra and the Royal New Zealand Ballet, and has also worked with the Auckland Chamber Orchestra, Bach Musica NZ, Orchestra Wellington and Trust Waikato Symphony Orchestra.",
       "Jesbery now teaches at the Epsom Music School and also runs a private cello studio of which all who have sat their ABRSM grade exams received marks with Distinction.",
-    ],
-  },
-  {
-    name: "Alejandro Larumbe",
-    picture: "alejandro.jpeg",
-    bio: [
-      "Alejandro Larumbe Martínez (RimuFest co-founder) is a violinist and conductor based in San Diego, California. Alejandro has performed as a violinist in the USA and Mexico with orchestras such as the Louisiana Philharmonic, Baton Rouge Symphony Orchestra, Lansing Symphony and the Miami Symphoni Orchestra.",
-      "Alejandro started his violin studies at age five in his native Mexico. He received a bachelor’s degree in violin performance from Florida International University, and a masters and doctoral degrees in orchestral conducting studying with Carlos Riazuelo at Louisiana State University.",
     ],
   },
 ];
