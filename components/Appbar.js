@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
-
+import { Logo } from "./Logo";
 import useTranslation from "../intl/useTranslation";
 import Button from "./primitives/button";
 
@@ -27,7 +27,9 @@ export default function Appbar() {
             <div className="lg:flex lg:items-center lg:justify-between">
               <div className="flex items-center justify-between">
                 <Link href="/">
-                  <a className="w-28 mt-3 h-14 lg:w-36 lg:h-18 bg-contain bg-no-repeat bg-logo-pink dark:bg-logo-dark" />
+                  <a>
+                    <Logo className="w-28 mt-3 h-auto lg:w-24 lg:h-12" />
+                  </a>
                 </Link>
 
                 {/* <!-- Mobile menu button --> */}

@@ -6,18 +6,17 @@ import SEO from "../../components/SEO";
 const concertsData = [
   {
     date: "September 29th, 6:30pm",
-    title: "Faculty concert",
+    title: "Chamber Music Series: Faculty concert",
+    href: "mixtape-vol-1",
+    subtitle: "Mixtape Vol. 1: Music to Meet Again",
     price: "Adult $35, Student $25",
+    image: "musicToMeetAgain",
+    location: "St. Peter's Church, Mount Maunganui, NZ",
   },
   {
     date: "October 3rd, 1:30pm",
     title: "Student concert",
     price: "Adults $10, Student free",
-  },
-  {
-    date: "January 11th, 6:30pm",
-    title: "Faculty Concert",
-    price: "Adult $35, Student $25",
   },
   {
     date: "January 12th, 1pm",
@@ -42,14 +41,30 @@ export default function Concerts() {
       </Hero>
 
       <div className="md:w-101 md:mx-auto md:my-20 p-8 flex flex-col gap-6">
-        <h1 className={"text-pink text-4xl"}>2025 Concert Series</h1>
-        {concertsData.map(({ date, title, price }) => (
-          <div className="my-4">
-            <h2 className={" text-2xl"}>{title}</h2>
-            <p className="text-lg">{date}</p>
-            <p>Tickets: {price}</p>
-          </div>
-        ))}
+        <h1 className={"text-pink text-5xl"}>2025 Concert Series</h1>
+        {concertsData.map(
+          ({ date, title, price, image, subtitle, href, location }) => (
+            <div key={title} className="my-4">
+              <h2 className={"text-4xl"}>{title}</h2>
+              <h2 className={"text-3xl mt-1"}>{subtitle}</h2>
+              <p className="text-2xl mt-2">{date}</p>
+              {location && <p className="text-xl">{location}</p>}
+              <p>Tickets: {price}</p>
+              {image && href && (
+                <a href={`/concerts/${href}`}>
+                  <div
+                    style={{
+                      backgroundImage: `url("/${image}.png")`,
+                      backgroundRepeat: "no-repeat",
+                      paddingTop: "56.25%", // 16:9 aspect ratio
+                    }}
+                    className={`w-full mt-4 bg-contain bg-center mb-4`}
+                  ></div>
+                </a>
+              )}
+            </div>
+          )
+        )}
       </div>
     </>
   );

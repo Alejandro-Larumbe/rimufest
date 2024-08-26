@@ -62,6 +62,7 @@ module.exports = {
         "logo-pink": "url('/logo-pink.svg')",
         "nz-2024": "url('/nz-2024.jpg')",
         "nz-2022": "url('/nz-2022.jpg')",
+        musicToMeetAgain: "url('/musicToMeetAgain.jpg')",
         martin: "url('/martin.jpg')",
         donald: "url('/donald-maurice1.jpeg')",
         gallery: "url('/gallery.jpeg')",
