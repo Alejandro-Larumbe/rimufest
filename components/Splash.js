@@ -16,6 +16,7 @@ export default function Splash() {
             alt="Hero Image"
             layout="fill"
             objectFit="cover"
+            priority
           />
           <div className="absolute inset-0 flex flex-col items-end gap-4 right-8 md:right-28 lg:right-24 text-right top-48 lg:top-56">
             <div className="bg-black bg-opacity-50 p-4 rounded-lg">
@@ -35,17 +36,6 @@ export default function Splash() {
                 <Button>Apply</Button>
               </a>
             </div>
-            {/* <div className="bg-black bg-opacity-50 p-4 rounded-lg">
-              <p className="text-white text-4xl lg:text-6xl">
-                Annual Festival NZ 2025
-              </p>
-              <p className="text-white text-3xl lg:text-4xl">
-                Jan - 9th - 14th
-              </p>
-              <p className="text-white text-2xl lg:text-3xl">
-                Applications Open Oct 1st
-              </p>
-            </div> */}
           </div>
         </div>
       </div>
@@ -64,6 +54,7 @@ export default function Splash() {
           layout="intrinsic"
           width={3637 * 0.12}
           height={5465 * 0.12}
+          priority
         />
         <p className="max-w-lg lg:w-96 text-lg text-center text-md">
           <strong>RimuFest Chamber Music Festival</strong> is a non profit
