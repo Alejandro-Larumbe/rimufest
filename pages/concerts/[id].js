@@ -69,11 +69,11 @@ export default function Concert() {
         <p className="text-2xl ">{concert.date}</p>
         <p className="text-xl">{concert.location}</p>
         <p className="text-xl">Tickets: {concert.price}</p>
-        <div className="mt-4">
+        {/* <div className="mt-4">
           <Button>
             <a href="#">Book Tickets</a>
           </Button>
-        </div>
+        </div> */}
 
         {concert.description.map((paragraph, index) => (
           <p key={index} className={index === 0 ? "mt-4" : "mt-2"}>
