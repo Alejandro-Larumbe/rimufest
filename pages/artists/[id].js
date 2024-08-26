@@ -73,13 +73,25 @@ const artists = [
     name: "Jesbery Hartono-Hall",
     instrument: "Cello",
     image: "jesbery",
-    path: "jesbery-hartono-hall",
+    path: "/jesbery-hartono-hall",
     bio: [
       "Jesbery Hartono-Hall holds a Master of Music with First Class Honours from the University of Auckland, New Zealand. She was awarded scholarships and funding such as the Anne Bellam and the Wallace Foundation to further her studies in Europe.",
       "Jesbery has played for and worked with many renowned artists such as cellists Daniel Müller-Schott, Torleif Thedéen, Alexander Gebert, Clemens Krieger (Dresdner Philharmonie), Dinar Enikeev (Robert Schumann Philharmonie), Ramón Jaffé, Mario di Secondi and Elisabeth Kufferath of the Tetzlaff String Quartet, amongst many others in Germany, America and New Zealand.",
       "She has played in prestigious venues around Europe, most notibly the Berlin Konzerthaus and Predjama Castle, among many others. Jesbery has also played in film soundtracks and other music videos in New Zealand. A founding member of the prize-winning Akato Piano Trio, the group has also been successful in New Zealand and Europe.",
       "Jesbery is an active orchestral musician who performs regularly with the Christchurch Symphony Orchestra, Auckland Philharmonia Orchestra and the Royal New Zealand Ballet, and has also worked with the Auckland Chamber Orchestra, Bach Musica NZ, Orchestra Wellington and Trust Waikato Symphony Orchestra.",
       "Jesbery now teaches at the Epsom Music School and also runs a private cello studio of which all who have sat their ABRSM grade exams received marks with Distinction.",
+    ],
+  },
+  {
+    name: "Callum Hall",
+    instrument: "Cello",
+    image: "callum",
+    path: "/callum",
+    bio: [
+      "Auckland musician Callum Hall has been making music since a young age, initially playing violin alongside his three siblings but quickly moving his focus to the beautiful sound of the cello. Currently Callum is found performing a diverse range of music around New Zealand, including chamber and orchestral music, contemporary and classical.",
+      "Callum has toured for Chamber Music New Zealand, recorded for Atoll Records and performed on Radio NZ Concert. He played at Upsurge Festival 2022 in the Bay of Islands as well as the Asian Composers League Festival in Christchurch. Callum was a part of the Auckland String Quartet Summer School 2023, tutoring and playing with the Jade String Quartet. In April 2024 he performed in the inaugural Waiheke Chamber Music Festival.",
+      "Callum performs frequently with the Auckland Chamber Orchestra and the Auckland Philharmonia. He has also played as Guest Principal of the Christchurch Symphony Orchestra and the Opus Chamber Orchestra.",
+      "Callum studied with Suren Bagratuni at Michigan State University, where he graduated with a Doctorate of Musical Arts. Prior to his studies in the USA he completed his Masters degree at the University of Waikato, studying with James Tennant. At MSU Callum worked as a teaching assistant, and he now teaches cello in Auckland, on the North Shore as well as at Epsom Music School.",
     ],
   },
 ];
