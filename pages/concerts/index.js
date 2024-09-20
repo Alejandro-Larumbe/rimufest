@@ -1,11 +1,10 @@
 import Hero from "../../components/Hero";
 import React from "react";
-import Button from "../../components/primitives/button";
 import SEO from "../../components/SEO";
 
 const concertsData = [
   {
-    date: "September 29th, 6:30pm",
+    date: "September 29th, 1:30pm",
     title: "Chamber Music Series: Faculty concert",
     href: "mixtape-vol-1",
     subtitle: "Mixtape Vol. 1: Music to Meet Again",

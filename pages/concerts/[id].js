@@ -6,7 +6,7 @@ import Button from "../../components/primitives/button";
 const concertsData = [
   {
     id: "mixtape-vol-1",
-    date: "September 29th, 6:30pm",
+    date: "September 29th, 1:30pm",
     title: "Chamber Music Series: Faculty concert",
     subtitle: "Mixtape Vol. 1: Music to Meet Again",
     location: "St. Peter's Church, Mount Maunganui, NZ",
@@ -22,6 +22,7 @@ const concertsData = [
       "Alejandro Larumbe, violin",
       "Benjamin Harrison, viola",
       "Jesbery Hartono-Hall, cello",
+      "Callum Hall, cello",
     ],
   },
 ];
