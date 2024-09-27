@@ -8,7 +8,7 @@ const concertsData = [
     title: "Chamber Music Series: Faculty concert",
     href: "mixtape-vol-1",
     subtitle: "Mixtape Vol. 1: Music to Meet Again",
-    price: "Adult $35, Student $25",
+    price: "Adult $38, Student $28",
     image: "musicToMeetAgain",
     location: "St. Peter's Church, Mount Maunganui, NZ",
   },
