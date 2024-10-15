@@ -54,13 +54,13 @@ const artists = [
     image: "amelia-4",
     path: "/amelia-taylor",
   },
-  {
-    name: "Alejandro Larumbe",
-    instrument: "Violin, Orchestra Conductor",
-    title: "Co-Founder",
-    image: "alejandro",
-    path: "/alejandro-larumbe",
-  },
+  // {
+  //   name: "Alejandro Larumbe",
+  //   instrument: "Violin, Orchestra Conductor",
+  //   title: "Co-Founder",
+  //   image: "alejandro",
+  //   path: "/alejandro-larumbe",
+  // },
   // {
   //   name: "Kate Ellingham-Hunt",
   //   instrument: "Violin, Alexander Technique",
@@ -68,13 +68,13 @@ const artists = [
   //   image: "kate",
   //   path: "/kate-ellingham-hunt",
   // },
-  {
-    name: "Donald Maurice",
-    instrument: "Viola",
-    website: "https://www.donaldmaurice.org",
-    image: "donald-maurice1",
-    path: "/donald-maurice",
-  },
+  // {
+  //   name: "Donald Maurice",
+  //   instrument: "Viola",
+  //   website: "https://www.donaldmaurice.org",
+  //   image: "donald-maurice1",
+  //   path: "/donald-maurice",
+  // },
   {
     name: "Maria Mo",
     instrument: "Piano",
@@ -103,8 +103,8 @@ export default function AnnualNZ2022() {
           <p className="text-lg ">
             Open to Violin, Viola, Cello, Double Bass, and Piano
           </p>{" "}
-          <p className="mt-4">Applications Open October 1st</p>
-          <p className="mt-1">Applications Close November 17th</p>
+          {/* <p className="mt-4">Applications Open October 1st</p> */}
+          {/* <p className="mt-1">Applications Close November 17th</p> */}
           <p className="mt-1">Tuition fee: $300</p>
           <a className="mt-6 block" href="https://forms.gle/PAVTpLEVct2aKSm79">
             <Button>Apply</Button>
