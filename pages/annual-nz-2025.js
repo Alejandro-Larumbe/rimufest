@@ -75,12 +75,12 @@ const artists = [
   //   image: "donald-maurice1",
   //   path: "/donald-maurice",
   // },
-  {
-    name: "Maria Mo",
-    instrument: "Piano",
-    image: "maria-mo",
-    path: "/maria-mo",
-  },
+  // {
+  //   name: "Maria Mo",
+  //   instrument: "Piano",
+  //   image: "maria-mo",
+  //   path: "/maria-mo",
+  // },
 ];
 
 export default function AnnualNZ2022() {
@@ -154,26 +154,6 @@ export default function AnnualNZ2022() {
                 ))}
               </ul>
             </ul>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
-            {artists.map((artist) => (
-              <a
-                href={"/artists" + artist.path}
-                className="gap-4 flex flex-col group"
-              >
-                <div className="relative">
-                  <img
-                    className="h-96 w-full object-cover grayscale transition duration-300 group-hover:grayscale-0"
-                    src={`/${artist.image}.jpeg`}
-                    alt={artist.name}
-                  />
-                </div>
-                <div>
-                  <h5 className="text-pink text-2xl">{artist.name}</h5>
-                  <h6 className="text-lg">{artist.instrument}</h6>
-                </div>
-              </a>
-            ))}
           </div>
         </div>
       </div>
