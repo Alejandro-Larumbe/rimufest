@@ -32,7 +32,11 @@
 }
 @layer base {
   body {
-    /* overflow-y: hidden; */
     overscroll-behavior: none;
+    overflow: hidden;
+  }
+
+  html {
+    overflow: hidden;
   }
 }
