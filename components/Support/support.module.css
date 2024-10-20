@@ -1,8 +1,0 @@
-.towards li {
-  display: flex;
-  align-items: start;
-}
-
-.towards li > svg:last-of-type {
-  margin-right: 8px;
-}
