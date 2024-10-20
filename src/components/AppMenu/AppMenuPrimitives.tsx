@@ -12,7 +12,7 @@ const navigationLinks = [
   { label: "About", href: "/about", image: "about" },
   { label: "Gallery", href: "/gallery", image: "gallery" },
   {
-    label: "6th Annual Festival 2025",
+    label: "Annual 2025",
     href: "/annual-festival",
     image: "annual",
   },
