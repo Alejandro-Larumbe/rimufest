@@ -45,7 +45,7 @@ export default function Splash() {
         tuition, promoting teamwork, leadership, and a diverse repertoire.
         Through captivating performances and community engagement, we aim to
         inspire and make a lasting impact on the musical journey of young
-        talents in the Bay of Plenty and beyond.
+        talents in the Bay of Plenty and beyond
       </p>
 
       <div className="flex p-6  flex-col lg:flex-row items-center justify-center gap-12">
