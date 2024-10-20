@@ -7,7 +7,7 @@ export default function Splash() {
     <>
       <SEO
         title="Rimufest Chamber Music Festival | Home"
-        description="RimuFest Chamber Music Festival, founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
+        description="RimuFest Chamber Music Festival founded by Amelia Taylor and Alejandro Larumbe, offers two programmes a year in Tauranga - a 4-day holiday programme and a 6-day summer programme for beginner to advanced string players between the ages of 7-18. Both these programmes provide music collaboration opportunities. Students can develop effective communication, teamwork, goal-setting and organisational skills, all transferable life skills."
       />
       <div className="flex flex-col lg:flex-row items-center relative">
         <div style={{ width: "100%", height: "100vh", position: "relative" }}>
