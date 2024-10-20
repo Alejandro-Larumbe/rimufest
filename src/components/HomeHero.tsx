@@ -3,7 +3,7 @@
 export function HomeHero() {
   return (
     <>
-      <div className="relative z-10 h-screen w-screen overflow-hidden">
+      <div className="relative bg-black z-10 h-screen w-screen overflow-hidden">
         <div
           className={`absolute inset-0 z-10 flex items-center justify-center transition-transform duration-300 ease-in-out`}
         >
