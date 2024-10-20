@@ -54,13 +54,13 @@ const artists = [
     image: "amelia-4",
     path: "/amelia-taylor",
   },
-  {
-    name: "Alejandro Larumbe",
-    instrument: "Violin, Orchestra Conductor",
-    title: "Co-Founder",
-    image: "alejandro",
-    path: "/alejandro-larumbe",
-  },
+  // {
+  //   name: "Alejandro Larumbe",
+  //   instrument: "Violin, Orchestra Conductor",
+  //   title: "Co-Founder",
+  //   image: "alejandro",
+  //   path: "/alejandro-larumbe",
+  // },
   // {
   //   name: "Kate Ellingham-Hunt",
   //   instrument: "Violin, Alexander Technique",
@@ -68,19 +68,19 @@ const artists = [
   //   image: "kate",
   //   path: "/kate-ellingham-hunt",
   // },
-  {
-    name: "Donald Maurice",
-    instrument: "Viola",
-    website: "https://www.donaldmaurice.org",
-    image: "donald-maurice1",
-    path: "/donald-maurice",
-  },
-  {
-    name: "Maria Mo",
-    instrument: "Piano",
-    image: "maria-mo",
-    path: "/maria-mo",
-  },
+  // {
+  //   name: "Donald Maurice",
+  //   instrument: "Viola",
+  //   website: "https://www.donaldmaurice.org",
+  //   image: "donald-maurice1",
+  //   path: "/donald-maurice",
+  // },
+  // {
+  //   name: "Maria Mo",
+  //   instrument: "Piano",
+  //   image: "maria-mo",
+  //   path: "/maria-mo",
+  // },
 ];
 
 export default function AnnualNZ2022() {
@@ -103,8 +103,8 @@ export default function AnnualNZ2022() {
           <p className="text-lg ">
             Open to Violin, Viola, Cello, Double Bass, and Piano
           </p>{" "}
-          <p className="mt-4">Applications Open October 1st</p>
-          <p className="mt-1">Applications Close November 17th</p>
+          {/* <p className="mt-4">Applications Open October 1st</p> */}
+          {/* <p className="mt-1">Applications Close November 17th</p> */}
           <p className="mt-1">Tuition fee: $300</p>
           <a className="mt-6 block" href="https://forms.gle/PAVTpLEVct2aKSm79">
             <Button>Apply</Button>
@@ -154,26 +154,6 @@ export default function AnnualNZ2022() {
                 ))}
               </ul>
             </ul>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
-            {artists.map((artist) => (
-              <a
-                href={"/artists" + artist.path}
-                className="gap-4 flex flex-col group"
-              >
-                <div className="relative">
-                  <img
-                    className="h-96 w-full object-cover grayscale transition duration-300 group-hover:grayscale-0"
-                    src={`/${artist.image}.jpeg`}
-                    alt={artist.name}
-                  />
-                </div>
-                <div>
-                  <h5 className="text-pink text-2xl">{artist.name}</h5>
-                  <h6 className="text-lg">{artist.instrument}</h6>
-                </div>
-              </a>
-            ))}
           </div>
         </div>
       </div>
