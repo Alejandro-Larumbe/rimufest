@@ -33,10 +33,5 @@
 @layer base {
   body {
     overscroll-behavior: none;
-    overflow: hidden;
-  }
-
-  html {
-    overflow: hidden;
   }
 }
