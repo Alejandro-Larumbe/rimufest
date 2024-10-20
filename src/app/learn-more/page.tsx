@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { PageHero } from "~/components/PageHero/PageHero";
 
-export const learnMore = [
+const learnMore = [
   {
     title: "Ensemble/Orchestra",
     image: "/learn-more/orchestra.jpg",
@@ -54,7 +54,7 @@ interface LearnMoreItemProps {
   };
 }
 
-export const LearnMoreItem: React.FC<LearnMoreItemProps> = ({ item }) => (
+const LearnMoreItem: React.FC<LearnMoreItemProps> = ({ item }) => (
   <div>
     <div className="relative w-full aspect-10/12">
       <Image alt={item.title} fill className="object-cover" src={item.image} />
@@ -72,7 +72,7 @@ export const LearnMoreItem: React.FC<LearnMoreItemProps> = ({ item }) => (
   </div>
 );
 
-export const LearnMore = () => {
+export default function LearnMore() {
   return (
     <>
       <PageHero title="Learn more" image={"/learn-more.jpeg"} />
@@ -93,6 +93,4 @@ export const LearnMore = () => {
       </div>
     </>
   );
-};
-
-export default LearnMore;
+}
