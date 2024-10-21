@@ -17,7 +17,7 @@ export const Details = () => {
       </span>
       <span className="text-xl">Tuition: $300</span>
 
-      <LinkButton href="https://forms.gle/ySSu5CJXZU6VNToD6">
+      <LinkButton href="https://forms.gle/7CXKCsb5BzDXL3ca7">
         apply now
       </LinkButton>
     </div>
