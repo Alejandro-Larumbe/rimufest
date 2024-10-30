@@ -1,6 +1,7 @@
 import { PageHero } from "~/components/PageHero/PageHero";
 import { Details } from "./Details";
 import { OnOffer } from "./OnOffer";
+import { Faculty } from "./Faculty";
 
 const Annual2025 = () => {
   return (
@@ -11,6 +12,7 @@ const Annual2025 = () => {
           <Details />
           <OnOffer />
         </div>
+        <Faculty />
       </div>
     </>
   );
