@@ -14,9 +14,12 @@ export const AppMenu = () => {
   const [backgroundImage, setBackgroundImage] = React.useState<string>("");
 
   return (
-    <AppMenuRoot onOpenChange={() => setBackgroundImage("")}>
+    <AppMenuRoot>
       <AppMenuTrigger />
-      <AppMenuContent backgroundImage={backgroundImage}>
+      <AppMenuContent
+        setBackgroundImage={setBackgroundImage}
+        backgroundImage={backgroundImage}
+      >
         <AppMenuTitle />
         <AppMenuNavigationLinks setBackgroundImage={setBackgroundImage} />
         <AppMenuFooter />

@@ -38,15 +38,19 @@ AppMenuTrigger.displayName = AppMenuPrimitive.Trigger.displayName;
 const AppMenuClose = React.forwardRef<
   React.ElementRef<typeof AppMenuPrimitive.Close>,
   React.ComponentPropsWithoutRef<typeof AppMenuPrimitive.Close> &
-    React.RefAttributes<HTMLButtonElement>
->(({ className, ...props }, ref) => (
+    React.RefAttributes<HTMLButtonElement> & {
+      setBackgroundImage: (backgroundImage: string) => void;
+    }
+>(({ className, setBackgroundImage, ...props }, ref) => (
   <AppMenuPrimitive.Close
     ref={ref}
     className={cn(
       "fixed right-8 top-8 z-[60] rounded-sm text-pink-500 opacity-70 transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary",
       className
     )}
+    asChild
     {...props}
+    onClick={() => setBackgroundImage("")}
   >
     <Cross1Icon className="h-6 w-5" />
   </AppMenuPrimitive.Close>
@@ -74,40 +78,48 @@ type AppMenuContentProps = React.ComponentPropsWithoutRef<
 
 const AppMenuContent = React.forwardRef<
   React.ElementRef<typeof AppMenuPrimitive.Content>,
-  AppMenuContentProps & { backgroundImage?: string }
->(({ className, backgroundImage, children, ...props }, ref) => {
-  return (
-    <AppMenuPortal>
-      <AppMenuOverlay />
-      <AppMenuPrimitive.Content
-        ref={ref}
-        className={cn(
-          "fixed inset-x-0 top-0 z-40 flex h-full flex-col items-center justify-between gap-4 border-b",
-          "bg-black",
+  AppMenuContentProps & {
+    backgroundImage?: string;
+    setBackgroundImage: React.Dispatch<React.SetStateAction<string>>;
+  }
+>(
+  (
+    { className, backgroundImage, setBackgroundImage, children, ...props },
+    ref
+  ) => {
+    return (
+      <AppMenuPortal>
+        <AppMenuOverlay />
+        <AppMenuPrimitive.Content
+          ref={ref}
+          className={cn(
+            "fixed inset-x-0 top-0 z-40 flex h-full flex-col items-center justify-between gap-4 border-b",
+            "bg-black",
 
-          "px-10 py-20 shadow-lg transition duration-300 ease-in-out data-[state=closed]:duration-300 data-[state=open]:duration-500 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top",
-          className
-        )}
-        {...props}
-      >
-        {backgroundImage && (
-          <div className="absolute inset-0 h-screen w-screen duration-1000 animate-in fade-in">
-            <Image
-              className={`z-[45] mx-auto h-full w-full object-cover`}
-              src={`/${backgroundImage}.jpeg`}
-              alt="preloaded"
-              width={2000}
-              height={1000}
-              priority
-            />
-          </div>
-        )}
-        <AppMenuClose />
-        {children}
-      </AppMenuPrimitive.Content>
-    </AppMenuPortal>
-  );
-});
+            "px-10 py-20 shadow-lg transition duration-300 ease-in-out data-[state=closed]:duration-300 data-[state=open]:duration-500 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top",
+            className
+          )}
+          {...props}
+        >
+          {backgroundImage && (
+            <div className="absolute inset-0 h-screen w-screen duration-1000 animate-in fade-in">
+              <Image
+                className={`z-[45] mx-auto h-full w-full object-cover`}
+                src={`/${backgroundImage}.jpeg`}
+                alt="preloaded"
+                width={2000}
+                height={1000}
+                priority
+              />
+            </div>
+          )}
+          <AppMenuClose setBackgroundImage={setBackgroundImage} />
+          {children}
+        </AppMenuPrimitive.Content>
+      </AppMenuPortal>
+    );
+  }
+);
 AppMenuContent.displayName = AppMenuPrimitive.Content.displayName;
 
 const footerLinks = [
