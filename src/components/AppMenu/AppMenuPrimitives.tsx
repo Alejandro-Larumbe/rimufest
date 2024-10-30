@@ -41,18 +41,15 @@ const AppMenuClose = React.forwardRef<
     React.RefAttributes<HTMLButtonElement> & {
       setBackgroundImage: (backgroundImage: string) => void;
     }
->(({ className, setBackgroundImage, ...props }, ref) => (
+>(({ className, children, setBackgroundImage, ...props }, ref) => (
   <AppMenuPrimitive.Close
     ref={ref}
-    className={cn(
-      "fixed right-8 top-8 z-[60] rounded-sm text-pink-500 opacity-70 transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary",
-      className
-    )}
+    className={className}
     asChild
     {...props}
     onClick={() => setBackgroundImage("")}
   >
-    <Cross1Icon className="h-6 w-5" />
+    {children}
   </AppMenuPrimitive.Close>
 ));
 
@@ -113,7 +110,11 @@ const AppMenuContent = React.forwardRef<
               />
             </div>
           )}
-          <AppMenuClose setBackgroundImage={setBackgroundImage} />
+          <AppMenuClose setBackgroundImage={setBackgroundImage}>
+            <button className="fixed right-8 top-8 z-[60] rounded-sm text-pink-500 opacity-70 transition-opacity hover:opacity-100 focus:outline-none disabled:pointer-events-none data-[state=open]:bg-secondary">
+              <Cross1Icon className="h-6 w-5" />
+            </button>
+          </AppMenuClose>
           {children}
         </AppMenuPrimitive.Content>
       </AppMenuPortal>
@@ -175,11 +176,9 @@ const AppMenuNavigationLinks = ({
 }: AppMenuNavigationLinksProps) => (
   <div className={cn("z-50 flex flex-col items-center", className)} {...props}>
     {navigationLinks.map(({ href, label, image }) => (
-      <AppMenuPrimitive.Close key={label} asChild>
+      <AppMenuClose setBackgroundImage={setBackgroundImage}>
         <Link
-          className={
-            "group relative h-16 text-4xl font-semibold text-foreground"
-          }
+          className={"group relative h-16 text-4xl font-semibold text-white"}
           href={href}
           onMouseEnter={() => setBackgroundImage(image)}
           onMouseLeave={() => setBackgroundImage("")}
@@ -187,7 +186,7 @@ const AppMenuNavigationLinks = ({
           {label}
           <span className="absolute bottom-6 left-1/2 h-[2px] w-0 bg-foreground transition-all duration-300 group-hover:left-0 group-hover:w-full" />
         </Link>
-      </AppMenuPrimitive.Close>
+      </AppMenuClose>
     ))}
   </div>
 );
