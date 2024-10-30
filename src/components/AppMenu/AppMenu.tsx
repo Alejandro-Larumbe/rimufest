@@ -12,6 +12,7 @@ import {
 
 export const AppMenu = () => {
   const [backgroundImage, setBackgroundImage] = React.useState<string>("");
+
   return (
     <AppMenuRoot onOpenChange={() => setBackgroundImage("")}>
       <AppMenuTrigger />

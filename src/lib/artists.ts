@@ -19,7 +19,7 @@ export type Artists =
 export const artists: Record<Artists, Artist> = {
   "amelia-taylor": {
     name: "Amelia Taylor",
-    instrument: "Violin",
+    instrument: "Violin/Viola",
     title: "Director, Co-Founder",
     website: "https://www.ameliacetaylor.com",
     image: "amelia-4",
