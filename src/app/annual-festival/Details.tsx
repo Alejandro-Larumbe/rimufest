@@ -15,7 +15,7 @@ export const Details = () => {
           November 17th, 2025
         </span>
       </span>
-      <span className="text-xl">Tuition: $300</span>
+      <span className="text-xl">Tuition: $300 </span>
 
       <LinkButton href="https://forms.gle/7CXKCsb5BzDXL3ca7">
         apply now
