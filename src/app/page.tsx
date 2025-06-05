@@ -15,11 +15,24 @@ export default function HomePage() {
         </p>
         <div className="w-full md:w-1/2">
           <FeatureBox
-            title="6th Annual Festival 2025"
+            title="Holiday Programme 2025"
+            href="/holiday-programme"
+            imageSrc="/holiday.jpeg"
+            captions={[
+              "21st-24th September, 2025",
+              "Tauranga, NZ",
+              "Open to Violin, Viola, Cello, Double Bass, and Piano",
+            ]}
+            borderColor="green-500"
+          />
+        </div>
+        <div className="w-full md:w-1/2">
+          <FeatureBox
+            title="7th Annual Festival 2026"
             href="/annual-festival"
             imageSrc="/annual-portrait.jpeg"
             captions={[
-              "9th - 14th January, 2025",
+              "January 6th - 11th, 2026",
               "Tauranga, NZ",
               "Open to Violin, Viola, Cello, Double Bass, and Piano",
             ]}
