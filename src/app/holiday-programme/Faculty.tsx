@@ -6,10 +6,8 @@ import type { Artist } from "~/lib/artists";
 const facultyMembers: Artist[] = [
   artists["amelia-taylor"],
   artists["alejandro-larumbe"],
-  artists["kate-ellingham-hunt"],
   artists["maria-mo"],
   artists["jesbery-hartono-hall"],
-  artists["callum"],
 ];
 
 export const Faculty = () => {
