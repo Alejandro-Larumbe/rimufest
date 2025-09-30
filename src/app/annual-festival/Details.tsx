@@ -21,11 +21,14 @@ export const Details = () => {
           October 31st, 2025
         </span>
       </span>
-      <span className="text-xl">Tuition: $300 </span>
+   
+      <span className="text-xl">Tuition: $300 
+        </span>
+        <span className="text-lg">Early bird discount until Oct 17th: $275</span>
 
-      {/* <LinkButton href="https://forms.gle/7CXKCsb5BzDXL3ca7">
+      <LinkButton href="https://forms.gle/D8vDEQTRL6qYVmig9">
         apply now
-      </LinkButton> */}
+      </LinkButton>
     </div>
   );
 };
